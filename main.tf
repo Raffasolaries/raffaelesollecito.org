@@ -41,3 +41,40 @@ module "waf" {
     aws.ue1 = aws.ue1
   }
 }
+
+locals {
+  aws_account_id = "480391725083"
+  aws_region     = "eu-west-1"
+  site_name      = "raffaelesollecitowebsite"
+  profile        = "raffasolaries"
+  site_domain    = "raffaelesollecito.it"
+}
+
+data "aws_caller_identity" "current" {}
+
+# module "docker_pullpush" {
+#   source         = "TechToSpeech/ecr-mirror/aws"
+#   version        = "0.0.6"
+#   aws_account_id = data.aws_caller_identity.current.account_id
+#   aws_region     = local.aws_region
+#   docker_source  = "wordpress:6-apache"
+#   aws_profile    = local.profile
+#   ecr_repo_name  = aws_ecr_repository.serverless_wordpress.name
+#   ecr_repo_tag   = "base"
+#   depends_on = [
+#     module.codebuild,
+#     module.waf
+#   ]
+# }
+
+resource "null_resource" "trigger_build" {
+  triggers = {
+    codebuild_etag = module.codebuild.codebuild_package_etag
+  }
+  provisioner "local-exec" {
+    command = "aws codebuild start-build --project-name ${module.codebuild.codebuild_project_name} --profile ${local.profile} --region ${local.aws_region}"
+  }
+  # depends_on = [
+  #   module.docker_pullpush
+  # ]
+}

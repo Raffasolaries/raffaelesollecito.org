@@ -13,4 +13,18 @@ terraform {
       version = "~> 3.1.0"
     }
   }
+
+ backend "s3" {
+  bucket = "terraform-wordpress-states"
+  key    = "ecs/raffaelesollecito/terraform.tfstate"
+  region = "eu-west-1"
+  encrypt = true
+  shared_credentials_file = "~/.aws/credentials"
+  profile = "raffasolaries"
+ }
+}
+
+provider "aws" {
+  alias   = "ue1"
+  region  = "us-east-1"
 }
