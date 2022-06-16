@@ -67,14 +67,14 @@ data "aws_caller_identity" "current" {}
 #   ]
 # }
 
-resource "null_resource" "trigger_build" {
-  triggers = {
-    codebuild_etag = module.codebuild.codebuild_package_etag
-  }
-  provisioner "local-exec" {
-    command = "aws codebuild start-build --project-name ${module.codebuild.codebuild_project_name} --profile ${local.profile} --region ${local.aws_region}"
-  }
-  # depends_on = [
-  #   module.docker_pullpush
-  # ]
-}
+# resource "null_resource" "trigger_build" {
+#   triggers = {
+#     codebuild_etag = module.codebuild.codebuild_package_etag
+#   }
+#   provisioner "local-exec" {
+#     command = "aws codebuild start-build --project-name ${module.codebuild.codebuild_project_name} --profile ${local.profile} --region ${local.aws_region}"
+#   }
+#   # depends_on = [
+#   #   module.docker_pullpush
+#   # ]
+# }
