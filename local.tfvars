@@ -1,6 +1,6 @@
 
 aws_account_id = "480391725083"
-hosted_zone_id = "Z00582702KHBK8CRMY8OK"
+hosted_zone_id = "Z10348702D3SPFDJMEVEN"
 site_name      = "raffaelesollecitowebsite"
 site_domain    = "raffaelesollecito.org"
 main_vpc_id         = "vpc-0d505e22c17c75197"
