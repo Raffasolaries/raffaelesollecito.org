@@ -79,7 +79,7 @@ resource "aws_cloudfront_distribution" "wordpress_distribution" {
   price_class = var.cloudfront_class
 
   viewer_certificate {
-    minimum_protocol_version = "TLSv1.2_2019"
+    minimum_protocol_version = "TLSv1.2_2021"
     acm_certificate_arn      = var.cloudfront_ssl
     ssl_support_method       = "sni-only"
 
