@@ -16,18 +16,18 @@ variable "cloudfront_ssl" {
 
 variable "site_name" {
   type        = string
-  description = "The unique name for this instance of the module. Required to deploy multiple wordpress instances to the same AWS account (if desired)."
+  description = "The unique name for this instance of the module."
 }
 
 variable "cloudfront_aliases" {
-  type        = list(any)
-  description = "The domain and sub-domain aliases to use for the cloudfront distribution."
+  type        = list(string)
+  description = "The domain and sub-domain aliases to use for the CloudFront distribution."
   default     = []
 }
 
 variable "cloudfront_class" {
   type        = string
-  description = "The [price class](https://aws.amazon.com/cloudfront/pricing/) for the distribution. One of: PriceClass_All, PriceClass_200, PriceClass_100"
+  description = "The price class for the distribution. One of: PriceClass_All, PriceClass_200, PriceClass_100"
   default     = "PriceClass_All"
 }
 
