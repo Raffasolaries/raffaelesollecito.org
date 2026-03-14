@@ -239,7 +239,7 @@ For any issues relating to this module, [raise an issue against this repo.](http
 | <a name="input_slack_webhook"></a> [slack\_webhook](#input\_slack\_webhook) | The Slack webhook URL where ECS Cluster EventBridge notifications will be sent. | `string` | `""` | no |
 | <a name="input_snapshot_identifier"></a> [snapshot\_identifier](#input\_snapshot\_identifier) | To create the RDS cluster from a previous snapshot in the same region, specify it by name. | `string` | `null` | no |
 | <a name="input_subnet_ids"></a> [subnet\_ids](#input\_subnet\_ids) | A list of subnet IDs within the specified VPC where resources will be launched. | `list(any)` | n/a | yes |
-| <a name="input_waf_acl_rules"></a> [waf\_acl\_rules](#input\_waf\_acl\_rules) | List of WAF rules to apply. Can be customized to apply others created outside of module. | `list(any)` | <pre>[<br>  {<br>    "cloudwatch_metrics_enabled": true,<br>    "managed_rule_group_name": "AWSManagedRulesAmazonIpReputationList",<br>    "metric_name": "AWS-AWSManagedRulesAmazonIpReputationList",<br>    "name": "AWS-AWSManagedRulesAmazonIpReputationList",<br>    "priority": 0,<br>    "sampled_requests_enabled": true,<br>    "vendor_name": "AWS"<br>  },<br>  {<br>    "cloudwatch_metrics_enabled": true,<br>    "managed_rule_group_name": "AWSManagedRulesKnownBadInputsRuleSet",<br>    "metric_name": "AWS-AWSManagedRulesKnownBadInputsRuleSet",<br>    "name": "AWS-AWSManagedRulesKnownBadInputsRuleSet",<br>    "priority": 1,<br>    "sampled_requests_enabled": true,<br>    "vendor_name": "AWS"<br>  },<br>  {<br>    "cloudwatch_metrics_enabled": true,<br>    "managed_rule_group_name": "AWSManagedRulesBotControlRuleSet",<br>    "metric_name": "AWS-AWSManagedRulesBotControlRuleSet",<br>    "name": "AWS-AWSManagedRulesBotControlRuleSet",<br>    "priority": 2,<br>    "sampled_requests_enabled": true,<br>    "vendor_name": "AWS"<br>  }<br>]</pre> | no |
+| <a name="input_waf_acl_rules"></a> [waf\_acl\_rules](#input\_waf\_acl\_rules) | List of WAF rules to apply. Can be customized to apply others created outside of module. | `list(any)` | <pre>[<br/>  {<br/>    "cloudwatch_metrics_enabled": true,<br/>    "managed_rule_group_name": "AWSManagedRulesAmazonIpReputationList",<br/>    "metric_name": "AWS-AWSManagedRulesAmazonIpReputationList",<br/>    "name": "AWS-AWSManagedRulesAmazonIpReputationList",<br/>    "priority": 0,<br/>    "sampled_requests_enabled": true,<br/>    "vendor_name": "AWS"<br/>  },<br/>  {<br/>    "cloudwatch_metrics_enabled": true,<br/>    "managed_rule_group_name": "AWSManagedRulesKnownBadInputsRuleSet",<br/>    "metric_name": "AWS-AWSManagedRulesKnownBadInputsRuleSet",<br/>    "name": "AWS-AWSManagedRulesKnownBadInputsRuleSet",<br/>    "priority": 1,<br/>    "sampled_requests_enabled": true,<br/>    "vendor_name": "AWS"<br/>  },<br/>  {<br/>    "cloudwatch_metrics_enabled": true,<br/>    "managed_rule_group_name": "AWSManagedRulesBotControlRuleSet",<br/>    "metric_name": "AWS-AWSManagedRulesBotControlRuleSet",<br/>    "name": "AWS-AWSManagedRulesBotControlRuleSet",<br/>    "priority": 2,<br/>    "sampled_requests_enabled": true,<br/>    "vendor_name": "AWS"<br/>  }<br/>]</pre> | no |
 | <a name="input_waf_enabled"></a> [waf\_enabled](#input\_waf\_enabled) | Flag to enable default WAF configuration in front of CloudFront. | `bool` | n/a | yes |
 | <a name="input_wordpress_admin_email"></a> [wordpress\_admin\_email](#input\_wordpress\_admin\_email) | The email address of the default wordpress admin user. | `string` | `"admin@example.com"` | no |
 | <a name="input_wordpress_admin_password"></a> [wordpress\_admin\_password](#input\_wordpress\_admin\_password) | The password of the default wordpress admin user. | `string` | `"techtospeech.com"` | no |
@@ -265,9 +265,9 @@ For any issues relating to this module, [raise an issue against this repo.](http
 
 | Name | Version |
 |------|---------|
-| <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 0.15.1 |
-| <a name="requirement_aws"></a> [aws](#requirement\_aws) | ~> 3.0 |
-| <a name="requirement_random"></a> [random](#requirement\_random) | ~> 3.1.0 |
+| <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 1.5 |
+| <a name="requirement_aws"></a> [aws](#requirement\_aws) | ~> 5.0 |
+| <a name="requirement_random"></a> [random](#requirement\_random) | ~> 3.1 |
 ## Resources
 
 | Name | Type |
@@ -279,6 +279,7 @@ For any issues relating to this module, [raise an issue against this repo.](http
 | [aws_db_subnet_group.main_vpc](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/db_subnet_group) | resource |
 | [aws_ecr_repository.serverless_wordpress](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/ecr_repository) | resource |
 | [aws_ecs_cluster.wordpress_cluster](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/ecs_cluster) | resource |
+| [aws_ecs_cluster_capacity_providers.wordpress_cluster](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/ecs_cluster_capacity_providers) | resource |
 | [aws_ecs_service.wordpress_service](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/ecs_service) | resource |
 | [aws_ecs_task_definition.wordpress_container](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/ecs_task_definition) | resource |
 | [aws_efs_access_point.wordpress_efs](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/efs_access_point) | resource |
@@ -305,6 +306,7 @@ For any issues relating to this module, [raise an issue against this repo.](http
 | [aws_security_group_rule.wordpress_sg_ingress_80](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/security_group_rule) | resource |
 | [random_id.rds_snapshot](https://registry.terraform.io/providers/hashicorp/random/latest/docs/resources/id) | resource |
 | [random_password.serverless_wordpress_password](https://registry.terraform.io/providers/hashicorp/random/latest/docs/resources/password) | resource |
+| [aws_caller_identity.current](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/data-sources/caller_identity) | data source |
 | [aws_iam_policy_document.ecs_assume_role_policy](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/data-sources/iam_policy_document) | data source |
 | [aws_iam_policy_document.wordpress_bucket_access](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/data-sources/iam_policy_document) | data source |
 <!-- END_TF_DOCS -->
