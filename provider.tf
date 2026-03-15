@@ -1,15 +1,15 @@
 terraform {
-  required_version = ">= 1.5"
+  required_version = ">= 1.14"
 
   required_providers {
     aws = {
       source                = "hashicorp/aws"
-      version               = "~> 5.0"
+      version               = "~> 6.0"
       configuration_aliases = [aws.ue1]
     }
     random = {
       source  = "hashicorp/random"
-      version = "~> 3.1"
+      version = "~> 3.8"
     }
   }
 

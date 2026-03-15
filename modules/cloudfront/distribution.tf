@@ -66,6 +66,7 @@ resource "aws_cloudfront_distribution" "wordpress_distribution" {
 
   enabled             = true
   is_ipv6_enabled     = true
+  http_version        = "http3"
   comment             = "${var.site_name} Distribution for Wordpress"
   default_root_object = "index.html"
   web_acl_id          = var.waf_acl_arn
@@ -97,7 +98,7 @@ resource "aws_cloudfront_distribution" "wordpress_distribution" {
   price_class = var.cloudfront_class
 
   viewer_certificate {
-    minimum_protocol_version = "TLSv1.2_2021"
+    minimum_protocol_version = "TLSv1.2_2021" # Supports TLS 1.3 automatically
     acm_certificate_arn      = var.cloudfront_ssl
     ssl_support_method       = "sni-only"
   }

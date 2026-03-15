@@ -110,7 +110,7 @@ resource "aws_codebuild_project" "wordpress_docker_build" {
 
     environment_variable {
       name  = "AWS_DEFAULT_REGION"
-      value = data.aws_region.current.name
+      value = data.aws_region.current.id
     }
     environment_variable {
       name  = "AWS_ACCOUNT_ID"
