@@ -1,0 +1,111 @@
+---
+name: terraform
+# yamllint disable-line rule:truthy
+on:
+  push:
+    branches: [master]
+  pull_request:
+    branches: [master]
+
+permissions:
+  id-token: write
+  contents: read
+  pull-requests: write
+
+env:
+  TF_VAR_FILE: local.tfvars
+  AWS_REGION: eu-west-1
+
+jobs:
+  plan:
+    name: Terraform Plan
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: aws-actions/configure-aws-credentials@v4
+        with:
+          role-to-assume: arn:aws:iam::480391725083:role/github-actions-oidc
+          aws-region: ${{ env.AWS_REGION }}
+
+      - uses: hashicorp/setup-terraform@v3
+        with:
+          terraform_version: "~> 1.5"
+
+      - name: Terraform Init
+        run: terraform init
+
+      - name: Terraform Format Check
+        run: terraform fmt -check -recursive
+
+      - name: Terraform Validate
+        run: terraform validate
+
+      - name: Terraform Plan
+        id: plan
+        run: terraform plan -var-file="${TF_VAR_FILE}" -no-color -out=tfplan
+        continue-on-error: true
+
+      - name: Save Plan Output
+        if: github.event_name == 'pull_request'
+        run: terraform show -no-color tfplan > plan.txt
+
+      - name: Comment PR with Plan
+        if: github.event_name == 'pull_request'
+        uses: actions/github-script@v7
+        env:
+          PLAN_FILE: plan.txt
+        with:
+          # yamllint disable rule:line-length
+          script: |
+            const fs = require('fs');
+            const plan = fs.readFileSync(
+              process.env.PLAN_FILE, 'utf8'
+            );
+            const max = 60000;
+            const truncated = plan.length > max
+              ? plan.substring(0, max) + '\n\n... truncated'
+              : plan;
+            const body = [
+              '#### Terraform Plan',
+              '<details><summary>Show Plan</summary>\n',
+              '```terraform',
+              truncated,
+              '```',
+              '</details>'
+            ].join('\n');
+            github.rest.issues.createComment({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: body
+            });
+          # yamllint enable rule:line-length
+
+      - name: Plan Status
+        if: steps.plan.outcome == 'failure'
+        run: exit 1
+
+  apply:
+    name: Terraform Apply
+    runs-on: ubuntu-latest
+    needs: plan
+    if: github.ref == 'refs/heads/master' && github.event_name == 'push'
+    environment: production
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: aws-actions/configure-aws-credentials@v4
+        with:
+          role-to-assume: arn:aws:iam::480391725083:role/github-actions-oidc
+          aws-region: ${{ env.AWS_REGION }}
+
+      - uses: hashicorp/setup-terraform@v3
+        with:
+          terraform_version: "~> 1.5"
+
+      - name: Terraform Init
+        run: terraform init
+
+      - name: Terraform Apply
+        run: terraform apply -var-file="${TF_VAR_FILE}" -auto-approve
