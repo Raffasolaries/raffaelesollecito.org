@@ -1,7 +1,6 @@
 variable "aws_account_id" {
   type        = string
   description = "The AWS account ID into which resources will be launched."
-  sensitive   = true
 }
 
 variable "site_name" {
@@ -27,13 +26,11 @@ variable "site_prefix" {
 variable "hosted_zone_id" {
   type        = string
   description = "The Route53 HostedZone ID to use to create records in."
-  sensitive   = true
 }
 
 variable "main_vpc_id" {
   type        = string
   description = "The VPC ID into which to launch resources."
-  sensitive   = true
   validation {
     condition     = length(var.main_vpc_id) > 4 && substr(var.main_vpc_id, 0, 4) == "vpc-"
     error_message = "The main_vpc_id value must be a valid VPC id, starting with \"vpc-\"."
@@ -43,7 +40,6 @@ variable "main_vpc_id" {
 variable "subnet_ids" {
   type        = list(string)
   description = "A list of subnet IDs within the specified VPC where resources will be launched."
-  sensitive   = true
 }
 
 variable "s3_region" {
