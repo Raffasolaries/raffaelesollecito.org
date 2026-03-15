@@ -1,0 +1,10 @@
+aws_account_id     = "REPLACE_ME"
+hosted_zone_id     = "REPLACE_ME"
+site_name          = "raffaelesollecitowebsite"
+site_domain        = "raffaelesollecito.org"
+cloudfront_aliases = ["raffaelesollecito.org", "www.raffaelesollecito.org"]
+main_vpc_id        = "vpc-REPLACE_ME"
+subnet_ids         = ["subnet-REPLACE_ME", "subnet-REPLACE_ME", "subnet-REPLACE_ME"]
+s3_region          = "eu-west-1"
+waf_enabled        = false
+launch             = 0
