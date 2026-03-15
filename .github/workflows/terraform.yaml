@@ -13,8 +13,17 @@ permissions:
   pull-requests: write
 
 env:
-  TF_VAR_FILE: local.tfvars
   AWS_REGION: eu-west-1
+  TF_VAR_aws_account_id: ${{ secrets.AWS_ACCOUNT_ID }}
+  TF_VAR_hosted_zone_id: ${{ secrets.HOSTED_ZONE_ID }}
+  TF_VAR_main_vpc_id: ${{ secrets.MAIN_VPC_ID }}
+  TF_VAR_subnet_ids: ${{ secrets.SUBNET_IDS }}
+  TF_VAR_site_name: ${{ vars.SITE_NAME }}
+  TF_VAR_site_domain: ${{ vars.SITE_DOMAIN }}
+  TF_VAR_s3_region: ${{ vars.S3_REGION }}
+  TF_VAR_cloudfront_aliases: ${{ vars.CLOUDFRONT_ALIASES }}
+  TF_VAR_waf_enabled: ${{ vars.WAF_ENABLED }}
+  TF_VAR_launch: ${{ vars.LAUNCH }}
 
 jobs:
   plan:
@@ -25,7 +34,9 @@ jobs:
 
       - uses: aws-actions/configure-aws-credentials@v4
         with:
-          role-to-assume: arn:aws:iam::480391725083:role/github-actions-oidc
+          role-to-assume: ${{ format(
+            'arn:aws:iam::{0}:role/github-actions-oidc',
+            secrets.AWS_ACCOUNT_ID) }}
           aws-region: ${{ env.AWS_REGION }}
 
       - uses: hashicorp/setup-terraform@v3
@@ -43,7 +54,7 @@ jobs:
 
       - name: Terraform Plan
         id: plan
-        run: terraform plan -var-file="${TF_VAR_FILE}" -no-color -out=tfplan
+        run: terraform plan -no-color -out=tfplan
         continue-on-error: true
 
       - name: Save Plan Output
@@ -97,7 +108,9 @@ jobs:
 
       - uses: aws-actions/configure-aws-credentials@v4
         with:
-          role-to-assume: arn:aws:iam::480391725083:role/github-actions-oidc
+          role-to-assume: ${{ format(
+            'arn:aws:iam::{0}:role/github-actions-oidc',
+            secrets.AWS_ACCOUNT_ID) }}
           aws-region: ${{ env.AWS_REGION }}
 
       - uses: hashicorp/setup-terraform@v3
@@ -108,4 +121,4 @@ jobs:
         run: terraform init
 
       - name: Terraform Apply
-        run: terraform apply -var-file="${TF_VAR_FILE}" -auto-approve
+        run: terraform apply -auto-approve
