@@ -4,11 +4,14 @@
 resource "aws_s3_bucket" "wordpress_bucket" {
   bucket        = "${var.site_prefix}.${var.site_domain}"
   force_destroy = true
-  server_side_encryption_configuration {
-    rule {
-      apply_server_side_encryption_by_default {
-        sse_algorithm = "AES256"
-      }
+}
+
+resource "aws_s3_bucket_server_side_encryption_configuration" "wordpress_bucket" {
+  bucket = aws_s3_bucket.wordpress_bucket.id
+
+  rule {
+    apply_server_side_encryption_by_default {
+      sse_algorithm = "AES256"
     }
   }
 }
@@ -21,22 +24,46 @@ resource "aws_s3_bucket_public_access_block" "wordpress_bucket" {
   restrict_public_buckets = true
 }
 
-resource "aws_cloudfront_origin_access_identity" "wordpress_distribution" {
-  comment = "${var.site_name} OAI for S3"
+# -----------------------------------------------------------------------------
+# Origin Access Control (replaces legacy OAI)
+# -----------------------------------------------------------------------------
+
+resource "aws_cloudfront_origin_access_control" "wordpress_distribution" {
+  name                              = "${var.site_name}-oac"
+  description                       = "${var.site_name} OAC for S3"
+  origin_access_control_origin_type = "s3"
+  signing_behavior                  = "always"
+  signing_protocol                  = "sigv4"
 }
 
-# TODO: Add optional Access Logging configuration for Cloudfront
-# TODO: Add optional WAF configuration in front of Cloudfront
+# -----------------------------------------------------------------------------
+# CloudFront Function (replaces Lambda@Edge for URL rewriting)
+# -----------------------------------------------------------------------------
+
+resource "aws_cloudfront_function" "url_rewrite" {
+  name    = "${var.site_name}_url_rewrite"
+  runtime = "cloudfront-js-2.0"
+  comment = "Rewrite directory requests to index.html"
+  publish = true
+  code    = file("${path.module}/functions/url-rewrite.js")
+}
+
+# -----------------------------------------------------------------------------
+# CloudFront Distribution
+# -----------------------------------------------------------------------------
+
+data "aws_cloudfront_cache_policy" "caching_optimized" {
+  name = "Managed-CachingOptimized"
+}
+
 #tfsec:ignore:AWS045 #tfsec:ignore:AWS071
 resource "aws_cloudfront_distribution" "wordpress_distribution" {
   origin {
-    domain_name = aws_s3_bucket.wordpress_bucket.bucket_regional_domain_name
-    origin_id   = "${var.site_name}_WordpressBucket"
-
-    s3_origin_config {
-      origin_access_identity = aws_cloudfront_origin_access_identity.wordpress_distribution.cloudfront_access_identity_path
-    }
+    domain_name              = aws_s3_bucket.wordpress_bucket.bucket_regional_domain_name
+    origin_id                = "${var.site_name}_WordpressBucket"
+    origin_access_control_id = aws_cloudfront_origin_access_control.wordpress_distribution.id
   }
+
   enabled             = true
   is_ipv6_enabled     = true
   comment             = "${var.site_name} Distribution for Wordpress"
@@ -51,23 +78,14 @@ resource "aws_cloudfront_distribution" "wordpress_distribution" {
     target_origin_id = "${var.site_name}_WordpressBucket"
     compress         = true
 
-    forwarded_values {
-      query_string = true
+    cache_policy_id = data.aws_cloudfront_cache_policy.caching_optimized.id
 
-      cookies {
-        forward = "none"
-      }
-    }
-
-    lambda_function_association {
-      event_type = "origin-request"
-      lambda_arn = "${aws_lambda_function.object_redirect.arn}:${aws_lambda_function.object_redirect.version}"
+    function_association {
+      event_type   = "viewer-request"
+      function_arn = aws_cloudfront_function.url_rewrite.arn
     }
 
     viewer_protocol_policy = "redirect-to-https"
-    min_ttl                = 0
-    default_ttl            = 600
-    max_ttl                = 31536000
   }
 
   restrictions {
@@ -82,29 +100,33 @@ resource "aws_cloudfront_distribution" "wordpress_distribution" {
     minimum_protocol_version = "TLSv1.2_2021"
     acm_certificate_arn      = var.cloudfront_ssl
     ssl_support_method       = "sni-only"
-
   }
-
 }
+
+# -----------------------------------------------------------------------------
+# S3 Bucket Policy — grants CloudFront OAC access
+# -----------------------------------------------------------------------------
 
 resource "aws_s3_bucket_policy" "wordpress_bucket" {
   bucket = aws_s3_bucket.wordpress_bucket.id
 
-  policy = jsonencode(
-    {
-      "Version" : "2008-10-17",
-      "Id" : "PolicyForCloudFrontPrivateContent",
-      "Statement" : [
-        {
-          "Sid" : "1",
-          "Effect" : "Allow",
-          "Principal" : {
-            "AWS" : aws_cloudfront_origin_access_identity.wordpress_distribution.iam_arn
-          },
-          "Action" : "s3:GetObject",
-          "Resource" : "${aws_s3_bucket.wordpress_bucket.arn}/*"
+  policy = jsonencode({
+    Version = "2012-10-17"
+    Statement = [
+      {
+        Sid    = "AllowCloudFrontServicePrincipal"
+        Effect = "Allow"
+        Principal = {
+          Service = "cloudfront.amazonaws.com"
         }
-      ]
-    }
-  )
+        Action   = "s3:GetObject"
+        Resource = "${aws_s3_bucket.wordpress_bucket.arn}/*"
+        Condition = {
+          StringEquals = {
+            "AWS:SourceArn" = aws_cloudfront_distribution.wordpress_distribution.arn
+          }
+        }
+      }
+    ]
+  })
 }

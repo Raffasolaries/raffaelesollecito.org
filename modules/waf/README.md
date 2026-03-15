@@ -8,8 +8,8 @@ allows for rule-definition override in the event you wish to customize further.
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
-| <a name="input_site_name"></a> [site\_name](#input\_site\_name) | The unique name for this instance of the module. Required to deploy multiple wordpress instances to the same AWS account (if desired). | `string` | n/a | yes |
-| <a name="input_waf_acl_rules"></a> [waf\_acl\_rules](#input\_waf\_acl\_rules) | List of WAF rules to apply. Can be customized to apply others created outside of module. | `list(any)` | n/a | yes |
+| <a name="input_site_name"></a> [site\_name](#input\_site\_name) | The unique name for this instance of the module. | `string` | n/a | yes |
+| <a name="input_waf_acl_rules"></a> [waf\_acl\_rules](#input\_waf\_acl\_rules) | List of WAF rules to apply. | <pre>list(object({<br/>    name                       = string<br/>    priority                   = number<br/>    managed_rule_group_name    = string<br/>    vendor_name                = string<br/>    cloudwatch_metrics_enabled = bool<br/>    metric_name                = string<br/>    sampled_requests_enabled   = bool<br/>  }))</pre> | n/a | yes |
 ## Modules
 
 No modules.

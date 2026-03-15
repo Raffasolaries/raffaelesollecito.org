@@ -1,9 +1,22 @@
-module "lambda_slack" {
-  count           = length(var.slack_webhook) > 5 ? 1 : 0
-  source          = "./modules/lambda_slack"
-  site_name       = var.site_name
-  slack_webhook   = var.slack_webhook
-  ecs_cluster_arn = aws_ecs_cluster.wordpress_cluster.arn
+data "aws_caller_identity" "current" {}
+
+module "cloudfront" {
+  source             = "./modules/cloudfront"
+  site_name          = var.site_name
+  site_domain        = var.site_domain
+  cloudfront_ssl     = aws_acm_certificate.wordpress_site.arn
+  cloudfront_aliases = var.cloudfront_aliases
+  cloudfront_class   = var.cloudfront_class
+  waf_acl_arn        = var.waf_enabled ? module.waf[0].waf_acl_arn : null
+
+  providers = {
+    aws.ue1 = aws.ue1
+  }
+
+  depends_on = [
+    aws_acm_certificate_validation.wordpress_site,
+    module.waf,
+  ]
 }
 
 module "codebuild" {
@@ -17,64 +30,21 @@ module "codebuild" {
   container_memory         = var.ecs_memory
 }
 
-module "cloudfront" {
-  source             = "./modules/cloudfront"
-  site_name          = var.site_name
-  site_domain        = var.site_domain
-  cloudfront_ssl     = aws_acm_certificate.wordpress_site.arn
-  cloudfront_aliases = var.cloudfront_aliases
-  providers = {
-    aws.ue1 = aws.ue1
-  }
-  depends_on = [aws_acm_certificate_validation.wordpress_site,
-  module.waf]
-  cloudfront_class = var.cloudfront_class
-  waf_acl_arn      = var.waf_enabled ? module.waf[0].waf_acl_arn : null
-}
-
 module "waf" {
   count         = var.waf_enabled ? 1 : 0
   source        = "./modules/waf"
   site_name     = var.site_name
   waf_acl_rules = var.waf_acl_rules
+
   providers = {
     aws.ue1 = aws.ue1
   }
 }
 
-locals {
-  aws_account_id = "480391725083"
-  aws_region     = "eu-west-1"
-  site_name      = "raffaelesollecitowebsite"
-  profile        = "raffasolaries"
-  site_domain    = "raffaelesollecito.it"
+module "lambda_slack" {
+  count           = length(var.slack_webhook) > 5 ? 1 : 0
+  source          = "./modules/lambda_slack"
+  site_name       = var.site_name
+  slack_webhook   = var.slack_webhook
+  ecs_cluster_arn = aws_ecs_cluster.wordpress_cluster.arn
 }
-
-data "aws_caller_identity" "current" {}
-
-# module "docker_pullpush" {
-#   source         = "TechToSpeech/ecr-mirror/aws"
-#   version        = "0.0.6"
-#   aws_account_id = data.aws_caller_identity.current.account_id
-#   aws_region     = local.aws_region
-#   docker_source  = "wordpress:6-apache"
-#   aws_profile    = local.profile
-#   ecr_repo_name  = aws_ecr_repository.serverless_wordpress.name
-#   ecr_repo_tag   = "base"
-#   depends_on = [
-#     module.codebuild,
-#     module.waf
-#   ]
-# }
-
-# resource "null_resource" "trigger_build" {
-#   triggers = {
-#     codebuild_etag = module.codebuild.codebuild_package_etag
-#   }
-#   provisioner "local-exec" {
-#     command = "aws codebuild start-build --project-name ${module.codebuild.codebuild_project_name} --profile ${local.profile} --region ${local.aws_region}"
-#   }
-#   # depends_on = [
-#   #   module.docker_pullpush
-#   # ]
-# }

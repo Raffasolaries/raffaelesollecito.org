@@ -5,62 +5,70 @@ on:
   push:
     branches:
       - master
+
+permissions:
+  contents: read
+  checks: write
+
 jobs:
   tflint:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2.3.4
-      - name: setup Terraform
-        uses: hashicorp/setup-terraform@v1.3.2
+      - uses: actions/checkout@v4
+      - name: Setup Terraform
+        uses: hashicorp/setup-terraform@v3
         with:
-          terraform_version: 0.15.5
+          terraform_version: "~> 1.5"
       - name: Terraform init
         run: terraform init --backend=false
       - name: tflint
-        uses: reviewdog/action-tflint@master
+        uses: reviewdog/action-tflint@v1
         with:
-          github_token: ${{ secrets.ACTIONS_TOKEN }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
           reporter: github-check
           filter_mode: added
           flags: --module
           level: error
+
   tfsec:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2.3.4
-      - name: setup Terraform
-        uses: hashicorp/setup-terraform@v1.3.2
+      - uses: actions/checkout@v4
+      - name: Setup Terraform
+        uses: hashicorp/setup-terraform@v3
         with:
-          terraform_version: 0.15.5
+          terraform_version: "~> 1.5"
       - name: Terraform init
         run: terraform init --backend=false
       - name: tfsec
-        uses: reviewdog/action-tfsec@master
+        uses: reviewdog/action-tfsec@v1
         with:
-          github_token: ${{ secrets.ACTIONS_TOKEN }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
           reporter: github-check
           filter_mode: added
           level: warning
+
   misspell:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2.3.4
+      - uses: actions/checkout@v4
       - name: misspell
         uses: reviewdog/action-misspell@v1
         with:
-          github_token: ${{ secrets.ACTIONS_TOKEN }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
           locale: "US"
           reporter: github-check
           filter_mode: added
           level: error
+
   yamllint:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2.3.4
+      - uses: actions/checkout@v4
       - name: yamllint
-        uses: reviewdog/action-yamllint@v1.2.0
+        uses: reviewdog/action-yamllint@v1
         with:
-          github_token: ${{ secrets.ACTIONS_TOKEN }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
           reporter: github-check
           filter_mode: added
           level: error
