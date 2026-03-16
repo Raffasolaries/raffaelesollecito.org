@@ -239,9 +239,10 @@
     "subtitle": "A look back at the entrepreneurial projects that shaped my journey before cloud architecture.",
     "memories": {
       "name": "Memories IT Company",
+      "tagline": "\"La memoria è la poetica del ricordo.\" — Alessandro Morandotti",
       "period": "Jun 2015 — Mar 2018",
       "location": "Giovinazzo, Italy",
-      "description": "Founded and led a web agency that built innovative digital products for clients across Italy. From social marketplaces to real-time trading platforms, Memories was where I honed my full-stack engineering skills and discovered my passion for building scalable systems.",
+      "description": "Founded and led a web agency that built innovative digital products for clients across Italy. Memories IT Company was the umbrella under which I developed two main web applications — SunTickets and BeOnMemories — alongside client projects ranging from social marketplaces to real-time trading platforms. This is where I honed my full-stack engineering skills and discovered my passion for building scalable systems.",
       "highlights": {
         "social_marketplaces": "Social marketplaces with user profiles and messaging",
         "booking_platforms": "Online booking platforms for tourism and hospitality",
@@ -252,8 +253,8 @@
       }
     },
     "suntickets": {
-      "name": "SunTickets",
-      "description": "An innovative online booking and management platform designed for beach clubs, swimming pools, resorts, campsites, villages, and restaurants. SunTickets combined a comprehensive management system with a revolutionary booking experience — users could book by clicking directly on an aerial photo of the venue.",
+      "name": "SunTickets®",
+      "description": "An innovative online booking and management platform designed for beach clubs, swimming pools, resorts, campsites, villages, and restaurants. SunTickets combined a comprehensive management system with a revolutionary booking experience — users could book umbrellas, sunbeds, tables, pitches or any spot by clicking directly on an aerial photo of the venue (captured by drones when not available).",
       "features_title": "Key Features",
       "features": {
         "beach_clubs": "Full management software for beach club operators",
@@ -262,6 +263,20 @@
         "campsites": "Pitch and spot booking for campsites",
         "restaurants": "Table reservation system for restaurants",
         "aerial_booking": "Aerial photo-based interactive booking — book by clicking on the map"
+      },
+      "registered": "SunTickets® is a registered trademark of Memories IT Company."
+    },
+    "beonmemories": {
+      "name": "BeOnMemories",
+      "description": "A social network and e-commerce marketplace platform built to connect communities and enable commerce across Europe. BeOnMemories combined the social engagement of a community platform with a fully-featured online store, allowing users to create profiles, interact, and buy or sell products within a unified experience.",
+      "tech_title": "Platform Highlights",
+      "features": {
+        "social_network": "Community-driven social network with profiles, messaging, and activity feeds",
+        "ecommerce": "Integrated e-commerce engine for product listings and transactions",
+        "marketplace": "Multi-vendor marketplace connecting buyers and sellers",
+        "magento": "Built on Magento for robust e-commerce functionality",
+        "oxwall": "Social layer powered by Oxwall community platform",
+        "european_reach": "Designed for a pan-European audience with multi-language support"
       }
     }
   },
