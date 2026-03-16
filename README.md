@@ -265,9 +265,9 @@ For any issues relating to this module, [raise an issue against this repo.](http
 
 | Name | Version |
 |------|---------|
-| <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 1.5 |
-| <a name="requirement_aws"></a> [aws](#requirement\_aws) | ~> 5.0 |
-| <a name="requirement_random"></a> [random](#requirement\_random) | ~> 3.1 |
+| <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 1.14 |
+| <a name="requirement_aws"></a> [aws](#requirement\_aws) | ~> 6.0 |
+| <a name="requirement_random"></a> [random](#requirement\_random) | ~> 3.8 |
 ## Resources
 
 | Name | Type |
@@ -291,6 +291,7 @@ For any issues relating to this module, [raise an issue against this repo.](http
 | [aws_iam_role_policy_attachment.wordpress_role_attachment_cloudwatch](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/iam_role_policy_attachment) | resource |
 | [aws_iam_role_policy_attachment.wordpress_role_attachment_ecs](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/iam_role_policy_attachment) | resource |
 | [aws_rds_cluster.serverless_wordpress](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/rds_cluster) | resource |
+| [aws_rds_cluster_instance.serverless_wordpress](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/rds_cluster_instance) | resource |
 | [aws_route53_record.apex](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/route53_record) | resource |
 | [aws_route53_record.wordpress_acm_validation](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/route53_record) | resource |
 | [aws_route53_record.www](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/route53_record) | resource |
