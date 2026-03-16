@@ -151,12 +151,12 @@ export default async function ArchivePage({
               <div className="space-y-3">
                 {(
                   [
-                    "social_network",
+                    "cemetery_database",
                     "ecommerce",
-                    "marketplace",
+                    "courier_delivery",
                     "magento",
                     "oxwall",
-                    "european_reach",
+                    "nationwide",
                   ] as const
                 ).map((key) => (
                   <div key={key} className="flex gap-3">
