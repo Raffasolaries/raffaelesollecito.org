@@ -67,7 +67,7 @@ export default async function FamilyPage({
                 <img
                   src={photo.src}
                   alt={t(photo.captionKey)}
-                  className="w-full h-72 object-cover group-hover:scale-105 transition-transform duration-500"
+                  className="w-full aspect-square object-cover object-top group-hover:scale-105 transition-transform duration-500"
                 />
               </div>
               <p className="mt-3 text-sm text-muted text-center">

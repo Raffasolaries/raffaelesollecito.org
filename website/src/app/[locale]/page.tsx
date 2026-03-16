@@ -24,7 +24,8 @@ export default async function HomePage({
         </div>
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-24 pb-16 relative">
-          <div className="max-w-3xl">
+          <div className="grid lg:grid-cols-5 gap-12 items-center">
+          <div className="lg:col-span-3">
             <p className="text-accent font-mono text-sm tracking-widest uppercase mb-4 animate-fade-up">
               {t("hero.greeting")}
             </p>
@@ -65,6 +66,19 @@ export default async function HomePage({
               </svg>
               {t("hero.location")}
             </div>
+          </div>
+
+          {/* Hero Photo */}
+          <div className="lg:col-span-2 hidden lg:block animate-fade-up" style={{ animationDelay: "0.5s" }}>
+            <div className="relative">
+              <div className="absolute -inset-3 bg-accent/10 rounded-2xl blur-2xl" />
+              <img
+                src="/images/raffaele-3.jpg"
+                alt="Raffaele Sollecito"
+                className="relative w-full rounded-2xl border border-border/50 object-cover aspect-[4/5]"
+              />
+            </div>
+          </div>
           </div>
         </div>
 
