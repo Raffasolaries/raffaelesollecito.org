@@ -36,6 +36,9 @@ yarn-error.log*
 # vercel
 .vercel
 
+# legal documents (too large for git, synced from S3)
+/public/documents/
+
 # typescript
 *.tsbuildinfo
 next-env.d.ts
