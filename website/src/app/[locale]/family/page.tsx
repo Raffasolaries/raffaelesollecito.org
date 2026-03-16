@@ -63,11 +63,11 @@ export default async function FamilyPage({
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {childhoodPhotos.map((photo) => (
             <div key={photo.captionKey} className="group">
-              <div className="overflow-hidden rounded-lg border border-border/50">
+              <div className="overflow-hidden rounded-lg border border-border/50 bg-surface aspect-square flex items-center justify-center">
                 <img
                   src={photo.src}
                   alt={t(photo.captionKey)}
-                  className="w-full aspect-square object-cover object-top group-hover:scale-105 transition-transform duration-500"
+                  className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500"
                 />
               </div>
               <p className="mt-3 text-sm text-muted text-center">

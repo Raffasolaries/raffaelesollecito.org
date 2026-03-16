@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://raffaelesollecito.org/en/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://raffaelesollecito.org/en/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://raffaelesollecito.org/it/"/>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://raffaelesollecito.org/it/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://raffaelesollecito.org/en/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://raffaelesollecito.org/it/"/>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://raffaelesollecito.org/en/about/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://raffaelesollecito.org/en/about/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://raffaelesollecito.org/it/about/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://raffaelesollecito.org/it/about/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://raffaelesollecito.org/en/about/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://raffaelesollecito.org/it/about/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://raffaelesollecito.org/en/experience/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://raffaelesollecito.org/en/experience/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://raffaelesollecito.org/it/experience/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://raffaelesollecito.org/it/experience/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://raffaelesollecito.org/en/experience/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://raffaelesollecito.org/it/experience/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://raffaelesollecito.org/en/projects/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://raffaelesollecito.org/en/projects/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://raffaelesollecito.org/it/projects/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://raffaelesollecito.org/it/projects/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://raffaelesollecito.org/en/projects/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://raffaelesollecito.org/it/projects/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://raffaelesollecito.org/en/book/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://raffaelesollecito.org/en/book/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://raffaelesollecito.org/it/book/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://raffaelesollecito.org/it/book/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://raffaelesollecito.org/en/book/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://raffaelesollecito.org/it/book/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://raffaelesollecito.org/en/case/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://raffaelesollecito.org/en/case/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://raffaelesollecito.org/it/case/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://raffaelesollecito.org/it/case/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://raffaelesollecito.org/en/case/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://raffaelesollecito.org/it/case/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://raffaelesollecito.org/en/family/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://raffaelesollecito.org/en/family/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://raffaelesollecito.org/it/family/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://raffaelesollecito.org/it/family/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://raffaelesollecito.org/en/family/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://raffaelesollecito.org/it/family/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://raffaelesollecito.org/en/documents/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://raffaelesollecito.org/en/documents/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://raffaelesollecito.org/it/documents/"/>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://raffaelesollecito.org/it/documents/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://raffaelesollecito.org/en/documents/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://raffaelesollecito.org/it/documents/"/>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://raffaelesollecito.org/en/contact/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://raffaelesollecito.org/en/contact/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://raffaelesollecito.org/it/contact/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://raffaelesollecito.org/it/contact/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://raffaelesollecito.org/en/contact/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://raffaelesollecito.org/it/contact/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://raffaelesollecito.org/en/archive/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://raffaelesollecito.org/en/archive/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://raffaelesollecito.org/it/archive/"/>
+    <changefreq>yearly</changefreq>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://raffaelesollecito.org/it/archive/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://raffaelesollecito.org/en/archive/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://raffaelesollecito.org/it/archive/"/>
+    <changefreq>yearly</changefreq>
+    <priority>0.4</priority>
+  </url>
+</urlset>

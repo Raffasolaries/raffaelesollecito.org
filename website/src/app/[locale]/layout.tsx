@@ -30,26 +30,63 @@ export async function generateMetadata({
   const { locale } = await params;
   const messages = (await import(`@/messages/${locale}.json`)).default;
 
+  const siteUrl = "https://raffaelesollecito.org";
+
   return {
     title: messages.metadata.title,
     description: messages.metadata.description,
+    metadataBase: new URL(siteUrl),
+    icons: {
+      icon: [
+        { url: "/favicon.ico", sizes: "32x32" },
+        { url: "/icon.svg", type: "image/svg+xml" },
+      ],
+      apple: "/apple-touch-icon.png",
+    },
+    manifest: "/site.webmanifest",
     openGraph: {
       title: messages.metadata.title,
       description: messages.metadata.description,
+      url: `${siteUrl}/${locale}/`,
       siteName: "Raffaele Sollecito",
       locale: locale === "it" ? "it_IT" : "en_US",
       type: "website",
+      images: [
+        {
+          url: "/og-image.png",
+          width: 1200,
+          height: 630,
+          alt: "Raffaele Sollecito — Cloud Architect & Author",
+        },
+      ],
     },
     twitter: {
       card: "summary_large_image",
       title: messages.metadata.title,
       description: messages.metadata.description,
+      images: ["/og-image.png"],
+      creator: "@Raffasolaries",
     },
     alternates: {
+      canonical: `${siteUrl}/${locale}/`,
       languages: {
-        en: "/en",
-        it: "/it",
+        en: `${siteUrl}/en/`,
+        it: `${siteUrl}/it/`,
       },
+    },
+    robots: {
+      index: true,
+      follow: true,
+      googleBot: {
+        index: true,
+        follow: true,
+        "max-video-preview": -1,
+        "max-image-preview": "large",
+        "max-snippet": -1,
+      },
+    },
+    other: {
+      "theme-color": "#7c3aed",
     },
   };
 }
@@ -76,6 +113,35 @@ export default async function LocaleLayout({
         <script
           dangerouslySetInnerHTML={{
             __html: `(function(){try{var t=localStorage.getItem("theme");if(t==="dark"||(!t&&window.matchMedia("(prefers-color-scheme: dark)").matches)){document.documentElement.classList.add("dark")}}catch(e){}})()`,
+          }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Person",
+              name: "Raffaele Sollecito",
+              url: "https://raffaelesollecito.org",
+              image: "https://raffaelesollecito.org/images/raffaele-1.jpg",
+              jobTitle: "Principal Cloud Solutions Architect",
+              worksFor: {
+                "@type": "Organization",
+                name: "Aspect Solutions",
+              },
+              sameAs: [
+                "https://linkedin.com/in/raffasolaries",
+                "https://github.com/Raffasolaries",
+                "https://twitter.com/Raffasolaries",
+              ],
+              knowsAbout: [
+                "AWS",
+                "Cloud Architecture",
+                "Terraform",
+                "Kubernetes",
+                "DevOps",
+              ],
+            }),
           }}
         />
       </head>
