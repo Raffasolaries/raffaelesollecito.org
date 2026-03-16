@@ -19,7 +19,7 @@ jobs:
       - name: Setup Terraform
         uses: hashicorp/setup-terraform@v3
         with:
-          terraform_version: "~> 1.5"
+          terraform_version: "~> 1.14"
       - name: Install prerequisites
         run: ./bin/install-ubuntu.sh
       - name: Terraform init
@@ -49,7 +49,7 @@ jobs:
       - name: Setup Terraform
         uses: hashicorp/setup-terraform@v3
         with:
-          terraform_version: "~> 1.5"
+          terraform_version: "~> 1.14"
       - name: Terraform init
         run: terraform init --backend=false
       - name: tflint
@@ -68,7 +68,7 @@ jobs:
       - name: Setup Terraform
         uses: hashicorp/setup-terraform@v3
         with:
-          terraform_version: "~> 1.5"
+          terraform_version: "~> 1.14"
       - name: Terraform init
         run: terraform init --backend=false
       - name: tfsec

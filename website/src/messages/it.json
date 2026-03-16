@@ -1,0 +1,290 @@
+{
+  "metadata": {
+    "title": "Raffaele Sollecito — Cloud Architect & Autore",
+    "description": "Principal Cloud Solutions Architect, AWS Subject Matter Expert e autore di Honor Bound. Progetto infrastrutture cloud sicure e scalabili per aziende in tutto il mondo."
+  },
+  "nav": {
+    "home": "Home",
+    "about": "Chi Sono",
+    "experience": "Esperienza",
+    "projects": "Progetti",
+    "book": "Libro",
+    "case": "Il Caso",
+    "family": "Famiglia",
+    "documents": "Documenti",
+    "contact": "Contatti",
+    "archive": "Archivio"
+  },
+  "hero": {
+    "greeting": "Ciao, sono",
+    "name": "Raffaele Sollecito",
+    "title": "Cloud Architect & Autore",
+    "subtitle": "Principal Cloud Solutions Architect. AWS Subject Matter Expert. Autore. Costruisco infrastrutture cloud enterprise-grade per fintech, automotive, cybersecurity e IoT.",
+    "cta_work": "I Miei Lavori",
+    "cta_contact": "Contattami",
+    "location": "Tavira, Portogallo",
+    "scroll": "Scorri per esplorare"
+  },
+  "about": {
+    "title": "Chi Sono",
+    "headline": "Ingegnere. Architetto. Narratore.",
+    "bio_intro": "Sono un Cloud Architect con profonda esperienza in AWS, con multiple certificazioni tra cui Solutions Architect Professional e Security Specialty. Progetto e realizzo soluzioni cloud sicure e scalabili per organizzazioni che vanno da istituzioni europee a colossi dell'automotive e startup fintech.",
+    "bio_current": "Attualmente dirigo Aspect Solutions da Tavira, Portogallo — una consulenza indipendente che offre architettura AWS e Azure enterprise-grade, sicurezza e soluzioni DevOps a clienti internazionali.",
+    "bio_personal": "Oltre al cloud, sono un autore — il mio memoir \"Honor Bound\" è stato pubblicato da Simon & Schuster nel 2012. Sono anche un nerd nel cuore: appassionato di manga, smanettone tecnologico e una persona che trova bellezza sia nel codice elegante che nell'architettura gotica.",
+    "stats": {
+      "years": "10+",
+      "years_label": "Anni nel Cloud",
+      "certs": "6",
+      "certs_label": "Certificazioni AWS",
+      "clients": "15+",
+      "clients_label": "Clienti Enterprise",
+      "countries": "5",
+      "countries_label": "Paesi Lavorati"
+    },
+    "personal_title": "La Persona Dietro il Codice",
+    "personal_text": "Nato a Bari, Italia. Formato a Perugia e Verona. Plasmato da esperienze che la maggior parte delle persone legge solo sui giornali. Ho vissuto eventi che mi hanno insegnato la resilienza, il valore della verità e l'importanza di restare fedeli ai propri principi — a qualsiasi costo. Oggi, canalizzo quella stessa determinazione nel costruire sistemi che proteggono, scalano e durano."
+  },
+  "experience": {
+    "title": "Esperienza",
+    "headline": "Percorso Professionale",
+    "subtitle": "Dall'ingegneria full-stack alla principal cloud architecture — un decennio di costruzione e crescita.",
+    "positions": {
+      "aspect": {
+        "company": "Aspect Solutions",
+        "role": "Principal Cloud Solutions Architect & Fondatore",
+        "period": "Gen 2025 — Presente",
+        "location": "Remoto (Tavira, Portogallo)",
+        "description": "Consulenza indipendente che offre architettura cloud AWS e Azure enterprise-grade, sicurezza e soluzioni DevOps a clienti internazionali nei settori fintech, automotive, cybersecurity e IoT."
+      },
+      "pwc": {
+        "company": "PwC Luxembourg",
+        "role": "Cloud Architect",
+        "period": "Set 2023 — Gen 2024",
+        "location": "Remoto",
+        "description": "Progettato strategie centralizzate di backup AWS per un'Istituzione Europea. Implementato patching automatizzato, automazione Network Firewall e guidato la remediation della sicurezza con Security Hub e AWS Config."
+      },
+      "vw": {
+        "company": "Volkswagen Digital Solutions",
+        "role": "Cloud Solutions Architect",
+        "period": "Feb 2023 — Giu 2023",
+        "location": "Lisbona, Portogallo",
+        "description": "Consegnato account AWS sicuri all'interno della Landing Zone MAN-compliant. Gestito pipeline GitLab CI/CD, automatizzato il provisioning degli account con Step Functions e implementato servizi di sicurezza multi-account."
+      },
+      "itnet": {
+        "company": "ITnet",
+        "role": "Solutions Architect",
+        "period": "Ott 2021 — Feb 2023",
+        "location": "Assago, Italia",
+        "description": "Guidato organizzazioni nell'adozione del cloud e nella gestione di architetture ibride. Creato AWS Control Tower Landing Zones, integrato ServiceNow con AWS Service Catalog e guidato la pianificazione della migrazione Azure-AWS."
+      },
+      "tantosvago": {
+        "company": "Tantosvago",
+        "role": "AWS DevOps Engineer",
+        "period": "Giu 2019 — Ott 2021",
+        "location": "Milano, Italia",
+        "description": "Implementato pipeline CI/CD per ECS e deployment CloudFront+S3. Integrato API REST con mTLS, costruito SSO personalizzato con Lambda Authorizer e containerizzato app Laravel su ECS Fargate."
+      },
+      "keypartner": {
+        "company": "Key Partner Digital",
+        "role": "Full Stack Engineer",
+        "period": "Apr 2018 — Dic 2018",
+        "location": "Milano, Italia",
+        "description": "Guidato lo sviluppo di un framework chatbot multi-piattaforma usando AWS Claudia.js e LEX. Costruito interfacce utente con Angular 2+."
+      },
+      "memories": {
+        "company": "Memories IT Company",
+        "role": "CEO & Fondatore",
+        "period": "Giu 2015 — Mar 2018",
+        "location": "Giovinazzo, Italia",
+        "description": "Fondato e guidato una web agency che costruiva marketplace sociali, piattaforme di prenotazione, app Angular, siti WordPress e una piattaforma Forex con D3.js. Integrato Stripe, Google Maps e What3Words."
+      }
+    }
+  },
+  "projects": {
+    "title": "Progetti",
+    "headline": "Lavori Selezionati",
+    "subtitle": "Architetture cloud enterprise consegnate per leader di settore.",
+    "items": {
+      "ublox": {
+        "title": "Piattaforma GitLab & Migrazione Wiki",
+        "client": "Leader Globale Tecnologia IoT",
+        "period": "2025",
+        "description": "Architettato piattaforma GitLab self-managed su AWS per 500+ utenti con autenticazione federata Azure AD. Guidato migrazione repository da GitHub.com e sistemi SVN legacy. Costruito Wiki aziendale serverless."
+      },
+      "ucapital": {
+        "title": "Piattaforma Fintech Multi-Account",
+        "client": "Gruppo Fintech Europeo",
+        "period": "2023 — Presente",
+        "description": "Infrastruttura AWS sicura per dati finanziari in tempo reale. Control Tower con Security Hub, SAML 2.0 SSO, microservizi ECS, API GraphQL con AppSync, osservabilità con Managed Grafana."
+      },
+      "reevo": {
+        "title": "Landing Zone & Kubernetes per Settore Pubblico",
+        "client": "Provider Cloud & Cyber Security",
+        "period": "2024 — 2025",
+        "description": "AWS Control Tower con Security Hub, VPC Hub-and-Spoke via Transit Gateway, Direct Connect, Network Firewall con Suricata. EKS multi-tenant con ArgoCD GitOps e Karpenter autoscaling."
+      },
+      "awake": {
+        "title": "Modernizzazione Piattaforma Veicoli Connessi",
+        "client": "Azienda IoT Automotive",
+        "period": "2025",
+        "description": "Architettura AWS multi-account per piattaforma IoT veicoli connessi. Auth federata con Entra ID, segmentazione VPC, Network Firewall, backup cross-region, IaC con CloudFormation e Terraform."
+      }
+    }
+  },
+  "skills": {
+    "title": "Competenze & Certificazioni",
+    "certifications": "Certificazioni AWS",
+    "cert_list": {
+      "sap": "Solutions Architect — Professional",
+      "saa": "Solutions Architect — Associate",
+      "sec": "Security — Specialty",
+      "ccp": "Cloud Practitioner",
+      "sme": "Certification SME — Associate",
+      "partner": "Partner: Technical Accredited"
+    },
+    "categories": {
+      "cloud": "Cloud & Infrastruttura",
+      "security": "Sicurezza & Identità",
+      "devops": "DevOps & CI/CD",
+      "development": "Sviluppo"
+    }
+  },
+  "book": {
+    "title": "Honor Bound",
+    "headline": "La Mia Storia, Con le Mie Parole",
+    "publisher": "Pubblicato da Simon & Schuster, 2012",
+    "synopsis": "Sono stati accusati di uno degli omicidi più infami del nostro tempo. Bersagliati dai media, condannati dai tribunali e ingiustamente imprigionati per quattro estenuanti anni per un crimine che nessuno dei due poteva concepire né tantomeno perpetrare. Ora, per la prima volta dalla sua assoluzione, Raffaele rivela cosa è realmente accaduto.",
+    "quote": "Si è rifiutato di testimoniare contro di lei per salvarsi, perché sapeva che lei sarebbe stata persa per sempre.",
+    "buy_amazon": "Acquista su Amazon",
+    "buy_bn": "Acquista su Barnes & Noble"
+  },
+  "case": {
+    "title": "Il Caso",
+    "headline": "La Verità Prevale",
+    "intro": "Nel 2007, sono stato ingiustamente accusato e imprigionato per un crimine che non ho commesso. Dopo quattro anni di prigionia e otto anni di procedimenti legali, sono stato definitivamente assolto dalla Corte Suprema di Cassazione italiana il 27 marzo 2015.",
+    "sections": {
+      "timeline": "Cronologia",
+      "considerations": "Considerazioni della Corte Suprema",
+      "dna": "Le Prove del DNA",
+      "police": "Cosa Ha Detto la Polizia Scientifica",
+      "documents": "Documenti Legali"
+    }
+  },
+  "documents": {
+    "title": "Documenti",
+    "headline": "Archivio Legale",
+    "subtitle": "Decisioni dei tribunali, perizie e documenti legali del caso — tutti pubblicamente disponibili per la consultazione.",
+    "categories": {
+      "verdicts": "Sentenze & Verdetti",
+      "appeals": "Appelli",
+      "expert": "Perizie",
+      "other": "Altri Documenti"
+    }
+  },
+  "contact": {
+    "title": "Contatti",
+    "headline": "Restiamo in Contatto",
+    "subtitle": "Che tu abbia bisogno di consulenza cloud architecture, voglia discutere un progetto o semplicemente salutare.",
+    "email": "Email",
+    "phone": "Telefono",
+    "location": "Posizione",
+    "location_value": "Tavira, Faro, Portogallo",
+    "social": "Trovami online",
+    "availability": "Attualmente disponibile per incarichi di consulenza."
+  },
+  "footer": {
+    "copyright": "Raffaele Sollecito. Tutti i diritti riservati.",
+    "built_with": "Costruito con Next.js, deployato su AWS."
+  },
+  "family": {
+    "title": "Famiglia & Amici",
+    "headline": "Dove Tutto È Iniziato",
+    "subtitle": "Giovinazzo, sulla costa adriatica del Sud Italia — il luogo che ha plasmato chi sono.",
+    "intro": "Raffaele è cresciuto nella città di Giovinazzo, sulla costa adriatica del Sud Italia. Ecco una selezione di foto di famiglia.",
+    "photos_title": "Crescere a Giovinazzo",
+    "friends_title": "Cosa Dicono i Miei Amici",
+    "photos": {
+      "parents_young": "La Mamma ed il Papà in gioventù",
+      "baptism": "Il suo battesimo con sua sorella e la madrina",
+      "with_mom": "Raffaele bimbo a 3 anni con la sua mamma",
+      "age_1": "Raffaele a 1 anno",
+      "age_5": "Raffaele a 5 anni",
+      "age_4": "Raffaele a 4 anni",
+      "age_6": "Raffaele a 6 anni",
+      "school_class": "Raffaele a scuola con i compagni di classe per il suo compleanno di 7 anni",
+      "birthday_8": "Compleanno di Raffaele ad 8 anni con i genitori e sua sorella"
+    },
+    "friends": {
+      "antonella": {
+        "name": "Antonella Petruzzella",
+        "quote": "Ho conosciuto Raffaele al primo anno di liceo, è sempre stata una persona piacevole, generosa e amichevole. Un giorno mi disse che ogni azione deve essere spinta da un sentimento di amore e affetto, che l'amore è il sentimento alla base di tutto. Quel giorno ho capito che esistono persone che credono ancora in questi importanti valori. Raffaele è una delle persone più vere e sincere che abbia mai conosciuto e sono orgogliosa di essere sua amica."
+      },
+      "francesco": {
+        "name": "Francesco Marrano",
+        "quote": "Io sono cresciuto con Raffaele, per questo motivo ci sentiamo legati come fratelli. Molte esperienze importanti della nostra vita le abbiamo vissute insieme, a partire dall'asilo! Siamo cresciuti e ci siamo ritrovati insieme anche al liceo. Abbiamo iniziato a viaggiare insieme — Barcellona, Lisbona. Io e Raffaele abbiamo il progetto di trascorrere un mese in Giappone, perché siamo uniti da molti interessi quali i manga e la tecnologia. Spero che questa terribile storia finisca presto perché Raffaele è una persona fantastica."
+      },
+      "erica": {
+        "name": "Erica Milillo",
+        "quote": "Lo chiamavo il Piccolo Lord per la sua eleganza, delicatezza, il suo senso di rispetto per tutti! Quando un amico è lontano per colpa di qualcosa che lascia a tutti l'amaro in gola e ti fa sentire impotente, è un po' difficile far venire fuori quel sorriso di gioia... ma i ricordi con Raffaele sono solo ricordi di gioia. Questo è per me Raffaele — Un Principe della Grande Nobiltà d'Animo!"
+      },
+      "milko": {
+        "name": "Milko Desantis",
+        "quote": "La mia conoscenza di Raffaele risale a parecchi anni fa: abbiamo frequentato insieme le scuole medie e quelle superiori, gli anni che a mio parere sono quelli in cui si creano le amicizie che poi rimangono per tutta una vita. E così è."
+      }
+    }
+  },
+  "archive": {
+    "title": "Archivio",
+    "headline": "Progetti Passati",
+    "subtitle": "Uno sguardo ai progetti imprenditoriali che hanno plasmato il mio percorso prima dell'architettura cloud.",
+    "memories": {
+      "name": "Memories IT Company",
+      "tagline": "\"La memoria è la poetica del ricordo.\" — Alessandro Morandotti",
+      "period": "Giu 2015 — Mar 2018",
+      "location": "Giovinazzo, Italia",
+      "description": "Fondata e guidata una web agency che costruiva prodotti digitali innovativi per clienti in tutta Italia. Memories IT Company era l'azienda sotto la quale ho sviluppato due applicazioni web principali — SunTickets e BeOnMemories — oltre a progetti per clienti che spaziavano dai marketplace sociali alle piattaforme di trading in tempo reale. Qui ho affinato le mie competenze di ingegneria full-stack e scoperto la mia passione per i sistemi scalabili.",
+      "highlights": {
+        "social_marketplaces": "Marketplace sociali con profili utente e messaggistica",
+        "booking_platforms": "Piattaforme di prenotazione online per turismo e ospitalità",
+        "angular_apps": "Applicazioni single-page costruite con Angular 2+",
+        "wordpress_sites": "Temi e plugin WordPress personalizzati per clienti",
+        "forex_platform": "Piattaforma di trading Forex in tempo reale con visualizzazioni D3.js",
+        "integrations": "Integrazioni Stripe, Google Maps e What3Words"
+      }
+    },
+    "suntickets": {
+      "name": "SunTickets®",
+      "description": "Una piattaforma innovativa di prenotazione e gestione online progettata per stabilimenti balneari, piscine, resort, campeggi, villaggi e ristoranti. SunTickets combinava un sistema gestionale completo con un'esperienza di prenotazione rivoluzionaria — gli utenti potevano prenotare ombrelloni, lettini, tavoli, piazzole o postazioni cliccando direttamente sulla foto aerea della struttura (realizzata con droni in caso di mancanza).",
+      "features_title": "Funzionalità Principali",
+      "features": {
+        "beach_clubs": "Software gestionale completo per operatori di stabilimenti balneari",
+        "pools": "Sistema di prenotazione per piscine e parchi acquatici",
+        "resorts": "Gestione prenotazioni per resort e villaggi",
+        "campsites": "Prenotazione piazzole e postazioni per campeggi",
+        "restaurants": "Sistema di prenotazione tavoli per ristoranti",
+        "aerial_booking": "Prenotazione interattiva su foto aerea — prenota cliccando sulla mappa"
+      },
+      "registered": "SunTickets® è un marchio registrato di Memories IT Company."
+    },
+    "beonmemories": {
+      "name": "BeOnMemories",
+      "description": "Una piattaforma web memoriale innovativa che permetteva agli utenti di onorare i propri cari da qualsiasi luogo. Gli utenti potevano acquistare rose, candele, oggetti votivi e composizioni floreali, e far recapitare il tutto direttamente sulla lapide tramite corriere — il tutto attraverso un'esperienza online intuitiva. La piattaforma disponeva di un database completo di cimiteri in tutta Italia, rendendo semplice localizzare qualsiasi tomba e organizzare una consegna senza doversi recare di persona.",
+      "tech_title": "Caratteristiche della Piattaforma",
+      "features": {
+        "cemetery_database": "Database esteso di cimiteri in tutta Italia con localizzatore tombe",
+        "ecommerce": "Shop online per rose, candele, oggetti votivi e composizioni floreali",
+        "courier_delivery": "Servizio corriere con consegna direttamente sulla lapide per conto del cliente",
+        "magento": "Motore e-commerce costruito su Magento per transazioni sicure",
+        "oxwall": "Layer community alimentato da Oxwall per condividere ricordi e tributi",
+        "nationwide": "Copertura su tutto il territorio nazionale nei cimiteri italiani"
+      }
+    }
+  },
+  "common": {
+    "read_more": "Leggi di Più",
+    "view_all": "Vedi Tutto",
+    "back": "Indietro",
+    "download": "Scarica",
+    "loading": "Caricamento..."
+  }
+}

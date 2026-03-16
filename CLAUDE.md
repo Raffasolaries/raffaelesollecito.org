@@ -82,7 +82,7 @@ For local development, create `local.tfvars` from `local.tfvars.example` (gitign
 
 ## Conventions
 
-- AWS provider `~> 5.0`, Terraform `>= 1.5`
+- AWS provider `~> 6.0`, Terraform `>= 1.14`, Random `~> 3.8`
 - No hardcoded AWS profiles or credentials — use default credential chain
 - S3 backend at `terraform-wordpress-states` bucket
 - Feature branches for infrastructure changes, PRs to main
