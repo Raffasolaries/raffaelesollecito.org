@@ -1,0 +1,204 @@
+{
+  "metadata": {
+    "title": "Raffaele Sollecito — Cloud Architect & Author",
+    "description": "Principal Cloud Solutions Architect, AWS Subject Matter Expert, and author of Honor Bound. Building secure, scalable cloud infrastructure for enterprises worldwide."
+  },
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "experience": "Experience",
+    "projects": "Projects",
+    "book": "Book",
+    "case": "The Case",
+    "documents": "Documents",
+    "contact": "Contact"
+  },
+  "hero": {
+    "greeting": "Hello, I'm",
+    "name": "Raffaele Sollecito",
+    "title": "Cloud Architect & Author",
+    "subtitle": "Principal Cloud Solutions Architect. AWS Subject Matter Expert. Author. Building enterprise-grade cloud infrastructure across fintech, automotive, cybersecurity, and IoT.",
+    "cta_work": "View My Work",
+    "cta_contact": "Get in Touch",
+    "location": "Tavira, Portugal",
+    "scroll": "Scroll to explore"
+  },
+  "about": {
+    "title": "About Me",
+    "headline": "Engineer. Architect. Storyteller.",
+    "bio_intro": "I'm a Cloud Architect with deep expertise in AWS, holding multiple certifications including Solutions Architect Professional and Security Specialty. I design and deliver secure, scalable cloud solutions for organizations ranging from European institutions to automotive giants and fintech startups.",
+    "bio_current": "Currently, I run Aspect Solutions from Tavira, Portugal — an independent consultancy delivering enterprise-grade AWS and Azure architecture, security, and DevOps solutions to international clients.",
+    "bio_personal": "Beyond the cloud, I'm an author — my memoir \"Honor Bound\" was published by Simon & Schuster in 2012. I'm also a nerd at heart: manga enthusiast, tech tinkerer, and someone who finds beauty in both elegant code and gothic architecture.",
+    "stats": {
+      "years": "10+",
+      "years_label": "Years in Cloud",
+      "certs": "6",
+      "certs_label": "AWS Certifications",
+      "clients": "15+",
+      "clients_label": "Enterprise Clients",
+      "countries": "5",
+      "countries_label": "Countries Worked"
+    },
+    "personal_title": "The Person Behind the Code",
+    "personal_text": "Born in Bari, Italy. Educated in Perugia and Verona. Shaped by experiences that most people only read about. I've lived through events that taught me resilience, the value of truth, and the importance of standing by your principles — no matter the cost. Today, I channel that same determination into building systems that protect, scale, and endure."
+  },
+  "experience": {
+    "title": "Experience",
+    "headline": "Career Journey",
+    "subtitle": "From full-stack engineering to principal cloud architecture — a decade of building and scaling.",
+    "positions": {
+      "aspect": {
+        "company": "Aspect Solutions",
+        "role": "Principal Cloud Solutions Architect & Founder",
+        "period": "Jan 2025 — Present",
+        "location": "Remote (Tavira, Portugal)",
+        "description": "Independent consultancy delivering enterprise-grade AWS and Azure cloud architecture, security, and DevOps solutions to international clients across fintech, automotive, cybersecurity, and IoT sectors."
+      },
+      "pwc": {
+        "company": "PwC Luxembourg",
+        "role": "Cloud Architect",
+        "period": "Sep 2023 — Jan 2024",
+        "location": "Remote",
+        "description": "Engineered centralized AWS backup strategies for a European Institution. Deployed automated patching, Network Firewall automation, and led security remediation using Security Hub and AWS Config."
+      },
+      "vw": {
+        "company": "Volkswagen Digital Solutions",
+        "role": "Cloud Solutions Architect",
+        "period": "Feb 2023 — Jun 2023",
+        "location": "Lisbon, Portugal",
+        "description": "Delivered secure AWS accounts within MAN-compliant Landing Zone. Managed GitLab CI/CD pipelines, automated account provisioning with Step Functions, and implemented multi-account security services."
+      },
+      "itnet": {
+        "company": "ITnet",
+        "role": "Solutions Architect",
+        "period": "Oct 2021 — Feb 2023",
+        "location": "Assago, Italy",
+        "description": "Guided organizations through cloud adoption and hybrid architecture management. Created AWS Control Tower Landing Zones, integrated ServiceNow with AWS Service Catalog, and led Azure-to-AWS migration planning."
+      },
+      "tantosvago": {
+        "company": "Tantosvago",
+        "role": "AWS DevOps Engineer",
+        "period": "Jun 2019 — Oct 2021",
+        "location": "Milan, Italy",
+        "description": "Implemented CI/CD pipelines for ECS and CloudFront+S3 deployments. Integrated REST APIs with mTLS, built custom SSO with Lambda Authorizer, and containerized Laravel apps on ECS Fargate."
+      },
+      "keypartner": {
+        "company": "Key Partner Digital",
+        "role": "Full Stack Engineer",
+        "period": "Apr 2018 — Dec 2018",
+        "location": "Milan, Italy",
+        "description": "Led development of a multi-platform chatbot framework using AWS Claudia.js and LEX. Built engaging UIs with Angular 2+."
+      },
+      "memories": {
+        "company": "Memories IT Company",
+        "role": "CEO & Founder",
+        "period": "Jun 2015 — Mar 2018",
+        "location": "Giovinazzo, Italy",
+        "description": "Founded and led a web agency building social marketplaces, booking platforms, Angular apps, WordPress sites, and a Forex platform with D3.js. Integrated Stripe, Google Maps, and What3Words."
+      }
+    }
+  },
+  "projects": {
+    "title": "Projects",
+    "headline": "Selected Work",
+    "subtitle": "Enterprise cloud architectures delivered for industry leaders.",
+    "items": {
+      "ublox": {
+        "title": "GitLab Platform & Wiki Migration",
+        "client": "Global IoT Technology Leader",
+        "period": "2025",
+        "description": "Architected a self-managed GitLab platform on AWS for 500+ users with federated Azure AD authentication. Led repository migration from GitHub.com and legacy SVN systems. Built a serverless company-wide Wiki."
+      },
+      "ucapital": {
+        "title": "Multi-Account Fintech Platform",
+        "client": "European Fintech Group",
+        "period": "2023 — Present",
+        "description": "Secure AWS infrastructure for real-time financial market data. Control Tower with Security Hub, SAML 2.0 SSO, ECS microservices, GraphQL APIs with AppSync, Managed Grafana observability."
+      },
+      "reevo": {
+        "title": "Landing Zone & Kubernetes for Public Sector",
+        "client": "Cloud & Cyber Security Provider",
+        "period": "2024 — 2025",
+        "description": "AWS Control Tower with Security Hub, Hub-and-Spoke VPC via Transit Gateway, Direct Connect, Network Firewall with Suricata. Multi-tenant EKS with ArgoCD GitOps and Karpenter autoscaling."
+      },
+      "awake": {
+        "title": "Connected Vehicle Platform Modernization",
+        "client": "Automotive IoT Company",
+        "period": "2025",
+        "description": "Multi-account AWS architecture for connected vehicle IoT platform. Federated auth with Entra ID, VPC segmentation, Network Firewall, cross-region backup, CloudFormation and Terraform IaC."
+      }
+    }
+  },
+  "skills": {
+    "title": "Skills & Certifications",
+    "certifications": "AWS Certifications",
+    "cert_list": {
+      "sap": "Solutions Architect — Professional",
+      "saa": "Solutions Architect — Associate",
+      "sec": "Security — Specialty",
+      "ccp": "Cloud Practitioner",
+      "sme": "Certification SME — Associate",
+      "partner": "Partner: Technical Accredited"
+    },
+    "categories": {
+      "cloud": "Cloud & Infrastructure",
+      "security": "Security & Identity",
+      "devops": "DevOps & CI/CD",
+      "development": "Development"
+    }
+  },
+  "book": {
+    "title": "Honor Bound",
+    "headline": "My Story, In My Words",
+    "publisher": "Published by Simon & Schuster, 2012",
+    "synopsis": "They were accused of one of the most infamous murders of our time. Targeted by the media, sentenced by the courts, and wrongfully imprisoned for four excruciating years for a crime neither could fathom let alone perpetrate. Now, for the first time since his acquittal, Raffaele reveals what really happened.",
+    "quote": "He refused to testify against her to save his own skin, because he knew she would be lost forever.",
+    "buy_amazon": "Buy on Amazon",
+    "buy_bn": "Buy on Barnes & Noble"
+  },
+  "case": {
+    "title": "The Case",
+    "headline": "Truth Prevails",
+    "intro": "In 2007, I was wrongfully accused and imprisoned for a crime I did not commit. After four years of imprisonment and eight years of legal proceedings, I was definitively acquitted by Italy's Supreme Court of Cassation on March 27, 2015.",
+    "sections": {
+      "timeline": "Timeline",
+      "considerations": "Supreme Court Considerations",
+      "dna": "The DNA Evidence",
+      "police": "What the Scientific Police Said",
+      "documents": "Legal Documents"
+    }
+  },
+  "documents": {
+    "title": "Documents",
+    "headline": "Legal Archive",
+    "subtitle": "Court decisions, expert reports, and legal documents from the case — all publicly available for review.",
+    "categories": {
+      "verdicts": "Verdicts & Sentences",
+      "appeals": "Appeals",
+      "expert": "Expert Reports",
+      "other": "Other Documents"
+    }
+  },
+  "contact": {
+    "title": "Contact",
+    "headline": "Let's Connect",
+    "subtitle": "Whether you need cloud architecture consulting, want to discuss a project, or just want to say hello.",
+    "email": "Email",
+    "phone": "Phone",
+    "location": "Location",
+    "location_value": "Tavira, Faro, Portugal",
+    "social": "Find me online",
+    "availability": "Currently available for consulting engagements."
+  },
+  "footer": {
+    "copyright": "Raffaele Sollecito. All rights reserved.",
+    "built_with": "Built with Next.js, deployed on AWS."
+  },
+  "common": {
+    "read_more": "Read More",
+    "view_all": "View All",
+    "back": "Back",
+    "download": "Download",
+    "loading": "Loading..."
+  }
+}
