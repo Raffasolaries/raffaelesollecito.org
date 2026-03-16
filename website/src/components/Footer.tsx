@@ -1,13 +1,20 @@
+"use client";
+
 import { useTranslations } from "next-intl";
+import { usePathname } from "next/navigation";
+import Link from "next/link";
 
 export function Footer() {
   const t = useTranslations("footer");
+  const tn = useTranslations("nav");
+  const pathname = usePathname();
+  const locale = pathname.split("/")[1];
   const year = new Date().getFullYear();
 
   return (
     <footer className="border-t border-border/50 bg-surface/50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Brand */}
           <div>
             <span className="text-xl font-bold">
@@ -17,6 +24,19 @@ export function Footer() {
             <p className="mt-2 text-sm text-muted">
               Cloud Architect & Author
             </p>
+          </div>
+
+          {/* Footer Links */}
+          <div className="text-sm space-y-2">
+            <Link href={`/${locale}/archive`} className="block text-muted hover:text-accent transition-colors">
+              {tn("archive")}
+            </Link>
+            <Link href={`/${locale}/documents`} className="block text-muted hover:text-accent transition-colors">
+              {tn("documents")}
+            </Link>
+            <Link href={`/${locale}/contact`} className="block text-muted hover:text-accent transition-colors">
+              {tn("contact")}
+            </Link>
           </div>
 
           {/* Social Links */}

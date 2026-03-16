@@ -10,8 +10,10 @@
     "projects": "Projects",
     "book": "Book",
     "case": "The Case",
+    "family": "Family",
     "documents": "Documents",
-    "contact": "Contact"
+    "contact": "Contact",
+    "archive": "Archive"
   },
   "hero": {
     "greeting": "Hello, I'm",
@@ -193,6 +195,75 @@
   "footer": {
     "copyright": "Raffaele Sollecito. All rights reserved.",
     "built_with": "Built with Next.js, deployed on AWS."
+  },
+  "family": {
+    "title": "Family & Friends",
+    "headline": "Where It All Began",
+    "subtitle": "Giovinazzo, on the Adriatic coast of Southern Italy — the place that shaped who I am.",
+    "intro": "Raffaele grew up in the city of Giovinazzo, on the Adriatic coast of Southern Italy. Here is a selection of family photos.",
+    "photos_title": "Growing Up in Giovinazzo",
+    "friends_title": "What My Friends Say",
+    "photos": {
+      "parents_young": "Mom and Dad in their youth",
+      "baptism": "His baptism with his sister and godmother",
+      "with_mom": "Raffaele as a child at 3 with his mom",
+      "age_1": "Raffaele at 1 year old",
+      "age_5": "Raffaele at 5 years old",
+      "age_4": "Raffaele at 4 years old",
+      "age_6": "Raffaele at 6 years old",
+      "school_class": "Raffaele at school with classmates for his 7th birthday",
+      "birthday_8": "Raffaele's 8th birthday with parents and sister"
+    },
+    "friends": {
+      "antonella": {
+        "name": "Antonella Petruzzella",
+        "quote": "I met Raffaele in our first year of high school — he has always been a pleasant, generous and friendly person. One day he told me that every action must be driven by a feeling of love and affection, that love is the feeling at the root of everything. That day I understood that there are people who still believe in these important values. Raffaele is one of the most genuine and sincere people I have ever known and I am proud to be his friend."
+      },
+      "francesco": {
+        "name": "Francesco Marrano",
+        "quote": "I grew up with Raffaele — that's why we feel like brothers. Many important experiences of our lives we lived together, starting from nursery school! We grew up and found ourselves together again in high school. We started traveling together — Barcelona, Lisbon. Raffaele and I share a plan to spend a month in Japan, because we are united by many interests like manga and technology. I hope this terrible story ends soon because Raffaele is a fantastic person who doesn't deserve all this pain."
+      },
+      "erica": {
+        "name": "Erica Milillo",
+        "quote": "I called him the Little Lord for his elegance, delicacy, his sense of respect for everyone! When a friend is far away because of something that leaves everyone with a bitter taste and makes you feel powerless, it's a bit hard to bring out that smile of joy... but the memories with Raffaele are only memories of joy. This is Raffaele for me — A Prince of Great Nobility of Soul!"
+      },
+      "milko": {
+        "name": "Milko Desantis",
+        "quote": "My knowledge of Raffaele goes back many years: we attended middle school and high school together — the years that in my opinion are the ones in which friendships are created that then remain for a lifetime. And so it is."
+      }
+    }
+  },
+  "archive": {
+    "title": "Archive",
+    "headline": "Past Ventures",
+    "subtitle": "A look back at the entrepreneurial projects that shaped my journey before cloud architecture.",
+    "memories": {
+      "name": "Memories IT Company",
+      "period": "Jun 2015 — Mar 2018",
+      "location": "Giovinazzo, Italy",
+      "description": "Founded and led a web agency that built innovative digital products for clients across Italy. From social marketplaces to real-time trading platforms, Memories was where I honed my full-stack engineering skills and discovered my passion for building scalable systems.",
+      "highlights": {
+        "social_marketplaces": "Social marketplaces with user profiles and messaging",
+        "booking_platforms": "Online booking platforms for tourism and hospitality",
+        "angular_apps": "Single-page applications built with Angular 2+",
+        "wordpress_sites": "Custom WordPress themes and plugins for clients",
+        "forex_platform": "Real-time Forex trading platform with D3.js visualizations",
+        "integrations": "Stripe payments, Google Maps, and What3Words integrations"
+      }
+    },
+    "suntickets": {
+      "name": "SunTickets",
+      "description": "An innovative online booking and management platform designed for beach clubs, swimming pools, resorts, campsites, villages, and restaurants. SunTickets combined a comprehensive management system with a revolutionary booking experience — users could book by clicking directly on an aerial photo of the venue.",
+      "features_title": "Key Features",
+      "features": {
+        "beach_clubs": "Full management software for beach club operators",
+        "pools": "Booking system for swimming pools and water parks",
+        "resorts": "Reservation management for resorts and villages",
+        "campsites": "Pitch and spot booking for campsites",
+        "restaurants": "Table reservation system for restaurants",
+        "aerial_booking": "Aerial photo-based interactive booking — book by clicking on the map"
+      }
+    }
   },
   "common": {
     "read_more": "Read More",

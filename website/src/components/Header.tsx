@@ -5,11 +5,13 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
 import { LocaleSwitcher } from "./LocaleSwitcher";
+import { ThemeToggle } from "./ThemeToggle";
 
 const navItems = [
   { key: "about", href: "/about" },
   { key: "experience", href: "/experience" },
   { key: "projects", href: "/projects" },
+  { key: "family", href: "/family" },
   { key: "book", href: "/book" },
   { key: "case", href: "/case" },
   { key: "documents", href: "/documents" },
@@ -53,13 +55,15 @@ export function Header() {
                 </Link>
               );
             })}
-            <div className="ml-4 pl-4 border-l border-border">
+            <div className="ml-4 pl-4 border-l border-border flex items-center gap-2">
+              <ThemeToggle />
               <LocaleSwitcher />
             </div>
           </div>
 
           {/* Mobile menu button */}
-          <div className="flex items-center gap-3 lg:hidden">
+          <div className="flex items-center gap-2 lg:hidden">
+            <ThemeToggle />
             <LocaleSwitcher />
             <button
               onClick={() => setMobileOpen(!mobileOpen)}

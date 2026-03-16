@@ -29,7 +29,7 @@ export default async function AboutPage({
             <div className="relative">
               <div className="absolute -inset-2 bg-accent/10 rounded-lg blur-xl" />
               <img
-                src="/images/raffaele-1.jpg"
+                src="/images/raffaele-profile.jpg"
                 alt="Raffaele Sollecito"
                 className="relative w-full rounded-lg border border-border/50 object-cover aspect-[4/5]"
               />
@@ -54,30 +54,22 @@ export default async function AboutPage({
         </div>
       </Section>
 
-      {/* Photo Gallery */}
+      {/* Photo Gallery — childhood photos from family collection */}
       <Section className="bg-surface/30 !py-12">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          <div className="overflow-hidden rounded-lg border border-border/50">
-            <img
-              src="/images/raffaele-2.jpg"
-              alt="Raffaele Sollecito"
-              className="w-full h-72 object-cover hover:scale-105 transition-transform duration-500"
-            />
-          </div>
-          <div className="overflow-hidden rounded-lg border border-border/50">
-            <img
-              src="/images/raffaele-3.jpg"
-              alt="Raffaele Sollecito"
-              className="w-full h-72 object-cover hover:scale-105 transition-transform duration-500"
-            />
-          </div>
-          <div className="overflow-hidden rounded-lg border border-border/50">
-            <img
-              src="/images/raffaele-1.jpg"
-              alt="Raffaele Sollecito"
-              className="w-full h-72 object-cover object-top hover:scale-105 transition-transform duration-500"
-            />
-          </div>
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+          {[
+            { src: "/images/family/parents-young.jpg", alt: "Parents in their youth" },
+            { src: "/images/family/baptism.jpg", alt: "Baptism" },
+            { src: "/images/family/with-mom.jpg", alt: "With mom" },
+          ].map((photo) => (
+            <div key={photo.src} className="overflow-hidden rounded-lg border border-border/50">
+              <img
+                src={photo.src}
+                alt={photo.alt}
+                className="w-full h-48 md:h-64 object-cover hover:scale-105 transition-transform duration-500"
+              />
+            </div>
+          ))}
         </div>
       </Section>
 

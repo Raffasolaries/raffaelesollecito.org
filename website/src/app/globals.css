@@ -1,18 +1,38 @@
 @import "tailwindcss";
 
 @theme inline {
-  --color-background: #0a0a0f;
-  --color-foreground: #e4e4e7;
-  --color-muted: #71717a;
+  --color-background: var(--theme-background);
+  --color-foreground: var(--theme-foreground);
+  --color-muted: var(--theme-muted);
   --color-accent: #7c3aed;
   --color-accent-light: #a78bfa;
   --color-crimson: #dc2626;
   --color-crimson-dark: #991b1b;
-  --color-surface: #18181b;
-  --color-surface-light: #27272a;
-  --color-border: #3f3f46;
+  --color-surface: var(--theme-surface);
+  --color-surface-light: var(--theme-surface-light);
+  --color-border: var(--theme-border);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+}
+
+/* Light theme (default) */
+:root {
+  --theme-background: #fafafa;
+  --theme-foreground: #1a1a2e;
+  --theme-muted: #6b7280;
+  --theme-surface: #ffffff;
+  --theme-surface-light: #f3f4f6;
+  --theme-border: #e5e7eb;
+}
+
+/* Dark theme */
+.dark {
+  --theme-background: #0a0a0f;
+  --theme-foreground: #e4e4e7;
+  --theme-muted: #71717a;
+  --theme-surface: #18181b;
+  --theme-surface-light: #27272a;
+  --theme-border: #3f3f46;
 }
 
 body {
@@ -28,7 +48,7 @@ body {
 }
 
 .divider-gothic::after {
-  content: "◆";
+  content: "\25C6";
   position: absolute;
   top: 50%;
   left: 50%;
@@ -41,6 +61,16 @@ body {
 
 /* Manga-inspired speed lines background */
 .speed-lines {
+  background-image: repeating-linear-gradient(
+    -45deg,
+    transparent,
+    transparent 49px,
+    rgba(124, 58, 237, 0.03) 49px,
+    rgba(124, 58, 237, 0.03) 50px
+  );
+}
+
+.dark .speed-lines {
   background-image: repeating-linear-gradient(
     -45deg,
     transparent,
@@ -76,6 +106,14 @@ body {
   box-shadow: 0 0 20px rgba(124, 58, 237, 0.15);
 }
 
+.dark .glow-accent {
+  box-shadow: 0 0 20px rgba(124, 58, 237, 0.15);
+}
+
+:root .glow-accent {
+  box-shadow: 0 0 20px rgba(124, 58, 237, 0.1);
+}
+
 /* Custom scrollbar */
 ::-webkit-scrollbar {
   width: 6px;
@@ -98,4 +136,9 @@ body {
 ::selection {
   background: rgba(124, 58, 237, 0.3);
   color: white;
+}
+
+:root:not(.dark) ::selection {
+  background: rgba(124, 58, 237, 0.2);
+  color: #1a1a2e;
 }
