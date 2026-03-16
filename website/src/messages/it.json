@@ -268,15 +268,15 @@
     },
     "beonmemories": {
       "name": "BeOnMemories",
-      "description": "Una piattaforma social network ed e-commerce marketplace creata per connettere comunità e abilitare il commercio in tutta Europa. BeOnMemories combinava l'engagement sociale di una piattaforma comunitaria con un negozio online completo, permettendo agli utenti di creare profili, interagire e comprare o vendere prodotti all'interno di un'esperienza unificata.",
+      "description": "Una piattaforma web memoriale innovativa che permetteva agli utenti di onorare i propri cari da qualsiasi luogo. Gli utenti potevano acquistare rose, candele, oggetti votivi e composizioni floreali, e far recapitare il tutto direttamente sulla lapide tramite corriere — il tutto attraverso un'esperienza online intuitiva. La piattaforma disponeva di un database completo di cimiteri in tutta Italia, rendendo semplice localizzare qualsiasi tomba e organizzare una consegna senza doversi recare di persona.",
       "tech_title": "Caratteristiche della Piattaforma",
       "features": {
-        "social_network": "Social network comunitario con profili, messaggistica e feed attività",
-        "ecommerce": "Motore e-commerce integrato per inserzioni prodotti e transazioni",
-        "marketplace": "Marketplace multi-venditore che connette acquirenti e venditori",
-        "magento": "Costruito su Magento per funzionalità e-commerce robuste",
-        "oxwall": "Layer sociale alimentato dalla piattaforma community Oxwall",
-        "european_reach": "Progettato per un pubblico pan-europeo con supporto multilingua"
+        "cemetery_database": "Database esteso di cimiteri in tutta Italia con localizzatore tombe",
+        "ecommerce": "Shop online per rose, candele, oggetti votivi e composizioni floreali",
+        "courier_delivery": "Servizio corriere con consegna direttamente sulla lapide per conto del cliente",
+        "magento": "Motore e-commerce costruito su Magento per transazioni sicure",
+        "oxwall": "Layer community alimentato da Oxwall per condividere ricordi e tributi",
+        "nationwide": "Copertura su tutto il territorio nazionale nei cimiteri italiani"
       }
     }
   },

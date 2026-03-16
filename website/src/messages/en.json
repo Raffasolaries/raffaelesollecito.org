@@ -268,15 +268,15 @@
     },
     "beonmemories": {
       "name": "BeOnMemories",
-      "description": "A social network and e-commerce marketplace platform built to connect communities and enable commerce across Europe. BeOnMemories combined the social engagement of a community platform with a fully-featured online store, allowing users to create profiles, interact, and buy or sell products within a unified experience.",
+      "description": "An innovative memorial web platform that let users honor their loved ones from anywhere. Users could purchase roses, candles, votive objects, and floral arrangements, and have a courier deliver them directly to the tombstone — all through an intuitive online experience. The platform featured a comprehensive database of cemeteries across Italy, making it easy to locate any grave and arrange a delivery without having to travel in person.",
       "tech_title": "Platform Highlights",
       "features": {
-        "social_network": "Community-driven social network with profiles, messaging, and activity feeds",
-        "ecommerce": "Integrated e-commerce engine for product listings and transactions",
-        "marketplace": "Multi-vendor marketplace connecting buyers and sellers",
-        "magento": "Built on Magento for robust e-commerce functionality",
-        "oxwall": "Social layer powered by Oxwall community platform",
-        "european_reach": "Designed for a pan-European audience with multi-language support"
+        "cemetery_database": "Extensive database of cemeteries across Italy with grave locator",
+        "ecommerce": "Online shop for roses, candles, votive objects, and floral arrangements",
+        "courier_delivery": "Courier service delivering directly to the tombstone on behalf of the customer",
+        "magento": "E-commerce engine built on Magento for secure transactions",
+        "oxwall": "Community layer powered by Oxwall for sharing memories and tributes",
+        "nationwide": "Nationwide coverage across Italian cemeteries"
       }
     }
   },
