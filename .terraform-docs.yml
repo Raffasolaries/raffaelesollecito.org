@@ -1,7 +1,7 @@
 ---
 version: ""
 
-formatter: <FORMATTER_NAME>
+formatter: markdown table
 
 header-from: .header.md
 footer-from: ""
@@ -20,7 +20,7 @@ content: |-
   {{ .Resources }}
 
 output:
-  file: ""
+  file: README.md
   mode: inject
   template: |-
     <!-- BEGIN_TF_DOCS -->
