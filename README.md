@@ -232,6 +232,7 @@ For any issues relating to this module, [raise an issue against this repo.](http
 | <a name="input_hosted_zone_id"></a> [hosted\_zone\_id](#input\_hosted\_zone\_id) | The Route53 HostedZone ID to use to create records in. | `string` | n/a | yes |
 | <a name="input_launch"></a> [launch](#input\_launch) | Number of Wordpress tasks to launch (0 or 1). Toggle to start/stop the management session. | `number` | `0` | no |
 | <a name="input_main_vpc_id"></a> [main\_vpc\_id](#input\_main\_vpc\_id) | The VPC ID into which to launch resources. | `string` | n/a | yes |
+| <a name="input_redirect_domains"></a> [redirect\_domains](#input\_redirect\_domains) | Map of domains that should redirect to the main site. Key is the domain, value contains the hosted zone ID and the target URL path. | <pre>map(object({<br/>    zone_id     = string<br/>    redirect_to = string<br/>  }))</pre> | `{}` | no |
 | <a name="input_s3_region"></a> [s3\_region](#input\_s3\_region) | The regional endpoint to use for the S3 bucket for the published static site. | `string` | n/a | yes |
 | <a name="input_site_domain"></a> [site\_domain](#input\_site\_domain) | The site domain name to configure (without any subdomains such as 'www'). | `string` | n/a | yes |
 | <a name="input_site_name"></a> [site\_name](#input\_site\_name) | The unique name for this instance of the module. | `string` | n/a | yes |
@@ -293,6 +294,8 @@ For any issues relating to this module, [raise an issue against this repo.](http
 | [aws_rds_cluster.serverless_wordpress](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/rds_cluster) | resource |
 | [aws_rds_cluster_instance.serverless_wordpress](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/rds_cluster_instance) | resource |
 | [aws_route53_record.apex](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/route53_record) | resource |
+| [aws_route53_record.redirect_apex](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/route53_record) | resource |
+| [aws_route53_record.redirect_www](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/route53_record) | resource |
 | [aws_route53_record.wordpress_acm_validation](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/route53_record) | resource |
 | [aws_route53_record.www](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/route53_record) | resource |
 | [aws_security_group.aurora_serverless_group](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/security_group) | resource |

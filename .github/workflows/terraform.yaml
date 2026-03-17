@@ -24,6 +24,7 @@ env:
   TF_VAR_cloudfront_aliases: ${{ vars.CLOUDFRONT_ALIASES }}
   TF_VAR_waf_enabled: ${{ vars.WAF_ENABLED }}
   TF_VAR_launch: ${{ vars.LAUNCH }}
+  TF_VAR_redirect_domains: ${{ vars.REDIRECT_DOMAINS }}
 
 jobs:
   plan:
