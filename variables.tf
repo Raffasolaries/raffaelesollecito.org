@@ -156,6 +156,15 @@ variable "wordpress_admin_email" {
   default     = "admin@example.com"
 }
 
+variable "redirect_domains" {
+  type = map(object({
+    zone_id     = string
+    redirect_to = string
+  }))
+  description = "Map of domains that should redirect to the main site. Key is the domain, value contains the hosted zone ID and the target URL path."
+  default     = {}
+}
+
 variable "slack_webhook" {
   type        = string
   description = "The Slack webhook URL where ECS EventBridge notifications will be sent."

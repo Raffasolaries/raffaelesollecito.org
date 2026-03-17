@@ -2,9 +2,33 @@ aws_account_id     = "REPLACE_ME"
 hosted_zone_id     = "REPLACE_ME"
 site_name          = "raffaelesollecitowebsite"
 site_domain        = "raffaelesollecito.org"
-cloudfront_aliases = ["raffaelesollecito.org", "www.raffaelesollecito.org"]
-main_vpc_id        = "vpc-REPLACE_ME"
-subnet_ids         = ["subnet-REPLACE_ME", "subnet-REPLACE_ME", "subnet-REPLACE_ME"]
-s3_region          = "eu-west-1"
-waf_enabled        = false
-launch             = 0
+cloudfront_aliases = [
+  "raffaelesollecito.org",
+  "www.raffaelesollecito.org",
+  "raffaelesollecito.com",
+  "www.raffaelesollecito.com",
+  "raffaelesollecito.it",
+  "www.raffaelesollecito.it",
+  "suntickets.it",
+  "www.suntickets.it"
+]
+main_vpc_id = "vpc-REPLACE_ME"
+subnet_ids  = ["subnet-REPLACE_ME", "subnet-REPLACE_ME", "subnet-REPLACE_ME"]
+s3_region   = "eu-west-1"
+waf_enabled = false
+launch      = 0
+
+redirect_domains = {
+  "raffaelesollecito.com" = {
+    zone_id     = "REPLACE_ME"
+    redirect_to = "https://raffaelesollecito.org"
+  }
+  "raffaelesollecito.it" = {
+    zone_id     = "REPLACE_ME"
+    redirect_to = "https://raffaelesollecito.org"
+  }
+  "suntickets.it" = {
+    zone_id     = "REPLACE_ME"
+    redirect_to = "https://raffaelesollecito.org/en/archive/"
+  }
+}
