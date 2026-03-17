@@ -4,7 +4,7 @@ output "cloudfront_ssl_arn" {
 }
 
 output "wordpress_ecr_repository" {
-  value       = aws_ecr_repository.serverless_wordpress.name
+  value       = module.wordpress.ecr_repository_name
   description = "The name of the ECR repository where wordpress image is stored."
 }
 
