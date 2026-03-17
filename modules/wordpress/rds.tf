@@ -4,22 +4,6 @@ resource "random_password" "serverless_wordpress_password" {
   override_special = "!#%&*()-_=+[]<>"
 }
 
-resource "aws_security_group" "aurora_serverless_group" {
-  name        = "${var.site_domain}_aurora_mysql_sg"
-  description = "security group for serverless wordpress mysql aurora"
-  vpc_id      = var.main_vpc_id
-}
-
-resource "aws_security_group_rule" "aurora_sg_ingress_3306" {
-  security_group_id        = aws_security_group.aurora_serverless_group.id
-  type                     = "ingress"
-  from_port                = 3306
-  to_port                  = 3306
-  protocol                 = "TCP"
-  source_security_group_id = aws_security_group.wordpress_security_group.id
-  description              = "Ingress on mySQL port to Aurora Serverless"
-}
-
 resource "aws_db_subnet_group" "main_vpc" {
   name       = "${var.site_name}_main"
   subnet_ids = var.subnet_ids
