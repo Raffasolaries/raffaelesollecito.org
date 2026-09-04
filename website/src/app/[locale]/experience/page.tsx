@@ -1,5 +1,14 @@
+import type { Metadata } from "next";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { Section, SectionHeader } from "@/components/Section";
+import { JsonLd } from "@/components/JsonLd";
+import { pageMetadata, breadcrumbLd, RESUME_URL } from "@/lib/site";
+
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: "seo.experience" });
+  return pageMetadata({ locale, path: "experience/", title: t("title"), description: t("description") });
+}
 
 const positionKeys = [
   "aspect",
@@ -19,14 +28,24 @@ export default async function ExperiencePage({
   const { locale } = await params;
   setRequestLocale(locale);
   const t = await getTranslations("experience");
+  const tn = await getTranslations("nav");
 
   return (
     <Section className="pt-32">
+      <JsonLd data={breadcrumbLd(locale, tn("home"), tn("experience"), "experience/")} />
       <SectionHeader
         title={t("title")}
         headline={t("headline")}
         subtitle={t("subtitle")}
       />
+
+      <a
+        href={RESUME_URL}
+        className="-mt-8 mb-12 inline-flex items-center gap-2 px-5 py-2.5 border border-border hover:border-accent/50 rounded-md text-sm font-medium transition-colors"
+      >
+        <svg className="w-4 h-4 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v12m0 0l-4-4m4 4l4-4M4 20h16" /></svg>
+        {t("resume_cta")}
+      </a>
 
       {/* Timeline */}
       <div className="relative">

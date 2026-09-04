@@ -6,13 +6,14 @@ import { usePathname } from "next/navigation";
 import { useState } from "react";
 import { LocaleSwitcher } from "./LocaleSwitcher";
 import { ThemeToggle } from "./ThemeToggle";
+import { RESUME_URL } from "@/lib/site";
 
 const navItems = [
   { key: "about", href: "/about" },
   { key: "experience", href: "/experience" },
   { key: "projects", href: "/projects" },
   { key: "family", href: "/family" },
-  { key: "book", href: "/book" },
+  { key: "books", href: "/books" },
   { key: "case", href: "/case" },
   { key: "documents", href: "/documents" },
   { key: "contact", href: "/contact" },
@@ -30,7 +31,7 @@ export function Header() {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <Link
-            href={`/${locale}`}
+            href={`/${locale}/`}
             className="text-lg font-bold tracking-tight hover:text-accent transition-colors"
           >
             <span className="text-accent">R</span>S
@@ -39,8 +40,8 @@ export function Header() {
           {/* Desktop Nav */}
           <div className="hidden lg:flex items-center gap-1">
             {navItems.map((item) => {
-              const fullPath = `/${locale}${item.href}`;
-              const isActive = pathname === fullPath || pathname === `${fullPath}/`;
+              const fullPath = `/${locale}${item.href}/`;
+              const isActive = pathname === fullPath || pathname === fullPath.slice(0, -1);
               return (
                 <Link
                   key={item.key}
@@ -55,6 +56,12 @@ export function Header() {
                 </Link>
               );
             })}
+            <a
+              href={RESUME_URL}
+              className="ml-2 px-3 py-1.5 text-sm font-medium rounded-md border border-accent/40 text-accent hover:bg-accent hover:text-white transition-colors"
+            >
+              {t("resume")}
+            </a>
             <div className="ml-4 pl-4 border-l border-border flex items-center gap-2">
               <ThemeToggle />
               <LocaleSwitcher />
@@ -100,8 +107,8 @@ export function Header() {
         {mobileOpen && (
           <div className="lg:hidden pb-4 border-t border-border/50 mt-2 pt-4">
             {navItems.map((item) => {
-              const fullPath = `/${locale}${item.href}`;
-              const isActive = pathname === fullPath || pathname === `${fullPath}/`;
+              const fullPath = `/${locale}${item.href}/`;
+              const isActive = pathname === fullPath || pathname === fullPath.slice(0, -1);
               return (
                 <Link
                   key={item.key}
@@ -117,6 +124,12 @@ export function Header() {
                 </Link>
               );
             })}
+            <a
+              href={RESUME_URL}
+              className="block px-3 py-2.5 text-sm font-medium text-accent"
+            >
+              {t("resume")} ↗
+            </a>
           </div>
         )}
       </nav>

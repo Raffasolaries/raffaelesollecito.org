@@ -3,6 +3,7 @@
 import { useTranslations } from "next-intl";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
+import { RESUME_URL } from "@/lib/site";
 
 export function Footer() {
   const t = useTranslations("footer");
@@ -22,19 +23,25 @@ export function Footer() {
               <span className="text-accent">S</span>ollecito
             </span>
             <p className="mt-2 text-sm text-muted">
-              Cloud Architect & Author
+              {t("tagline")}
             </p>
           </div>
 
           {/* Footer Links */}
           <div className="text-sm space-y-2">
-            <Link href={`/${locale}/archive`} className="block text-muted hover:text-accent transition-colors">
+            <a href={RESUME_URL} className="block text-muted hover:text-accent transition-colors">
+              {tn("resume")}
+            </a>
+            <Link href={`/${locale}/books/`} className="block text-muted hover:text-accent transition-colors">
+              {tn("books")}
+            </Link>
+            <Link href={`/${locale}/archive/`} className="block text-muted hover:text-accent transition-colors">
               {tn("archive")}
             </Link>
-            <Link href={`/${locale}/documents`} className="block text-muted hover:text-accent transition-colors">
+            <Link href={`/${locale}/documents/`} className="block text-muted hover:text-accent transition-colors">
               {tn("documents")}
             </Link>
-            <Link href={`/${locale}/contact`} className="block text-muted hover:text-accent transition-colors">
+            <Link href={`/${locale}/contact/`} className="block text-muted hover:text-accent transition-colors">
               {tn("contact")}
             </Link>
           </div>

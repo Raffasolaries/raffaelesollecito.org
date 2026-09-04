@@ -1,266 +1,413 @@
 {
   "metadata": {
-    "title": "Raffaele Sollecito — Cloud Architect & Autore",
-    "description": "Principal Cloud Solutions Architect, AWS Subject Matter Expert e autore di Honor Bound. Progetto infrastrutture cloud sicure e scalabili per aziende in tutto il mondo."
+    "title": "Raffaele Sollecito — Principal Cloud Solutions Architect (AWS) e Autore",
+    "template": "%s · Raffaele Sollecito",
+    "description": "Sito ufficiale di Raffaele Sollecito: Principal Cloud Solutions Architect e AWS Subject Matter Expert (6 certificazioni AWS), fondatore di Aspect Solutions, autore di Honor Bound e Un passo fuori dalla notte."
+  },
+  "seo": {
+    "home": {
+      "title": "Raffaele Sollecito — Principal Cloud Solutions Architect (AWS)",
+      "description": "Raffaele Sollecito è Principal Cloud Solutions Architect e AWS Subject Matter Expert (6 certificazioni AWS): progetta piattaforme AWS sicure e resilienti per clienti enterprise e regolamentati. Autore di Honor Bound (2012) e Un passo fuori dalla notte (2015)."
+    },
+    "about": {
+      "title": "Chi è Raffaele Sollecito",
+      "description": "Chi è oggi Raffaele Sollecito: Principal Cloud Solutions Architect certificato AWS, di Giovinazzo, residente a Tavira (Portogallo) — formazione, valori e le esperienze dietro il lavoro."
+    },
+    "experience": {
+      "title": "Esperienza e carriera",
+      "description": "Il percorso professionale di Raffaele Sollecito: da full-stack engineer e fondatore a Principal Cloud Solutions Architect — Aspect Solutions, PwC Luxembourg, Volkswagen Digital Solutions, ITnet, Tantosvago."
+    },
+    "projects": {
+      "title": "Progetti AWS selezionati",
+      "description": "Architetture AWS enterprise realizzate da Raffaele Sollecito: landing zone, piattaforme EKS, migrazione edge da Cloudflare a CloudFront, disaster recovery multi-regione, AI agentica su Amazon Bedrock, archivi di compliance."
+    },
+    "books": {
+      "title": "Libri — Honor Bound e Un passo fuori dalla notte",
+      "description": "I due libri di Raffaele Sollecito: Honor Bound (Simon & Schuster, 2012, con Andrew Gumbel) e Un passo fuori dalla notte (Longanesi, 2015). Sinossi, citazioni e dove acquistarli."
+    },
+    "case": {
+      "title": "Il caso Meredith Kercher (2007–2015): fatti e FAQ",
+      "description": "Cosa è successo a Raffaele Sollecito nel caso Meredith Kercher: l'arresto a Perugia nel 2007, quasi quattro anni di carcere e l'assoluzione definitiva della Corte di Cassazione del 27 marzo 2015. Cronologia, FAQ, atti giudiziari."
+    },
+    "documents": {
+      "title": "Archivio documenti legali",
+      "description": "Sentenze, decisioni d'appello, perizie e documenti legali del caso Meredith Kercher relativi a Raffaele Sollecito — un archivio pubblico."
+    },
+    "contact": {
+      "title": "Contatti",
+      "description": "Contatta Raffaele Sollecito per consulenza su architettura cloud AWS, sicurezza e platform engineering, o per richieste di interventi e media."
+    },
+    "family": {
+      "title": "Famiglia e amici",
+      "description": "Le origini di Raffaele Sollecito: Giovinazzo, sulla costa adriatica della Puglia — fotografie di famiglia e le parole degli amici di sempre."
+    },
+    "archive": {
+      "title": "Archivio — Memories IT Company, SunTickets, BeOnMemories",
+      "description": "Le iniziative imprenditoriali di Raffaele Sollecito prima dell'architettura cloud: la web agency Memories IT Company, la piattaforma di prenotazione SunTickets e la piattaforma memoriale BeOnMemories."
+    }
   },
   "nav": {
     "home": "Home",
-    "about": "Chi Sono",
+    "about": "Chi sono",
     "experience": "Esperienza",
     "projects": "Progetti",
-    "book": "Libro",
-    "case": "Il Caso",
+    "books": "Libri",
+    "case": "Il caso",
     "family": "Famiglia",
     "documents": "Documenti",
     "contact": "Contatti",
-    "archive": "Archivio"
+    "archive": "Archivio",
+    "resume": "Curriculum"
   },
   "hero": {
-    "greeting": "Ciao, sono",
+    "eyebrow": "Principal Cloud Solutions Architect · AWS Subject Matter Expert",
     "name": "Raffaele Sollecito",
-    "title": "Cloud Architect & Autore",
-    "subtitle": "Principal Cloud Solutions Architect. AWS Subject Matter Expert. Autore. Costruisco infrastrutture cloud enterprise-grade per fintech, automotive, cybersecurity e IoT.",
-    "cta_work": "I Miei Lavori",
+    "title": "Progetto piattaforme AWS sicure e resilienti per clienti enterprise e regolamentati.",
+    "subtitle": "Sei certificazioni AWS, tra cui Solutions Architect Professional e Security Specialty. Landing zone, sicurezza cloud, piattaforme Kubernetes, disaster recovery multi-regione e AI agentica su Amazon Bedrock — seguite end-to-end come principal architect indipendente.",
+    "cta_work": "Progetti selezionati",
+    "cta_resume": "Scarica il curriculum",
     "cta_contact": "Contattami",
-    "location": "Tavira, Portogallo",
+    "location": "Tavira, Portogallo · Remoto, in tutta Europa",
+    "availability": "Disponibile per incarichi a contratto e ruoli di principal architect frazionale",
     "scroll": "Scorri per esplorare"
   },
+  "home": {
+    "certs_title": "Credenziali AWS verificate",
+    "certs_note": "Tutti i badge sono verificabili su Credly",
+    "services_title": "Cosa faccio",
+    "services_headline": "Architetture pronte per la produzione",
+    "services": {
+      "landing": {
+        "title": "Landing zone e governance",
+        "text": "Fondazioni AWS multi-account con Control Tower, Organizations e SCP, federazione IAM Identity Center con Entra ID o Google Workspace, guardrail riconciliati in Terraform o CDK."
+      },
+      "security": {
+        "title": "Sicurezza e compliance",
+        "text": "Perimetri di rete zero-trust (Transit Gateway, Network Firewall, WAFv2, Shield Advanced), remediation Security Hub, KMS e Secrets Manager, archivi WORM su S3 Object Lock, incident response."
+      },
+      "platforms": {
+        "title": "Piattaforme e resilienza",
+        "text": "Piattaforme EKS ed ECS in produzione con GitOps e Karpenter, livelli dati Aurora e Valkey, disaster recovery multi-regione progettato come codice e verificato con failover reali."
+      },
+      "ai": {
+        "title": "Ingegneria AI-native",
+        "text": "Piattaforme interne per sviluppatori basate su agenti con Amazon Bedrock AgentCore — RAG con fonti citate, agenti che validano le merge request, rilascio OIDC senza credenziali su molti account."
+      }
+    },
+    "work_title": "Lavori selezionati",
+    "work_headline": "Incarichi recenti",
+    "work_cta": "Tutti gli incarichi",
+    "trusted_title": "Carriera",
+    "trusted_text": "In precedenza con PwC Luxembourg, Volkswagen Digital Solutions, ITnet e Tantosvago; indipendente dal 2025.",
+    "beyond_title": "Oltre il cloud",
+    "beyond_headline": "Autore, e una storia che non ho mai nascosto",
+    "beyond_books_title": "Due libri",
+    "beyond_books_text": "Honor Bound (Simon & Schuster, 2012) e Un passo fuori dalla notte (Longanesi, 2015).",
+    "beyond_case_title": "Il caso, 2007–2015",
+    "beyond_case_text": "Accusato ingiustamente nel caso Meredith Kercher e assolto in via definitiva dalla Corte di Cassazione nel 2015. I fatti, la cronologia e gli atti giudiziari sono qui.",
+    "cta_title": "Serve un principal architect?",
+    "cta_text": "Seguo pochi incarichi alla volta — ownership dell'architettura, programmi di sicurezza, migrazioni di piattaforma, strumenti AI-native per gli sviluppatori.",
+    "cta_button": "Iniziamo a parlarne"
+  },
   "about": {
-    "title": "Chi Sono",
-    "headline": "Ingegnere. Architetto. Narratore.",
-    "bio_intro": "Sono un Cloud Architect con profonda esperienza in AWS, con multiple certificazioni tra cui Solutions Architect Professional e Security Specialty. Progetto e realizzo soluzioni cloud sicure e scalabili per organizzazioni che vanno da istituzioni europee a colossi dell'automotive e startup fintech.",
-    "bio_current": "Attualmente dirigo Aspect Solutions da Tavira, Portogallo — una consulenza indipendente che offre architettura AWS e Azure enterprise-grade, sicurezza e soluzioni DevOps a clienti internazionali.",
-    "bio_personal": "Oltre al cloud, sono un autore — il mio memoir \"Honor Bound\" è stato pubblicato da Simon & Schuster nel 2012. Sono anche un nerd nel cuore: appassionato di manga, smanettone tecnologico e una persona che trova bellezza sia nel codice elegante che nell'architettura gotica.",
+    "title": "Chi sono",
+    "headline": "Ingegnere prima di tutto. Architetto di mestiere. Autore per circostanza.",
+    "bio_intro": "Sono Principal Cloud Solutions Architect e AWS Subject Matter Expert, con oltre dieci anni di platform engineering, sicurezza e DevOps su AWS e sei certificazioni AWS, tra cui Solutions Architect Professional e Security Specialty. Progetto e realizzo landing zone multi-account, perimetri di rete zero-trust, piattaforme Kubernetes in produzione, disaster recovery multi-regione e piattaforme di AI agentica per clienti enterprise e regolamentati — un'istituzione europea, Volkswagen, un publisher globale di videogiochi, una fintech regolata dalla FCA, utility del settore pubblico e aziende IoT.",
+    "bio_current": "Dal 2025 lavoro in modo indipendente attraverso Aspect Solutions da Tavira, in Portogallo, in genere inserito come principal architect nel team di piattaforma o di consulenza del cliente. Tengo ai confini di ownership, al least privilege, a un change management che gli ingegneri seguono davvero e a progetti che reggono un failover reale.",
+    "bio_personal": "Sono anche un autore: il mio memoir Honor Bound è stato pubblicato da Simon & Schuster nel 2012 e Un passo fuori dalla notte da Longanesi nel 2015. Fuori dal lavoro: manga, lunghe camminate sulla costa dell'Algarve e architettura gotica.",
+    "case_title": "Il caso",
+    "case_text": "Tra il 2007 e il 2015 sono stato accusato ingiustamente nel caso Meredith Kercher a Perugia e ho passato quasi quattro anni in carcere prima che la Corte di Cassazione mi assolvesse in via definitiva il 27 marzo 2015. Ho completato la laurea magistrale mentre il processo era ancora aperto e da allora ho lavorato senza interruzioni nel software e nel cloud. Non nascondo quel capitolo e non lo metto davanti a tutto: i fatti, la cronologia e gli atti giudiziari sono in una pagina dedicata.",
+    "case_link": "Leggi i fatti e le FAQ",
     "stats": {
       "years": "10+",
-      "years_label": "Anni nel Cloud",
+      "years_label": "Anni su AWS",
       "certs": "6",
       "certs_label": "Certificazioni AWS",
       "clients": "15+",
-      "clients_label": "Clienti Enterprise",
+      "clients_label": "Clienti enterprise",
       "countries": "5",
-      "countries_label": "Paesi Lavorati"
+      "countries_label": "Paesi in cui ho lavorato"
     },
-    "personal_title": "La Persona Dietro il Codice",
-    "personal_text": "Nato a Bari, Italia. Formato a Perugia e Verona. Plasmato da esperienze che la maggior parte delle persone legge solo sui giornali. Ho vissuto eventi che mi hanno insegnato la resilienza, il valore della verità e l'importanza di restare fedeli ai propri principi — a qualsiasi costo. Oggi, canalizzo quella stessa determinazione nel costruire sistemi che proteggono, scalano e durano."
+    "values_title": "Come lavoro",
+    "values": {
+      "ownership": {
+        "title": "Ownership, dall'inizio alla fine",
+        "text": "Dalla Well-Architected review al runbook. Resto responsabile di ciò che progetto."
+      },
+      "evidence": {
+        "title": "Evidenze, non supposizioni",
+        "text": "DR provato con esercitazioni, sicurezza misurata in Security Hub, costi riconciliati con la fattura."
+      },
+      "governance": {
+        "title": "Governance che gli ingegneri seguono",
+        "text": "Pull request revisionate, CI con plan obbligatorio, design doc versionati con il codice, ServiceNow quando il cliente lo richiede."
+      }
+    },
+    "education_title": "Formazione",
+    "education": {
+      "verona": {
+        "school": "Università degli Studi di Verona",
+        "degree": "Laurea magistrale in Ingegneria Informatica — Visual Computing (LM-32)",
+        "period": "2008 — 2014"
+      },
+      "perugia": {
+        "school": "Università degli Studi di Perugia",
+        "degree": "Laurea in Informatica (L-26)",
+        "period": "2004 — 2008"
+      },
+      "camerino": {
+        "school": "Università di Camerino",
+        "degree": "Abilitazione all'esercizio della professione — Ingegneria dell'informazione",
+        "period": "2014"
+      }
+    },
+    "personal_title": "La persona dietro il codice",
+    "personal_text": "Nato a Bari, cresciuto a Giovinazzo, formato a Perugia e Verona. Ho vissuto eventi che la maggior parte delle persone legge soltanto sui giornali; mi hanno insegnato la pazienza, il valore delle prove e il prezzo di restare dalla parte della verità. Porto la stessa determinazione nei sistemi che devono proteggere, scalare e durare."
   },
   "experience": {
     "title": "Esperienza",
-    "headline": "Percorso Professionale",
-    "subtitle": "Dall'ingegneria full-stack alla principal cloud architecture — un decennio di costruzione e crescita.",
+    "headline": "Carriera",
+    "subtitle": "Dallo sviluppo full-stack e dalla fondazione di una web agency all'architettura cloud per clienti enterprise e regolamentati.",
+    "resume_cta": "Curriculum stampabile e PDF",
     "positions": {
       "aspect": {
         "company": "Aspect Solutions",
-        "role": "Principal Cloud Solutions Architect & Fondatore",
+        "role": "Principal Cloud Solutions Architect e Fondatore",
         "period": "Gen 2025 — Presente",
         "location": "Remoto (Tavira, Portogallo)",
-        "description": "Consulenza indipendente che offre architettura cloud AWS e Azure enterprise-grade, sicurezza e soluzioni DevOps a clienti internazionali nei settori fintech, automotive, cybersecurity e IoT."
+        "description": "Principal architect indipendente per clienti internazionali in gaming, fintech, IoT, cybersecurity e automotive: migrazioni edge AWS-native, disaster recovery multi-regione, upgrade di piattaforme EKS, archivi di compliance su S3 Object Lock e una piattaforma per sviluppatori basata su agenti con Amazon Bedrock AgentCore rilasciata su undici account AWS."
       },
       "pwc": {
         "company": "PwC Luxembourg",
         "role": "Cloud Architect",
         "period": "Set 2023 — Gen 2024",
         "location": "Remoto",
-        "description": "Progettato strategie centralizzate di backup AWS per un'Istituzione Europea. Implementato patching automatizzato, automazione Network Firewall e guidato la remediation della sicurezza con Security Hub e AWS Config."
+        "description": "Progettata la strategia centralizzata di backup su AWS Backup per un'istituzione europea; introdotti patching automatico di EC2 e StackSet a livello di organizzazione; automatizzate le liste di minacce di Network Firewall; guidata la remediation delle risorse EC2 e RDS esposte segnalate da Security Hub e Config."
       },
       "vw": {
         "company": "Volkswagen Digital Solutions",
         "role": "Cloud Solutions Architect",
         "period": "Feb 2023 — Giu 2023",
         "location": "Lisbona, Portogallo",
-        "description": "Consegnato account AWS sicuri all'interno della Landing Zone MAN-compliant. Gestito pipeline GitLab CI/CD, automatizzato il provisioning degli account con Step Functions e implementato servizi di sicurezza multi-account."
+        "description": "Consegnati account AWS sicuri nella landing zone di Gruppo conforme MAN; provisioning automatizzato con Step Functions e CDK; ruoli cross-account e resolver Route 53 ibridi su Direct Connect e Transit Gateway; strumenti di sicurezza multi-account."
       },
       "itnet": {
         "company": "ITnet",
         "role": "Solutions Architect",
         "period": "Ott 2021 — Feb 2023",
         "location": "Assago, Italia",
-        "description": "Guidato organizzazioni nell'adozione del cloud e nella gestione di architetture ibride. Creato AWS Control Tower Landing Zones, integrato ServiceNow con AWS Service Catalog e guidato la pianificazione della migrazione Azure-AWS."
+        "description": "Accompagnate aziende mid-market ed enterprise nell'adozione del cloud e nelle operation ibride; progettate landing zone Control Tower; integrati ServiceNow ITSM, CMDB e ITOM con AWS Service Catalog; valutato un parco SAP su Azure per la migrazione ad AWS."
       },
       "tantosvago": {
         "company": "Tantosvago",
         "role": "AWS DevOps Engineer",
         "period": "Giu 2019 — Ott 2021",
         "location": "Milano, Italia",
-        "description": "Implementato pipeline CI/CD per ECS e deployment CloudFront+S3. Integrato API REST con mTLS, costruito SSO personalizzato con Lambda Authorizer e containerizzato app Laravel su ECS Fargate."
+        "description": "Introdotti Git Flow e CI/CD per workload ECS e siti CloudFront + S3; integrate API REST di partner con mTLS; SSO personalizzato con Lambda authorizer; applicazioni Laravel containerizzate su ECS Fargate."
       },
       "keypartner": {
         "company": "Key Partner Digital",
         "role": "Full Stack Engineer",
         "period": "Apr 2018 — Dic 2018",
         "location": "Milano, Italia",
-        "description": "Guidato lo sviluppo di un framework chatbot multi-piattaforma usando AWS Claudia.js e LEX. Costruito interfacce utente con Angular 2+."
+        "description": "Guidato un framework chatbot multi-piattaforma su AWS Lex e Claudia.js con front-end Angular 2+."
       },
       "memories": {
         "company": "Memories IT Company",
-        "role": "CEO & Fondatore",
-        "period": "Giu 2015 — Mar 2018",
+        "role": "CEO e Lead Engineer",
+        "period": "Gen 2015 — Mar 2018",
         "location": "Giovinazzo, Italia",
-        "description": "Fondato e guidato una web agency che costruiva marketplace sociali, piattaforme di prenotazione, app Angular, siti WordPress e una piattaforma Forex con D3.js. Integrato Stripe, Google Maps e What3Words."
+        "description": "Fondata e guidata una web agency che ha realizzato piattaforme per marketplace, prenotazioni, ospitalità, assicurazioni, autonoleggio e forex; integrazioni Stripe, Google Maps e what3words; i prodotti SunTickets® e BeOnMemories."
       }
     }
   },
   "projects": {
     "title": "Progetti",
-    "headline": "Lavori Selezionati",
-    "subtitle": "Architetture cloud enterprise consegnate per leader di settore.",
+    "headline": "Incarichi selezionati",
+    "subtitle": "Architettura AWS enterprise realizzata come principal architect responsabile. I clienti attuali sono descritti, non nominati.",
     "items": {
-      "ublox": {
-        "title": "Piattaforma GitLab & Migrazione Wiki",
-        "client": "Leader Globale Tecnologia IoT",
-        "period": "2025",
-        "description": "Architettato piattaforma GitLab self-managed su AWS per 500+ utenti con autenticazione federata Azure AD. Guidato migrazione repository da GitHub.com e sistemi SVN legacy. Costruito Wiki aziendale serverless."
+      "gaming": {
+        "title": "Platform engineering AWS e migrazione edge per titoli di gioco live",
+        "client": "Publisher globale di giochi mobile e web — tramite un partner di consulenza",
+        "period": "Mar 2026 — Presente",
+        "description": "Ownership della piattaforma Terraform dietro tre titoli live su più account, sei cluster EKS e undici cluster Aurora. Migrate sette zone di produzione da Cloudflare a CloudFront, WAFv2 e Shield Advanced nel budget previsto. Progettato il DR multi-regione per EKS, Aurora, Valkey e CI/CD come un unico workflow parametrico, verificato con un failover reale. RabbitMQ 3.13→4.2 su Amazon MQ, AWS Backup PITR, EKS 1.35 con Karpenter, Security Hub FSBP. Tenuto un workshop CloudFront/WAF per 12 ingegneri."
       },
-      "ucapital": {
-        "title": "Piattaforma Fintech Multi-Account",
-        "client": "Gruppo Fintech Europeo",
-        "period": "2023 — Presente",
-        "description": "Infrastruttura AWS sicura per dati finanziari in tempo reale. Control Tower con Security Hub, SAML 2.0 SSO, microservizi ECS, API GraphQL con AppSync, osservabilità con Managed Grafana."
+      "iot": {
+        "title": "Piattaforma interna per sviluppatori AI-native",
+        "client": "Azienda globale di semiconduttori per posizionamento e wireless IoT",
+        "period": "Lug 2025 — Presente",
+        "description": "Principal architect di una piattaforma per sviluppatori basata su agenti con Amazon Bedrock AgentCore, Lambda, EventBridge e DynamoDB: agenti di repo-discovery, conformità architetturale e RAG che validano le merge request GitLab e rispondono con fonti citate. Ruoli di deploy GitLab OIDC cross-account (CDK) su undici account AWS; tutte le segnalazioni di AWS Security Agent risolte. GitLab self-managed in alta disponibilità per oltre 500 utenti, migrazione da GitHub e SVN con storico completo, wiki aziendale serverless."
+      },
+      "fintech": {
+        "title": "Piattaforma cloud, archivio di compliance e security operations",
+        "client": "Gruppo fintech regolato dalla FCA",
+        "period": "Ago 2023 — Presente",
+        "description": "Landing zone Control Tower con Security Hub, SSO Google Workspace su IAM Identity Center, CI/CD GitLab OIDC, microservizi ECS che trasmettono dati di mercato in tempo reale, AppSync GraphQL e Managed Grafana. Archivio email immutabile a 7 anni su S3 Object Lock che ha anche ridotto le licenze del 51% circa. Guidata la risposta a un attacco P1 di brand impersonation, rafforzati SPF/DKIM/DMARC su dieci domini, migrazione da Microsoft 365 a Google Workspace, progettata l'alta disponibilità multi-regione negli USA."
       },
       "reevo": {
-        "title": "Landing Zone & Kubernetes per Settore Pubblico",
-        "client": "Provider Cloud & Cyber Security",
-        "period": "2024 — 2025",
-        "description": "AWS Control Tower con Security Hub, VPC Hub-and-Spoke via Transit Gateway, Direct Connect, Network Firewall con Suricata. EKS multi-tenant con ArgoCD GitOps e Karpenter autoscaling."
+        "title": "Landing zone e Kubernetes multi-tenant per la distribuzione gas nel settore pubblico",
+        "client": "ReeVo Cloud & Cyber Security — cliente finale nel settore pubblico",
+        "period": "Gen 2024 — Dic 2025",
+        "description": "Control Tower, Security Hub e IAM Identity Center federati con Entra ID; Transit Gateway hub-and-spoke con Direct Connect e failover VPN; Network Firewall con Suricata. EKS multi-tenant con isolamento per namespace, ArgoCD GitOps, Karpenter e ingress NGINX; moduli Terraform di osservabilità; NLB privato → API Gateway → CloudFront con WAF, Cognito e KMS."
       },
       "awake": {
-        "title": "Modernizzazione Piattaforma Veicoli Connessi",
-        "client": "Azienda IoT Automotive",
-        "period": "2025",
-        "description": "Architettura AWS multi-account per piattaforma IoT veicoli connessi. Auth federata con Entra ID, segmentazione VPC, Network Firewall, backup cross-region, IaC con CloudFormation e Terraform."
+        "title": "Modernizzazione della piattaforma per veicoli connessi",
+        "client": "AWAKE Mobility — IoT automotive",
+        "period": "Gen 2025 — Feb 2025",
+        "description": "Architettura multi-account Prod/Dev/QA allineata al Well-Architected Framework; SSO Entra ID con permission set a privilegio minimo; segmentazione VPC e Network Firewall; CI/CD Bitbucket senza credenziali via IAM Identity Center; AWS Backup con replica cross-region; CloudFormation e Terraform."
       }
     }
   },
-  "skills": {
-    "title": "Competenze & Certificazioni",
-    "certifications": "Certificazioni AWS",
-    "cert_list": {
-      "sap": "Solutions Architect — Professional",
-      "saa": "Solutions Architect — Associate",
-      "sec": "Security — Specialty",
-      "ccp": "Cloud Practitioner",
-      "sme": "Certification SME — Associate",
-      "partner": "Partner: Technical Accredited"
+  "books": {
+    "title": "Libri",
+    "headline": "Due libri, una storia",
+    "subtitle": "Scritti per lettori diversi, in anni diversi, sugli stessi otto anni — e su quello che viene dopo.",
+    "buy": "Dove acquistarlo",
+    "honor": {
+      "title": "Honor Bound",
+      "subtitle": "My Journey to Hell and Back with Amanda Knox",
+      "meta": "Con Andrew Gumbel · Simon & Schuster · settembre 2012 · inglese · ISBN 978-1-4516-9600-4",
+      "synopsis": "Accusato di uno degli omicidi più mediatici del nostro tempo, preso di mira dalla stampa e condannato dai tribunali, Raffaele Sollecito ha passato quattro anni in carcere per un delitto con cui non aveva nulla a che fare. Scritto dopo l'assoluzione in appello del 2011, Honor Bound è il suo racconto in prima persona dell'arresto, dei processi, degli anni nel carcere di Terni e del perché si è rifiutato di salvarsi accusando Amanda Knox.",
+      "quote": "Si è rifiutato di testimoniare contro di lei per salvarsi, perché sapeva che lei sarebbe stata perduta per sempre.",
+      "amazon": "Amazon",
+      "bn": "Barnes & Noble"
     },
-    "categories": {
-      "cloud": "Cloud & Infrastruttura",
-      "security": "Sicurezza & Identità",
-      "devops": "DevOps & CI/CD",
-      "development": "Sviluppo"
+    "passo": {
+      "title": "Un passo fuori dalla notte",
+      "subtitle": "Tutto quello che non avete mai immaginato di me",
+      "meta": "Longanesi · ottobre 2015 · italiano · ISBN 978-88-304-4393-8",
+      "synopsis": "Scritto per i lettori italiani dopo l'assoluzione definitiva del marzo 2015, Un passo fuori dalla notte è il racconto di un giovane uomo che torna alla vita: gli anni perduti, la famiglia che ha tenuto, la laurea conclusa sotto processo e i primi passi fuori dalla notte — verso il lavoro, la fiducia e un futuro costruito con le proprie mani.",
+      "amazon": "Amazon.it",
+      "ibs": "IBS"
     }
-  },
-  "book": {
-    "title": "Honor Bound",
-    "headline": "La Mia Storia, Con le Mie Parole",
-    "publisher": "Pubblicato da Simon & Schuster, 2012",
-    "synopsis": "Sono stati accusati di uno degli omicidi più infami del nostro tempo. Bersagliati dai media, condannati dai tribunali e ingiustamente imprigionati per quattro estenuanti anni per un crimine che nessuno dei due poteva concepire né tantomeno perpetrare. Ora, per la prima volta dalla sua assoluzione, Raffaele rivela cosa è realmente accaduto.",
-    "quote": "Si è rifiutato di testimoniare contro di lei per salvarsi, perché sapeva che lei sarebbe stata persa per sempre.",
-    "buy_amazon": "Acquista su Amazon",
-    "buy_bn": "Acquista su Barnes & Noble"
   },
   "case": {
-    "title": "Il Caso",
-    "headline": "La Verità Prevale",
-    "intro": "Nel 2007, sono stato ingiustamente accusato e imprigionato per un crimine che non ho commesso. Dopo quattro anni di prigionia e otto anni di procedimenti legali, sono stato definitivamente assolto dalla Corte Suprema di Cassazione italiana il 27 marzo 2015.",
+    "title": "Il caso",
+    "headline": "Il caso Meredith Kercher, 2007–2015",
+    "lede": "Nella notte del 1° novembre 2007 Meredith Kercher, studentessa britannica di 21 anni, fu uccisa a Perugia. Io avevo 23 anni, studiavo informatica nella stessa città e frequentavo Amanda Knox da una settimana. Cinque giorni dopo fummo arrestati entrambi. Ho passato quasi quattro anni in carcere per un delitto con cui non avevo nulla a che fare. Il 27 marzo 2015 la Corte di Cassazione ci ha assolti entrambi in via definitiva.",
+    "respect": "La famiglia di Meredith ha perso una figlia e una sorella. Nulla in questa pagina vuole sminuirlo, e non ho mai considerato la mia assoluzione altro che un ritorno alla verità.",
     "sections": {
       "timeline": "Cronologia",
-      "considerations": "Considerazioni della Corte Suprema",
-      "dna": "Le Prove del DNA",
-      "police": "Cosa Ha Detto la Polizia Scientifica",
-      "documents": "Documenti Legali"
-    }
+      "faq": "Domande frequenti",
+      "documents": "Atti giudiziari",
+      "books": "Con le mie parole"
+    },
+    "timeline": {
+      "t2007": { "date": "6 novembre 2007", "text": "Arrestato a Perugia insieme ad Amanda Knox, cinque giorni dopo l'omicidio. Custodia cautelare nel carcere di Terni." },
+      "t2009": { "date": "4 dicembre 2009", "text": "Condannato in primo grado dalla Corte d'Assise di Perugia (Corte Massei) a 25 anni." },
+      "t2011": { "date": "3 ottobre 2011", "text": "Assolto in appello dalla Corte d'Assise d'Appello di Perugia (Corte Hellmann) dopo che i periti indipendenti hanno giudicato inattendibili le prove del DNA. Liberato dopo 1.427 giorni di carcere." },
+      "t2013": { "date": "26 marzo 2013", "text": "La Corte di Cassazione annulla l'assoluzione d'appello e dispone un nuovo processo d'appello a Firenze." },
+      "t2014": { "date": "30 gennaio 2014", "text": "Nuova condanna dalla Corte d'Assise d'Appello di Firenze (Corte Nencini) a 25 anni." },
+      "t2015": { "date": "27 marzo 2015", "text": "La Corte di Cassazione (Quinta Sezione Penale) assolve in via definitiva entrambi gli imputati. Le motivazioni, depositate a settembre 2015, richiamano gravi carenze investigative e l'assenza di qualsiasi traccia biologica dei due imputati nella stanza del delitto. La sentenza è definitiva." }
+    },
+    "faq": {
+      "q1": { "q": "Raffaele Sollecito è stato assolto?", "a": "Sì. Il 27 marzo 2015 la Corte di Cassazione ha assolto in via definitiva Raffaele Sollecito e Amanda Knox dall'accusa di omicidio di Meredith Kercher. Un'assoluzione in Cassazione è definitiva: non esistono ulteriori gradi di giudizio né possibilità di nuovo processo." },
+      "q2": { "q": "Quanto tempo è stato in carcere?", "a": "Quasi quattro anni — 1.427 giorni di custodia cautelare nel carcere di Terni, dal 6 novembre 2007 al 3 ottobre 2011, quando è stato assolto in appello e liberato. La nuova condanna del 2014 non ha mai comportato un ritorno in carcere ed è stata annullata nel 2015." },
+      "q3": { "q": "Chi è stato condannato per l'omicidio?", "a": "Rudy Guede è stato condannato per l'omicidio di Meredith Kercher in un procedimento separato con rito abbreviato. La condanna è diventata definitiva nel dicembre 2010, con una pena di 16 anni." },
+      "q4": { "q": "Cosa ha detto la Cassazione nel 2015?", "a": "Le motivazioni, depositate a settembre 2015, descrivono un'indagine segnata da gravi carenze e rilevano che nella stanza del delitto non è stata trovata alcuna traccia biologica di Sollecito o Knox, mentre erano presenti quelle di Guede. La Corte ha chiuso il caso con un'assoluzione piena, non per insufficienza di prove." },
+      "q5": { "q": "È stato risarcito per l'ingiusta detenzione?", "a": "No. Nel 2017 la Corte d'Appello di Firenze ha rigettato la sua richiesta di riparazione per gli anni di custodia cautelare. Ha continuato a impegnarsi per la riforma della giustizia italiana." },
+      "q6": { "q": "Il caso incide sul suo lavoro?", "a": "No. Ha conseguito la laurea magistrale in Ingegneria Informatica all'Università di Verona nel 2014, con il processo ancora aperto, e da allora ha lavorato senza interruzioni nel software e nel cloud — oggi come Principal Cloud Solutions Architect con sei certificazioni AWS. Clienti e datori di lavoro hanno sempre avuto accesso a questi fatti." },
+      "q7": { "q": "Dove posso leggere gli atti?", "a": "Sentenze, decisioni d'appello e perizie sono pubblicate nella pagina Documenti di questo sito, per lo più in italiano." },
+      "q8": { "q": "Ne ha scritto?", "a": "Sì — due libri: Honor Bound (Simon & Schuster, 2012, scritto con Andrew Gumbel) e Un passo fuori dalla notte (Longanesi, 2015)." }
+    },
+    "documents_text": "Tutte le sentenze, le perizie e i documenti legali sono disponibili nell'archivio.",
+    "documents_cta": "Apri l'archivio documenti",
+    "books_text": "La storia completa, dall'arresto agli anni successivi, è nei miei due libri.",
+    "books_cta": "I libri"
   },
   "documents": {
     "title": "Documenti",
-    "headline": "Archivio Legale",
-    "subtitle": "Decisioni dei tribunali, perizie e documenti legali del caso — tutti pubblicamente disponibili per la consultazione.",
+    "headline": "Archivio legale",
+    "subtitle": "Sentenze, perizie e documenti legali del caso Meredith Kercher — pubblicati per chi vuole leggere gli atti invece dei titoli. La maggior parte dei documenti è in italiano.",
     "categories": {
-      "verdicts": "Sentenze & Verdetti",
+      "verdicts": "Sentenze",
       "appeals": "Appelli",
       "expert": "Perizie",
-      "other": "Altri Documenti"
+      "other": "Altri documenti"
     }
   },
   "contact": {
     "title": "Contatti",
-    "headline": "Restiamo in Contatto",
-    "subtitle": "Che tu abbia bisogno di consulenza cloud architecture, voglia discutere un progetto o semplicemente salutare.",
+    "headline": "Parliamone",
+    "subtitle": "Incarichi di architettura cloud, sicurezza e piattaforme; richieste per interventi e media.",
     "email": "Email",
     "phone": "Telefono",
-    "location": "Posizione",
-    "location_value": "Tavira, Faro, Portogallo",
-    "social": "Trovami online",
-    "availability": "Attualmente disponibile per incarichi di consulenza."
+    "location": "Sede",
+    "location_value": "Tavira, Faro, Portogallo · Remoto, in tutta Europa",
+    "social": "Dove trovarmi online",
+    "resume": "Curriculum stampabile (PDF)",
+    "availability": "Attualmente disponibile per incarichi a contratto e ruoli di principal architect frazionale."
   },
   "footer": {
+    "tagline": "Principal Cloud Solutions Architect · Autore",
     "copyright": "Raffaele Sollecito. Tutti i diritti riservati.",
-    "built_with": "Costruito con Next.js, deployato su AWS."
+    "built_with": "Realizzato con Next.js, distribuito su AWS."
   },
   "family": {
-    "title": "Famiglia & Amici",
-    "headline": "Dove Tutto È Iniziato",
-    "subtitle": "Giovinazzo, sulla costa adriatica del Sud Italia — il luogo che ha plasmato chi sono.",
-    "intro": "Raffaele è cresciuto nella città di Giovinazzo, sulla costa adriatica del Sud Italia. Ecco una selezione di foto di famiglia.",
+    "title": "Famiglia e amici",
+    "headline": "Dove tutto è iniziato",
+    "subtitle": "Giovinazzo, sulla costa adriatica del Sud Italia — il luogo che mi ha formato.",
+    "intro": "Raffaele è cresciuto a Giovinazzo, sulla costa adriatica del Sud Italia. Ecco una selezione di foto di famiglia.",
     "photos_title": "Crescere a Giovinazzo",
-    "friends_title": "Cosa Dicono i Miei Amici",
+    "friends_title": "Cosa dicono i miei amici",
     "photos": {
-      "parents_young": "La Mamma ed il Papà in gioventù",
-      "baptism": "Il suo battesimo con sua sorella e la madrina",
-      "with_mom": "Raffaele bimbo a 3 anni con la sua mamma",
+      "parents_young": "Mamma e papà da giovani",
+      "baptism": "Il battesimo con la sorella e la madrina",
+      "with_mom": "Raffaele a 3 anni con la mamma",
       "age_1": "Raffaele a 1 anno",
       "age_5": "Raffaele a 5 anni",
       "age_4": "Raffaele a 4 anni",
       "age_6": "Raffaele a 6 anni",
-      "school_class": "Raffaele a scuola con i compagni di classe per il suo compleanno di 7 anni",
-      "birthday_8": "Compleanno di Raffaele ad 8 anni con i genitori e sua sorella"
+      "school_class": "Raffaele a scuola con i compagni per il suo 7° compleanno",
+      "birthday_8": "L'8° compleanno di Raffaele con i genitori e la sorella"
     },
     "friends": {
       "antonella": {
         "name": "Antonella Petruzzella",
-        "quote": "Ho conosciuto Raffaele al primo anno di liceo, è sempre stata una persona piacevole, generosa e amichevole. Un giorno mi disse che ogni azione deve essere spinta da un sentimento di amore e affetto, che l'amore è il sentimento alla base di tutto. Quel giorno ho capito che esistono persone che credono ancora in questi importanti valori. Raffaele è una delle persone più vere e sincere che abbia mai conosciuto e sono orgogliosa di essere sua amica."
+        "quote": "Ho conosciuto Raffaele al primo anno di liceo — è sempre stato una persona piacevole, generosa e amichevole. Un giorno mi disse che ogni azione deve essere guidata da un sentimento di amore e affetto, che l'amore è il sentimento alla radice di tutto. Quel giorno ho capito che ci sono persone che credono ancora in questi valori importanti. Raffaele è una delle persone più genuine e sincere che abbia mai conosciuto e sono orgogliosa di essere sua amica."
       },
       "francesco": {
         "name": "Francesco Marrano",
-        "quote": "Io sono cresciuto con Raffaele, per questo motivo ci sentiamo legati come fratelli. Molte esperienze importanti della nostra vita le abbiamo vissute insieme, a partire dall'asilo! Siamo cresciuti e ci siamo ritrovati insieme anche al liceo. Abbiamo iniziato a viaggiare insieme — Barcellona, Lisbona. Io e Raffaele abbiamo il progetto di trascorrere un mese in Giappone, perché siamo uniti da molti interessi quali i manga e la tecnologia. Spero che questa terribile storia finisca presto perché Raffaele è una persona fantastica."
+        "quote": "Sono cresciuto con Raffaele — per questo ci sentiamo fratelli. Molte esperienze importanti della nostra vita le abbiamo vissute insieme, a partire dall'asilo! Siamo cresciuti e ci siamo ritrovati insieme al liceo. Abbiamo iniziato a viaggiare insieme — Barcellona, Lisbona. Raffaele e io condividiamo il progetto di passare un mese in Giappone, perché ci uniscono molti interessi come i manga e la tecnologia. Spero che questa terribile storia finisca presto perché Raffaele è una persona fantastica che non merita tutto questo dolore."
       },
       "erica": {
         "name": "Erica Milillo",
-        "quote": "Lo chiamavo il Piccolo Lord per la sua eleganza, delicatezza, il suo senso di rispetto per tutti! Quando un amico è lontano per colpa di qualcosa che lascia a tutti l'amaro in gola e ti fa sentire impotente, è un po' difficile far venire fuori quel sorriso di gioia... ma i ricordi con Raffaele sono solo ricordi di gioia. Questo è per me Raffaele — Un Principe della Grande Nobiltà d'Animo!"
+        "quote": "Lo chiamavo il Piccolo Lord per la sua eleganza, delicatezza, il suo senso di rispetto per tutti! Quando un amico è lontano per qualcosa che lascia a tutti l'amaro in bocca e ti fa sentire impotente, è un po' difficile far uscire quel sorriso di gioia... ma i ricordi con Raffaele sono solo ricordi di gioia. Questo è Raffaele per me — Un Principe di Grande Nobiltà d'Animo!"
       },
       "milko": {
         "name": "Milko Desantis",
-        "quote": "La mia conoscenza di Raffaele risale a parecchi anni fa: abbiamo frequentato insieme le scuole medie e quelle superiori, gli anni che a mio parere sono quelli in cui si creano le amicizie che poi rimangono per tutta una vita. E così è."
+        "quote": "La mia conoscenza di Raffaele risale a molti anni fa: abbiamo frequentato insieme le scuole medie e il liceo — gli anni che secondo me sono quelli in cui si creano le amicizie che poi restano per tutta la vita. E così è."
       }
     }
   },
   "archive": {
     "title": "Archivio",
-    "headline": "Progetti Passati",
-    "subtitle": "Uno sguardo ai progetti imprenditoriali che hanno plasmato il mio percorso prima dell'architettura cloud.",
+    "headline": "Iniziative passate",
+    "subtitle": "Uno sguardo ai progetti imprenditoriali che hanno segnato il mio percorso prima dell'architettura cloud.",
     "memories": {
       "name": "Memories IT Company",
       "tagline": "\"La memoria è la poetica del ricordo.\" — Alessandro Morandotti",
-      "period": "Giu 2015 — Mar 2018",
+      "period": "Gen 2015 — Mar 2018",
       "location": "Giovinazzo, Italia",
-      "description": "Fondata e guidata una web agency che costruiva prodotti digitali innovativi per clienti in tutta Italia. Memories IT Company era l'azienda sotto la quale ho sviluppato due applicazioni web principali — SunTickets e BeOnMemories — oltre a progetti per clienti che spaziavano dai marketplace sociali alle piattaforme di trading in tempo reale. Qui ho affinato le mie competenze di ingegneria full-stack e scoperto la mia passione per i sistemi scalabili.",
+      "description": "Ho fondato e guidato una web agency che realizzava prodotti digitali innovativi per clienti in tutta Italia. Memories IT Company è stata l'ombrello sotto cui ho sviluppato due applicazioni web principali — SunTickets e BeOnMemories — insieme a progetti per clienti che andavano dai marketplace sociali alle piattaforme di trading in tempo reale. Qui ho affinato le mie competenze full-stack e scoperto la passione per i sistemi scalabili.",
       "highlights": {
         "social_marketplaces": "Marketplace sociali con profili utente e messaggistica",
         "booking_platforms": "Piattaforme di prenotazione online per turismo e ospitalità",
-        "angular_apps": "Applicazioni single-page costruite con Angular 2+",
-        "wordpress_sites": "Temi e plugin WordPress personalizzati per clienti",
+        "angular_apps": "Single-page application realizzate con Angular 2+",
+        "wordpress_sites": "Temi e plugin WordPress personalizzati per i clienti",
         "forex_platform": "Piattaforma di trading Forex in tempo reale con visualizzazioni D3.js",
         "integrations": "Integrazioni Stripe, Google Maps e What3Words"
       }
     },
     "suntickets": {
       "name": "SunTickets®",
-      "description": "Una piattaforma innovativa di prenotazione e gestione online progettata per stabilimenti balneari, piscine, resort, campeggi, villaggi e ristoranti. SunTickets combinava un sistema gestionale completo con un'esperienza di prenotazione rivoluzionaria — gli utenti potevano prenotare ombrelloni, lettini, tavoli, piazzole o postazioni cliccando direttamente sulla foto aerea della struttura (realizzata con droni in caso di mancanza).",
-      "features_title": "Funzionalità Principali",
+      "description": "Una piattaforma innovativa di prenotazione e gestione pensata per stabilimenti balneari, piscine, resort, campeggi, villaggi e ristoranti. SunTickets univa un sistema gestionale completo a un'esperienza di prenotazione rivoluzionaria: gli utenti potevano prenotare ombrelloni, lettini, tavoli, piazzole o qualsiasi posto cliccando direttamente sulla foto aerea della struttura (ripresa con droni quando non disponibile).",
+      "features_title": "Funzionalità principali",
       "features": {
-        "beach_clubs": "Software gestionale completo per operatori di stabilimenti balneari",
+        "beach_clubs": "Software gestionale completo per gli stabilimenti balneari",
         "pools": "Sistema di prenotazione per piscine e parchi acquatici",
-        "resorts": "Gestione prenotazioni per resort e villaggi",
-        "campsites": "Prenotazione piazzole e postazioni per campeggi",
+        "resorts": "Gestione delle prenotazioni per resort e villaggi",
+        "campsites": "Prenotazione di piazzole e posti per campeggi",
         "restaurants": "Sistema di prenotazione tavoli per ristoranti",
         "aerial_booking": "Prenotazione interattiva su foto aerea — prenota cliccando sulla mappa"
       },
@@ -268,21 +415,21 @@
     },
     "beonmemories": {
       "name": "BeOnMemories",
-      "description": "Una piattaforma web memoriale innovativa che permetteva agli utenti di onorare i propri cari da qualsiasi luogo. Gli utenti potevano acquistare rose, candele, oggetti votivi e composizioni floreali, e far recapitare il tutto direttamente sulla lapide tramite corriere — il tutto attraverso un'esperienza online intuitiva. La piattaforma disponeva di un database completo di cimiteri in tutta Italia, rendendo semplice localizzare qualsiasi tomba e organizzare una consegna senza doversi recare di persona.",
-      "tech_title": "Caratteristiche della Piattaforma",
+      "description": "Una piattaforma web memoriale innovativa che permetteva di onorare i propri cari da qualsiasi luogo. Gli utenti potevano acquistare rose, candele, oggetti votivi e composizioni floreali e farli consegnare da un corriere direttamente sulla tomba — tutto attraverso un'esperienza online intuitiva. La piattaforma includeva un ampio database dei cimiteri italiani, per individuare facilmente qualsiasi sepoltura e organizzare una consegna senza doversi spostare.",
+      "tech_title": "Punti di forza della piattaforma",
       "features": {
-        "cemetery_database": "Database esteso di cimiteri in tutta Italia con localizzatore tombe",
-        "ecommerce": "Shop online per rose, candele, oggetti votivi e composizioni floreali",
-        "courier_delivery": "Servizio corriere con consegna direttamente sulla lapide per conto del cliente",
-        "magento": "Motore e-commerce costruito su Magento per transazioni sicure",
-        "oxwall": "Layer community alimentato da Oxwall per condividere ricordi e tributi",
-        "nationwide": "Copertura su tutto il territorio nazionale nei cimiteri italiani"
+        "cemetery_database": "Ampio database dei cimiteri italiani con localizzatore delle sepolture",
+        "ecommerce": "Negozio online di rose, candele, oggetti votivi e composizioni floreali",
+        "courier_delivery": "Servizio corriere con consegna direttamente sulla tomba per conto del cliente",
+        "magento": "Motore e-commerce basato su Magento per transazioni sicure",
+        "oxwall": "Livello community basato su Oxwall per condividere ricordi e tributi",
+        "nationwide": "Copertura nazionale dei cimiteri italiani"
       }
     }
   },
   "common": {
-    "read_more": "Leggi di Più",
-    "view_all": "Vedi Tutto",
+    "read_more": "Leggi di più",
+    "view_all": "Vedi tutto",
     "back": "Indietro",
     "download": "Scarica",
     "loading": "Caricamento..."

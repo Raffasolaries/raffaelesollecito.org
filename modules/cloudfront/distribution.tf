@@ -49,6 +49,48 @@ resource "aws_cloudfront_function" "url_rewrite" {
 }
 
 # -----------------------------------------------------------------------------
+# Response headers policy — baseline security headers for the static site
+# -----------------------------------------------------------------------------
+
+resource "aws_cloudfront_response_headers_policy" "security" {
+  name    = "${var.site_name}-security-headers"
+  comment = "Security headers for the static Next.js export"
+
+  security_headers_config {
+    strict_transport_security {
+      access_control_max_age_sec = 63072000
+      include_subdomains         = true
+      preload                    = true
+      override                   = true
+    }
+    content_type_options {
+      override = true
+    }
+    frame_options {
+      frame_option = "DENY"
+      override     = true
+    }
+    referrer_policy {
+      referrer_policy = "strict-origin-when-cross-origin"
+      override        = true
+    }
+    xss_protection {
+      mode_block = true
+      protection = true
+      override   = true
+    }
+  }
+
+  custom_headers_config {
+    items {
+      header   = "Permissions-Policy"
+      value    = "camera=(), microphone=(), geolocation=(), interest-cohort=()"
+      override = true
+    }
+  }
+}
+
+# -----------------------------------------------------------------------------
 # CloudFront Distribution
 # -----------------------------------------------------------------------------
 
@@ -79,7 +121,8 @@ resource "aws_cloudfront_distribution" "wordpress_distribution" {
     target_origin_id = "${var.site_name}_WordpressBucket"
     compress         = true
 
-    cache_policy_id = data.aws_cloudfront_cache_policy.caching_optimized.id
+    cache_policy_id            = data.aws_cloudfront_cache_policy.caching_optimized.id
+    response_headers_policy_id = aws_cloudfront_response_headers_policy.security.id
 
     function_association {
       event_type   = "viewer-request"
@@ -87,6 +130,21 @@ resource "aws_cloudfront_distribution" "wordpress_distribution" {
     }
 
     viewer_protocol_policy = "redirect-to-https"
+  }
+
+  # S3 (via OAC) answers 403 for missing keys; serve the static export's 404 page instead.
+  custom_error_response {
+    error_code            = 403
+    response_code         = 404
+    response_page_path    = "/404.html"
+    error_caching_min_ttl = 60
+  }
+
+  custom_error_response {
+    error_code            = 404
+    response_code         = 404
+    response_page_path    = "/404.html"
+    error_caching_min_ttl = 60
   }
 
   restrictions {

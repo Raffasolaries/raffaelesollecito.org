@@ -97,11 +97,14 @@ CI/CD passes these as `TF_VAR_*` environment variables. For local dev, use `loca
 │   ├── src/components/        # Shared components (Header, Footer, ThemeToggle)
 │   ├── src/messages/          # Translation files (en.json, it.json)
 │   ├── src/i18n/              # next-intl configuration
+│   ├── src/lib/site.ts        # SITE_URL, routes, pageMetadata() (canonical + hreflang), breadcrumbLd()
+│   ├── src/app/sitemap.ts     # /sitemap.xml with hreflang alternates (force-static)
+│   ├── src/app/robots.ts      # /robots.txt (allows AI crawlers)
+│   ├── src/app/not-found.tsx  # Bilingual 404 → out/404.html (CloudFront custom_error_response)
 │   ├── public/                # Static assets (images, icons, SEO files)
-│   │   ├── images/            # Photos, logos, archive assets
+│   │   ├── images/            # Photos, book covers, archive assets
 │   │   ├── documents/         # Legal PDFs (gitignored, synced from S3)
-│   │   ├── sitemap.xml        # SEO sitemap with hreflang
-│   │   ├── robots.txt         # Crawler directives
+│   │   ├── llms.txt           # GEO: machine-readable identity + preferred citation
 │   │   └── og-image.png       # Open Graph social preview
 │   └── package.json
 ├── docs/                      # Project documentation
@@ -132,7 +135,7 @@ CI/CD passes these as `TF_VAR_*` environment variables. For local dev, use `loca
 
 ### Pages
 
-Home, About, Experience, Projects, Family, Book (Honor Bound), The Case, Documents (legal archive), Contact, Archive (Memories IT / SunTickets / BeOnMemories)
+Home, About, Experience, Projects (`/projects/`, nav label "Work"), Family, Books (`/books/` — Honor Bound + Un passo fuori dalla notte; `/book/` 301s here), The Case (`/case/` — timeline + FAQ, FAQPage schema), Documents (legal archive), Contact, Archive (Memories IT / SunTickets / BeOnMemories). Printable résumé lives on a separate GitHub Pages site: https://resume.raffaelesollecito.org (repo `Raffasolaries/raffasolaries.github.io`).
 
 ### Legal Documents
 
@@ -144,7 +147,10 @@ The single CloudFront Function (`url-rewrite.js`) handles:
 1. **www → non-www** redirect for `raffaelesollecito.org`
 2. **Domain redirects** for `.com`, `.it` variants → `raffaelesollecito.org`
 3. **suntickets.it** → `/archive/` with `Accept-Language` locale detection
-4. **URL rewriting**: `/path/` → `/path/index.html`, `/path` → `/path/index.html`
+4. **Canonical redirects**: `/` → 302 `/{locale}/` (Accept-Language); `/path` → 301 `/path/`; `/{locale}/book/` → `/{locale}/books/`; legacy WordPress slugs (`/honor-bound/`, `/documenti/`, `/progetti/`, `/famiglia-e-amici/`, `/blog-processo/…`) → 301 to the new localized routes
+5. **URL rewriting**: `/path/` → `/path/index.html`
+
+CloudFront also maps origin 403/404 → `/404.html` and attaches `aws_cloudfront_response_headers_policy.security` (HSTS, nosniff, DENY, referrer, permissions policy).
 
 ## WordPress Fallback
 
@@ -171,7 +177,10 @@ Both systems write to the same S3 bucket — WordPress output overwrites Next.js
 - Feature branches for infrastructure changes, PRs to main
 - `*.tfvars` files are gitignored — use GitHub Secrets/Variables for CI
 - terraform-docs auto-generates README.md via pre-commit
-- NEVER mention current Aspect Solutions clients by name on website or public content
+- NEVER mention current Aspect Solutions clients by name on website or public content (describe them: "global gaming publisher", "IoT semiconductor company", "FCA-regulated fintech"). Past clients (ReeVo, AWAKE Mobility) and past employers may be named.
+- Every page.tsx exports `generateMetadata` built with `pageMetadata()` from `src/lib/site.ts` and reads its title/description from `seo.<page>` in the message files. Never set canonical/OG in the layout.
+- The case page states facts only (dates, courts, outcomes) and names Meredith Kercher respectfully; never editorialise about other people involved. Book quotes must be real jacket/text quotes — never invent one.
+- GA4 / Search Console / Bing tokens come from GitHub Variables `GA_MEASUREMENT_ID`, `GOOGLE_SITE_VERIFICATION`, `BING_SITE_VERIFICATION` (see `docs/seo-analytics-setup.md`).
 
 ## S3 Buckets (Active)
 
