@@ -2,6 +2,7 @@
 
 import { useTranslations } from "next-intl";
 import Link from "next/link";
+import { Seal } from "./Seal";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
 import { LocaleSwitcher } from "./LocaleSwitcher";
@@ -32,9 +33,11 @@ export function Header() {
           {/* Logo */}
           <Link
             href={`/${locale}/`}
-            className="text-lg font-bold tracking-tight hover:text-accent transition-colors"
+            className="inline-flex items-center gap-2.5 font-display text-base font-semibold tracking-tight hover:text-accent transition-colors"
+            aria-label="Raffaele Sollecito — home"
           >
-            <span className="text-accent">R</span>S
+            <Seal size={30} />
+            <span className="hidden sm:inline">Raffaele Sollecito</span>
           </Link>
 
           {/* Desktop Nav */}

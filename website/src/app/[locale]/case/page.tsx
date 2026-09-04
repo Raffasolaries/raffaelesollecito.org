@@ -53,7 +53,7 @@ export default async function CasePage({ params }: { params: Promise<{ locale: s
     <>
       <JsonLd data={ld} />
 
-      <Section className="pt-32">
+      <Section className="pt-32 speed-lines mandala">
         <SectionHeader title={t("title")} headline={t("headline")} />
         <div className="max-w-3xl space-y-6">
           <p className="text-lg sm:text-xl leading-relaxed">{t("lede")}</p>

@@ -3,6 +3,7 @@
 import { useTranslations } from "next-intl";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
+import { Seal } from "./Seal";
 import { RESUME_URL } from "@/lib/site";
 
 export function Footer() {
@@ -13,14 +14,14 @@ export function Footer() {
   const year = new Date().getFullYear();
 
   return (
-    <footer className="border-t border-border/50 bg-surface/50">
+    <footer className="relative overflow-hidden border-t border-border/50 bg-surface/50 mandala mandala-left">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Brand */}
           <div>
-            <span className="text-xl font-bold">
-              <span className="text-accent">R</span>affaele{" "}
-              <span className="text-accent">S</span>ollecito
+            <span className="inline-flex items-center gap-3 font-display text-xl font-semibold">
+              <Seal size={36} />
+              Raffaele Sollecito
             </span>
             <p className="mt-2 text-sm text-muted">
               {t("tagline")}
