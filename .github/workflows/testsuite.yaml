@@ -91,6 +91,9 @@ jobs:
           reporter: github-pr-check
           filter_mode: added
           level: error
+          # Italian copy is not English typos
+          exclude: |
+            ./website/src/messages/it.json
 
   yamllint:
     runs-on: ubuntu-latest

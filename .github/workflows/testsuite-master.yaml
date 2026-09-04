@@ -60,6 +60,8 @@ jobs:
           reporter: github-check
           filter_mode: added
           level: error
+          exclude: |
+            ./website/src/messages/it.json
 
   yamllint:
     runs-on: ubuntu-latest

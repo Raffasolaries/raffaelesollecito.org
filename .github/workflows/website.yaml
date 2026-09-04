@@ -42,6 +42,7 @@ jobs:
         working-directory: website
         env:
           NEXT_PUBLIC_GA_ID: ${{ vars.GA_MEASUREMENT_ID }}
+          # yamllint disable-line rule:line-length
           NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION: ${{ vars.GOOGLE_SITE_VERIFICATION }}
           NEXT_PUBLIC_BING_SITE_VERIFICATION: ${{ vars.BING_SITE_VERIFICATION }}
 
