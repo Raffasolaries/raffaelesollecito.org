@@ -1,208 +1,397 @@
 {
   "metadata": {
-    "title": "Raffaele Sollecito — Cloud Architect & Author",
-    "description": "Principal Cloud Solutions Architect, AWS Subject Matter Expert, and author of Honor Bound. Building secure, scalable cloud infrastructure for enterprises worldwide."
+    "title": "Raffaele Sollecito — Principal Cloud Solutions Architect (AWS) & Author",
+    "template": "%s · Raffaele Sollecito",
+    "description": "Official site of Raffaele Sollecito: Principal Cloud Solutions Architect and AWS Subject Matter Expert (6× AWS certified), founder of Aspect Solutions, author of Honor Bound and Un passo fuori dalla notte."
+  },
+  "seo": {
+    "home": {
+      "title": "Raffaele Sollecito — Principal Cloud Solutions Architect (AWS)",
+      "description": "Raffaele Sollecito is a Principal Cloud Solutions Architect and AWS Subject Matter Expert (6 AWS certifications) designing secure, resilient AWS platforms for enterprise and regulated clients. Author of Honor Bound (2012) and Un passo fuori dalla notte (2015)."
+    },
+    "about": {
+      "title": "About Raffaele Sollecito",
+      "description": "Who Raffaele Sollecito is today: AWS-certified Principal Cloud Solutions Architect from Giovinazzo, Italy, based in Tavira, Portugal — education, values and the experiences behind the work."
+    },
+    "experience": {
+      "title": "Experience & Career",
+      "description": "Career timeline of Raffaele Sollecito: from full-stack engineer and founder to Principal Cloud Solutions Architect — Aspect Solutions, PwC Luxembourg, Volkswagen Digital Solutions, ITnet, Tantosvago."
+    },
+    "projects": {
+      "title": "Selected AWS Engagements",
+      "description": "Enterprise AWS architectures delivered by Raffaele Sollecito: landing zones, EKS platforms, Cloudflare-to-CloudFront edge migration, multi-region disaster recovery, agentic AI on Amazon Bedrock, compliance archives."
+    },
+    "books": {
+      "title": "Books — Honor Bound & Un passo fuori dalla notte",
+      "description": "The two memoirs by Raffaele Sollecito: Honor Bound (Simon & Schuster, 2012, with Andrew Gumbel) and Un passo fuori dalla notte (Longanesi, 2015). Synopses, quotes and where to buy."
+    },
+    "case": {
+      "title": "The Meredith Kercher Case (2007–2015): Facts & FAQ",
+      "description": "What happened to Raffaele Sollecito in the Meredith Kercher case: arrest in Perugia in 2007, almost four years in prison, and the definitive acquittal by Italy's Supreme Court of Cassation on 27 March 2015. Timeline, FAQ, court documents."
+    },
+    "documents": {
+      "title": "Legal Documents Archive",
+      "description": "Court rulings, appeal decisions, expert reports and legal documents from the Meredith Kercher case involving Raffaele Sollecito — a public archive."
+    },
+    "contact": {
+      "title": "Contact",
+      "description": "Contact Raffaele Sollecito for AWS cloud architecture, security and platform engineering consulting, or for speaking and media requests."
+    },
+    "family": {
+      "title": "Family & Friends",
+      "description": "Where Raffaele Sollecito comes from: Giovinazzo, on the Adriatic coast of Puglia — family photographs and words from lifelong friends."
+    },
+    "archive": {
+      "title": "Archive — Memories IT Company, SunTickets, BeOnMemories",
+      "description": "Raffaele Sollecito's entrepreneurial ventures before cloud architecture: the Memories IT Company web agency, the SunTickets booking platform and the BeOnMemories memorial platform."
+    }
   },
   "nav": {
     "home": "Home",
     "about": "About",
     "experience": "Experience",
-    "projects": "Projects",
-    "book": "Book",
+    "projects": "Work",
+    "books": "Books",
     "case": "The Case",
     "family": "Family",
     "documents": "Documents",
     "contact": "Contact",
-    "archive": "Archive"
+    "archive": "Archive",
+    "resume": "Résumé"
   },
   "hero": {
-    "greeting": "Hello, I'm",
+    "eyebrow": "Principal Cloud Solutions Architect · AWS Subject Matter Expert",
     "name": "Raffaele Sollecito",
-    "title": "Cloud Architect & Author",
-    "subtitle": "Principal Cloud Solutions Architect. AWS Subject Matter Expert. Author. Building enterprise-grade cloud infrastructure across fintech, automotive, cybersecurity, and IoT.",
-    "cta_work": "View My Work",
-    "cta_contact": "Get in Touch",
-    "location": "Tavira, Portugal",
+    "title": "I design secure, resilient AWS platforms for enterprise and regulated clients.",
+    "subtitle": "Six AWS certifications, including Solutions Architect Professional and Security Specialty. Landing zones, cloud security, Kubernetes platforms, multi-region disaster recovery and agentic AI on Amazon Bedrock — owned end-to-end as an independent principal architect.",
+    "cta_work": "See selected work",
+    "cta_resume": "Download résumé",
+    "cta_contact": "Get in touch",
+    "location": "Tavira, Portugal · Remote, EU-wide",
+    "availability": "Open to contract and fractional principal-architect roles",
     "scroll": "Scroll to explore"
   },
+  "home": {
+    "certs_title": "Verified AWS credentials",
+    "certs_note": "All badges verifiable on Credly",
+    "services_title": "What I do",
+    "services_headline": "Architecture you can put in production",
+    "services": {
+      "landing": {
+        "title": "Landing zones & governance",
+        "text": "Multi-account AWS foundations with Control Tower, Organizations and SCPs, IAM Identity Center federation with Entra ID or Google Workspace, and guardrails reconciled in Terraform or CDK."
+      },
+      "security": {
+        "title": "Security & compliance",
+        "text": "Zero-trust network perimeters (Transit Gateway, Network Firewall, WAFv2, Shield Advanced), Security Hub remediation, KMS and Secrets Manager, S3 Object Lock WORM archives, incident response."
+      },
+      "platforms": {
+        "title": "Platforms & resilience",
+        "text": "Production EKS and ECS platforms with GitOps and Karpenter, Aurora and Valkey data tiers, and multi-region disaster recovery designed as code and proven in live failover drills."
+      },
+      "ai": {
+        "title": "AI-native engineering",
+        "text": "Agentic internal developer platforms on Amazon Bedrock AgentCore — RAG with cited sources, agents that gate merge requests, credential-less OIDC delivery across many accounts."
+      }
+    },
+    "work_title": "Selected work",
+    "work_headline": "Recent engagements",
+    "work_cta": "All engagements",
+    "trusted_title": "Career",
+    "trusted_text": "Previously with PwC Luxembourg, Volkswagen Digital Solutions, ITnet and Tantosvago; independent since 2025.",
+    "beyond_title": "Beyond the cloud",
+    "beyond_headline": "Author, and a story I have never hidden",
+    "beyond_books_title": "Two memoirs",
+    "beyond_books_text": "Honor Bound (Simon & Schuster, 2012) and Un passo fuori dalla notte (Longanesi, 2015).",
+    "beyond_case_title": "The case, 2007–2015",
+    "beyond_case_text": "Wrongfully accused in the Meredith Kercher case and definitively acquitted by Italy's Supreme Court in 2015. The facts, a timeline and the court documents are here.",
+    "cta_title": "Need a principal architect?",
+    "cta_text": "I take on a small number of engagements at a time — architecture ownership, security programs, platform migrations, AI-native developer tooling.",
+    "cta_button": "Start a conversation"
+  },
   "about": {
-    "title": "About Me",
-    "headline": "Engineer. Architect. Storyteller.",
-    "bio_intro": "I'm a Cloud Architect with deep expertise in AWS, holding multiple certifications including Solutions Architect Professional and Security Specialty. I design and deliver secure, scalable cloud solutions for organizations ranging from European institutions to automotive giants and fintech startups.",
-    "bio_current": "Currently, I run Aspect Solutions from Tavira, Portugal — an independent consultancy delivering enterprise-grade AWS and Azure architecture, security, and DevOps solutions to international clients.",
-    "bio_personal": "Beyond the cloud, I'm an author — my memoir \"Honor Bound\" was published by Simon & Schuster in 2012. I'm also a nerd at heart: manga enthusiast, tech tinkerer, and someone who finds beauty in both elegant code and gothic architecture.",
+    "title": "About",
+    "headline": "Engineer first. Architect by trade. Author by circumstance.",
+    "bio_intro": "I am a Principal Cloud Solutions Architect and AWS Subject Matter Expert with more than ten years in AWS platform engineering, security and DevOps, and six AWS certifications including Solutions Architect Professional and Security Specialty. I design and deliver multi-account landing zones, zero-trust network perimeters, production Kubernetes platforms, multi-region disaster recovery and agentic AI platforms for enterprise and regulated clients — a European institution, Volkswagen, a global gaming publisher, an FCA-regulated fintech, public-sector utilities and IoT companies.",
+    "bio_current": "Since 2025 I work independently through Aspect Solutions from Tavira, Portugal, usually embedded as the principal architect inside a client's platform or consulting team. I care about ownership boundaries, least privilege, change management that engineers actually follow, and designs that survive a live failover drill.",
+    "bio_personal": "I am also an author. My memoir Honor Bound was published by Simon & Schuster in 2012, and Un passo fuori dalla notte by Longanesi in 2015. Off the clock: manga, long walks on the Algarve coast, and gothic architecture.",
+    "case_title": "About the case",
+    "case_text": "Between 2007 and 2015 I was wrongfully accused in the Meredith Kercher case in Perugia and spent almost four years in prison before Italy's Supreme Court of Cassation definitively acquitted me on 27 March 2015. I completed my master's degree while the proceedings were still open and have worked continuously in software and cloud engineering since. I do not hide that chapter and I do not lead with it: the facts, a timeline and the court documents are on a dedicated page.",
+    "case_link": "Read the facts and FAQ",
     "stats": {
       "years": "10+",
-      "years_label": "Years in Cloud",
+      "years_label": "Years in AWS",
       "certs": "6",
-      "certs_label": "AWS Certifications",
+      "certs_label": "AWS certifications",
       "clients": "15+",
-      "clients_label": "Enterprise Clients",
+      "clients_label": "Enterprise clients",
       "countries": "5",
-      "countries_label": "Countries Worked"
+      "countries_label": "Countries worked in"
     },
-    "personal_title": "The Person Behind the Code",
-    "personal_text": "Born in Bari, Italy. Educated in Perugia and Verona. Shaped by experiences that most people only read about. I've lived through events that taught me resilience, the value of truth, and the importance of standing by your principles — no matter the cost. Today, I channel that same determination into building systems that protect, scale, and endure."
+    "values_title": "How I work",
+    "values": {
+      "ownership": {
+        "title": "Ownership, end to end",
+        "text": "From the Well-Architected review to the runbook. I stay accountable for what I design."
+      },
+      "evidence": {
+        "title": "Evidence over assumption",
+        "text": "DR that is drilled, security that is measured in Security Hub, costs that are reconciled against the bill."
+      },
+      "governance": {
+        "title": "Governance engineers follow",
+        "text": "Peer-reviewed pull requests, plan-gated CI, design docs versioned with the code, ServiceNow when the client needs it."
+      }
+    },
+    "education_title": "Education",
+    "education": {
+      "verona": {
+        "school": "Università degli Studi di Verona",
+        "degree": "MSc Software Engineering — Visual Computing (LM-32)",
+        "period": "2008 — 2014"
+      },
+      "perugia": {
+        "school": "Università degli Studi di Perugia",
+        "degree": "BSc Computer Science (L-26)",
+        "period": "2004 — 2008"
+      },
+      "camerino": {
+        "school": "Università di Camerino",
+        "degree": "State qualification for professional practice — Software Engineering",
+        "period": "2014"
+      }
+    },
+    "personal_title": "The person behind the code",
+    "personal_text": "Born in Bari, raised in Giovinazzo, educated in Perugia and Verona. I have lived through events most people only read about; they taught me patience, the value of evidence and the cost of standing by the truth. I bring the same determination to systems that have to protect, scale and endure."
   },
   "experience": {
     "title": "Experience",
-    "headline": "Career Journey",
-    "subtitle": "From full-stack engineering to principal cloud architecture — a decade of building and scaling.",
+    "headline": "Career",
+    "subtitle": "From full-stack engineering and founding a web agency to principal cloud architecture for enterprise and regulated clients.",
+    "resume_cta": "Printable résumé and PDF",
     "positions": {
       "aspect": {
         "company": "Aspect Solutions",
         "role": "Principal Cloud Solutions Architect & Founder",
         "period": "Jan 2025 — Present",
         "location": "Remote (Tavira, Portugal)",
-        "description": "Independent consultancy delivering enterprise-grade AWS and Azure cloud architecture, security, and DevOps solutions to international clients across fintech, automotive, cybersecurity, and IoT sectors."
+        "description": "Independent principal architect for international clients in gaming, fintech, IoT, cybersecurity and automotive: AWS-native edge migrations, multi-region disaster recovery, EKS platform upgrades, compliance archives on S3 Object Lock, and an agentic developer platform on Amazon Bedrock AgentCore delivered across eleven AWS accounts."
       },
       "pwc": {
         "company": "PwC Luxembourg",
         "role": "Cloud Architect",
         "period": "Sep 2023 — Jan 2024",
         "location": "Remote",
-        "description": "Engineered centralized AWS backup strategies for a European Institution. Deployed automated patching, Network Firewall automation, and led security remediation using Security Hub and AWS Config."
+        "description": "Designed the institution-wide centralized backup strategy on AWS Backup for a European institution; rolled out automated EC2 patching and org-wide StackSets; automated Network Firewall threat lists; led remediation of exposed EC2 and RDS resources from Security Hub and Config findings."
       },
       "vw": {
         "company": "Volkswagen Digital Solutions",
         "role": "Cloud Solutions Architect",
         "period": "Feb 2023 — Jun 2023",
         "location": "Lisbon, Portugal",
-        "description": "Delivered secure AWS accounts within MAN-compliant Landing Zone. Managed GitLab CI/CD pipelines, automated account provisioning with Step Functions, and implemented multi-account security services."
+        "description": "Delivered secure AWS accounts inside the MAN-compliant Group landing zone; automated account provisioning with Step Functions and CDK; cross-account roles and hybrid Route 53 resolvers over Direct Connect and Transit Gateway; multi-account security tooling."
       },
       "itnet": {
         "company": "ITnet",
         "role": "Solutions Architect",
         "period": "Oct 2021 — Feb 2023",
         "location": "Assago, Italy",
-        "description": "Guided organizations through cloud adoption and hybrid architecture management. Created AWS Control Tower Landing Zones, integrated ServiceNow with AWS Service Catalog, and led Azure-to-AWS migration planning."
+        "description": "Guided mid-market and enterprise clients through cloud adoption and hybrid operations; designed Control Tower landing zones; integrated ServiceNow ITSM, CMDB and ITOM with AWS Service Catalog; assessed an Azure SAP estate for AWS migration."
       },
       "tantosvago": {
         "company": "Tantosvago",
         "role": "AWS DevOps Engineer",
         "period": "Jun 2019 — Oct 2021",
         "location": "Milan, Italy",
-        "description": "Implemented CI/CD pipelines for ECS and CloudFront+S3 deployments. Integrated REST APIs with mTLS, built custom SSO with Lambda Authorizer, and containerized Laravel apps on ECS Fargate."
+        "description": "Introduced Git Flow and CI/CD for ECS workloads and CloudFront + S3 sites; integrated partner REST APIs with mTLS; built custom SSO with Lambda authorizers; containerized Laravel applications on ECS Fargate."
       },
       "keypartner": {
         "company": "Key Partner Digital",
         "role": "Full Stack Engineer",
         "period": "Apr 2018 — Dec 2018",
         "location": "Milan, Italy",
-        "description": "Led development of a multi-platform chatbot framework using AWS Claudia.js and LEX. Built engaging UIs with Angular 2+."
+        "description": "Led a multi-platform chatbot framework on AWS Lex and Claudia.js with Angular 2+ front-ends."
       },
       "memories": {
         "company": "Memories IT Company",
-        "role": "CEO & Founder",
-        "period": "Jun 2015 — Mar 2018",
+        "role": "CEO & Lead Engineer",
+        "period": "Jan 2015 — Mar 2018",
         "location": "Giovinazzo, Italy",
-        "description": "Founded and led a web agency building social marketplaces, booking platforms, Angular apps, WordPress sites, and a Forex platform with D3.js. Integrated Stripe, Google Maps, and What3Words."
+        "description": "Founded and led a web agency delivering marketplace, booking, hospitality, insurance, car-rental and forex platforms; Stripe, Google Maps and what3words integrations; SunTickets® and BeOnMemories products."
       }
     }
   },
   "projects": {
-    "title": "Projects",
-    "headline": "Selected Work",
-    "subtitle": "Enterprise cloud architectures delivered for industry leaders.",
+    "title": "Work",
+    "headline": "Selected engagements",
+    "subtitle": "Enterprise AWS architecture delivered as the accountable principal architect. Current clients are described, not named.",
     "items": {
-      "ublox": {
-        "title": "GitLab Platform & Wiki Migration",
-        "client": "Global IoT Technology Leader",
-        "period": "2025",
-        "description": "Architected a self-managed GitLab platform on AWS for 500+ users with federated Azure AD authentication. Led repository migration from GitHub.com and legacy SVN systems. Built a serverless company-wide Wiki."
+      "gaming": {
+        "title": "AWS platform engineering & edge migration for live game titles",
+        "client": "Global mobile & web gaming publisher — via a consulting partner",
+        "period": "Mar 2026 — Present",
+        "description": "Own the Terraform platform behind three live titles across multiple accounts, six EKS clusters and eleven Aurora clusters. Migrated seven production zones from Cloudflare to CloudFront, WAFv2 and Shield Advanced on budget. Designed multi-region DR for EKS, Aurora, Valkey and CI/CD as one parameter-driven workflow and validated it in a live failover drill. RabbitMQ 3.13→4.2 on Amazon MQ, AWS Backup PITR, EKS 1.35 with Karpenter, Security Hub FSBP. Ran a CloudFront/WAF workshop for 12 engineers."
       },
-      "ucapital": {
-        "title": "Multi-Account Fintech Platform",
-        "client": "European Fintech Group",
-        "period": "2023 — Present",
-        "description": "Secure AWS infrastructure for real-time financial market data. Control Tower with Security Hub, SAML 2.0 SSO, ECS microservices, GraphQL APIs with AppSync, Managed Grafana observability."
+      "iot": {
+        "title": "AI-native internal developer platform",
+        "client": "Global IoT positioning & wireless semiconductor company",
+        "period": "Jul 2025 — Present",
+        "description": "Principal architect of an agentic developer platform on Amazon Bedrock AgentCore, Lambda, EventBridge and DynamoDB: repo-discovery, architecture-compliance and RAG agents that gate GitLab merge requests and answer with cited sources. Cross-account GitLab OIDC deploy roles (CDK) across eleven AWS accounts; all AWS Security Agent findings remediated. HA self-managed GitLab for 500+ users, GitHub and SVN migration with full history, serverless company wiki."
+      },
+      "fintech": {
+        "title": "Cloud platform, compliance archive & security operations",
+        "client": "FCA-regulated fintech group",
+        "period": "Aug 2023 — Present",
+        "description": "Control Tower landing zone with Security Hub, Google Workspace SSO into IAM Identity Center, GitLab OIDC CI/CD, ECS microservices streaming real-time market data, AppSync GraphQL and Managed Grafana. Immutable 7-year email archive on S3 Object Lock that also cut licensing ≈51%. Led the response to a P1 brand-impersonation attack, hardened SPF/DKIM/DMARC on ten domains, migrated Microsoft 365 to Google Workspace, designed US multi-region HA."
       },
       "reevo": {
-        "title": "Landing Zone & Kubernetes for Public Sector",
-        "client": "Cloud & Cyber Security Provider",
-        "period": "2024 — 2025",
-        "description": "AWS Control Tower with Security Hub, Hub-and-Spoke VPC via Transit Gateway, Direct Connect, Network Firewall with Suricata. Multi-tenant EKS with ArgoCD GitOps and Karpenter autoscaling."
+        "title": "Landing zone & multi-tenant Kubernetes for public-sector gas distribution",
+        "client": "ReeVo Cloud & Cyber Security — public-sector end client",
+        "period": "Jan 2024 — Dec 2025",
+        "description": "Control Tower, Security Hub and IAM Identity Center federated with Entra ID; hub-and-spoke Transit Gateway with Direct Connect and VPN failover; Network Firewall with Suricata. Multi-tenant EKS with namespace isolation, ArgoCD GitOps, Karpenter and NGINX ingress; Terraform observability modules; private NLB → API Gateway → CloudFront with WAF, Cognito and KMS."
       },
       "awake": {
-        "title": "Connected Vehicle Platform Modernization",
-        "client": "Automotive IoT Company",
-        "period": "2025",
-        "description": "Multi-account AWS architecture for connected vehicle IoT platform. Federated auth with Entra ID, VPC segmentation, Network Firewall, cross-region backup, CloudFormation and Terraform IaC."
+        "title": "Connected-vehicle platform modernization",
+        "client": "AWAKE Mobility — automotive IoT",
+        "period": "Jan 2025 — Feb 2025",
+        "description": "Prod/Dev/QA multi-account architecture aligned to the Well-Architected Framework; Entra ID SSO with least-privilege permission sets; VPC segmentation and Network Firewall; credential-free Bitbucket CI/CD via IAM Identity Center; AWS Backup with cross-region replication; CloudFormation and Terraform."
       }
     }
   },
-  "skills": {
-    "title": "Skills & Certifications",
-    "certifications": "AWS Certifications",
-    "cert_list": {
-      "sap": "Solutions Architect — Professional",
-      "saa": "Solutions Architect — Associate",
-      "sec": "Security — Specialty",
-      "ccp": "Cloud Practitioner",
-      "sme": "Certification SME — Associate",
-      "partner": "Partner: Technical Accredited"
+  "books": {
+    "title": "Books",
+    "headline": "Two memoirs, one story",
+    "subtitle": "Written for different readers, in different years, about the same eight years — and about what comes after them.",
+    "buy": "Where to buy",
+    "honor": {
+      "title": "Honor Bound",
+      "subtitle": "My Journey to Hell and Back with Amanda Knox",
+      "meta": "With Andrew Gumbel · Simon & Schuster · September 2012 · English · ISBN 978-1-4516-9600-4",
+      "synopsis": "Accused of one of the most publicized murders of our time, targeted by the media and sentenced by the courts, Raffaele Sollecito spent four years in prison for a crime he had nothing to do with. Written after his 2011 appeal acquittal, Honor Bound is his first-person account of the arrest, the trials, the years in Terni prison, and why he refused to save himself by turning on Amanda Knox.",
+      "quote": "He refused to testify against her to save his own skin, because he knew she would be lost forever.",
+      "amazon": "Amazon",
+      "bn": "Barnes & Noble"
     },
-    "categories": {
-      "cloud": "Cloud & Infrastructure",
-      "security": "Security & Identity",
-      "devops": "DevOps & CI/CD",
-      "development": "Development"
+    "passo": {
+      "title": "Un passo fuori dalla notte",
+      "subtitle": "Tutto quello che non avete mai immaginato di me",
+      "meta": "Longanesi · October 2015 · Italian · ISBN 978-88-304-4393-8",
+      "synopsis": "Written for Italian readers after the definitive acquittal of March 2015, Un passo fuori dalla notte is the account of a young man returning to life: the years lost, the family that held on, the degree finished under judgment, and the first steps out of the night — towards work, trust and a future built on his own terms.",
+      "amazon": "Amazon.it",
+      "ibs": "IBS"
     }
-  },
-  "book": {
-    "title": "Honor Bound",
-    "headline": "My Story, In My Words",
-    "publisher": "Published by Simon & Schuster, 2012",
-    "synopsis": "They were accused of one of the most infamous murders of our time. Targeted by the media, sentenced by the courts, and wrongfully imprisoned for four excruciating years for a crime neither could fathom let alone perpetrate. Now, for the first time since his acquittal, Raffaele reveals what really happened.",
-    "quote": "He refused to testify against her to save his own skin, because he knew she would be lost forever.",
-    "buy_amazon": "Buy on Amazon",
-    "buy_bn": "Buy on Barnes & Noble"
   },
   "case": {
     "title": "The Case",
-    "headline": "Truth Prevails",
-    "intro": "In 2007, I was wrongfully accused and imprisoned for a crime I did not commit. After four years of imprisonment and eight years of legal proceedings, I was definitively acquitted by Italy's Supreme Court of Cassation on March 27, 2015.",
+    "headline": "The Meredith Kercher case, 2007–2015",
+    "lede": "On the night of 1 November 2007, Meredith Kercher, a 21-year-old British student, was murdered in Perugia, Italy. I was 23, a computer-science student in the same city, and had been dating Amanda Knox for a week. Five days later we were both arrested. I spent almost four years in prison for a crime I had nothing to do with. On 27 March 2015, Italy's Supreme Court of Cassation definitively acquitted us both.",
+    "respect": "Meredith's family lost a daughter and a sister. Nothing on this page is meant to diminish that, and I have never treated my acquittal as anything other than a return to the truth.",
     "sections": {
       "timeline": "Timeline",
-      "considerations": "Supreme Court Considerations",
-      "dna": "The DNA Evidence",
-      "police": "What the Scientific Police Said",
-      "documents": "Legal Documents"
-    }
+      "faq": "Frequently asked questions",
+      "documents": "Court documents",
+      "books": "In my own words"
+    },
+    "timeline": {
+      "t2007": {
+        "date": "6 November 2007",
+        "text": "Arrested in Perugia together with Amanda Knox, five days after the murder. Held in pre-trial detention at Terni prison."
+      },
+      "t2009": {
+        "date": "4 December 2009",
+        "text": "Convicted at first instance by the Perugia Court of Assizes (Massei court) and sentenced to 25 years."
+      },
+      "t2011": {
+        "date": "3 October 2011",
+        "text": "Acquitted on appeal by the Perugia Court of Assizes of Appeal (Hellmann court) after independent experts found the DNA evidence unreliable. Released after 1,427 days in prison."
+      },
+      "t2013": {
+        "date": "26 March 2013",
+        "text": "The Supreme Court of Cassation annuls the appeal acquittal and orders a new appeal trial in Florence."
+      },
+      "t2014": {
+        "date": "30 January 2014",
+        "text": "Re-convicted by the Florence Court of Assizes of Appeal (Nencini court) and sentenced to 25 years."
+      },
+      "t2015": {
+        "date": "27 March 2015",
+        "text": "The Supreme Court of Cassation (Fifth Criminal Section) definitively acquits both defendants. The written reasoning, published in September 2015, cites serious investigative failures and the absence of any biological trace of either defendant in the room where the crime took place. Under Italian law the ruling is final."
+      }
+    },
+    "faq": {
+      "q1": {
+        "q": "Was Raffaele Sollecito acquitted?",
+        "a": "Yes. On 27 March 2015 Italy's Supreme Court of Cassation definitively acquitted Raffaele Sollecito and Amanda Knox of the murder of Meredith Kercher. A Cassation acquittal is final under Italian law: there is no further appeal and no retrial."
+      },
+      "q2": {
+        "q": "How long was he in prison?",
+        "a": "Almost four years — 1,427 days of pre-trial detention at Terni prison, from 6 November 2007 to 3 October 2011, when he was acquitted on appeal and released. The 2014 re-conviction never led to a return to prison and was annulled in 2015."
+      },
+      "q3": {
+        "q": "Who was convicted of the murder?",
+        "a": "Rudy Guede was convicted of the murder of Meredith Kercher in separate, fast-track proceedings. His conviction became final in December 2010 with a 16-year sentence."
+      },
+      "q4": {
+        "q": "What did the Supreme Court say in 2015?",
+        "a": "The Court's written reasoning, published in September 2015, described the investigation as marked by serious failures and noted that no biological trace of Sollecito or Knox was found in the room where the crime occurred, whereas Guede's traces were. It closed the case with a full acquittal rather than an acquittal for insufficient evidence."
+      },
+      "q5": {
+        "q": "Was he compensated for the wrongful detention?",
+        "a": "No. In 2017 the Florence Court of Appeal rejected his claim for compensation for the years spent in pre-trial detention. He has continued to campaign for reform of the Italian justice system."
+      },
+      "q6": {
+        "q": "Does the case affect his professional work?",
+        "a": "No. He completed his MSc in Software Engineering at the University of Verona in 2014, while the proceedings were still open, and has worked continuously in software and cloud engineering since — today as a Principal Cloud Solutions Architect with six AWS certifications. Clients and employers have always had access to these facts."
+      },
+      "q7": {
+        "q": "Where can I read the court documents?",
+        "a": "The rulings, appeal decisions and expert reports are published on this site's Documents page, mostly in the original Italian."
+      },
+      "q8": {
+        "q": "Has he written about it?",
+        "a": "Yes — two memoirs: Honor Bound (Simon & Schuster, 2012, written with Andrew Gumbel) and Un passo fuori dalla notte (Longanesi, 2015)."
+      }
+    },
+    "documents_text": "All court decisions, expert reports and legal documents are available in the archive.",
+    "documents_cta": "Open the documents archive",
+    "books_text": "The full story, from the arrest to the years after, is in my two books.",
+    "books_cta": "The books"
   },
   "documents": {
     "title": "Documents",
-    "headline": "Legal Archive",
-    "subtitle": "Court decisions, expert reports, and legal documents from the case — all publicly available for review.",
+    "headline": "Legal archive",
+    "subtitle": "Court decisions, expert reports and legal documents from the Meredith Kercher case — published for anyone who wants to read the record rather than the headlines. Most documents are in Italian.",
     "categories": {
-      "verdicts": "Verdicts & Sentences",
+      "verdicts": "Verdicts & sentences",
       "appeals": "Appeals",
-      "expert": "Expert Reports",
-      "other": "Other Documents"
+      "expert": "Expert reports",
+      "other": "Other documents"
     }
   },
   "contact": {
     "title": "Contact",
-    "headline": "Let's Connect",
-    "subtitle": "Whether you need cloud architecture consulting, want to discuss a project, or just want to say hello.",
+    "headline": "Let's talk",
+    "subtitle": "Cloud architecture, security and platform engagements; speaking and media requests.",
     "email": "Email",
     "phone": "Phone",
     "location": "Location",
-    "location_value": "Tavira, Faro, Portugal",
+    "location_value": "Tavira, Faro, Portugal · Remote, EU-wide",
     "social": "Find me online",
-    "availability": "Currently available for consulting engagements."
+    "resume": "Printable résumé (PDF)",
+    "availability": "Currently open to contract and fractional principal-architect engagements."
   },
   "footer": {
+    "tagline": "Principal Cloud Solutions Architect · Author",
     "copyright": "Raffaele Sollecito. All rights reserved.",
     "built_with": "Built with Next.js, deployed on AWS."
   },
   "family": {
     "title": "Family & Friends",
-    "headline": "Where It All Began",
+    "headline": "Where it all began",
     "subtitle": "Giovinazzo, on the Adriatic coast of Southern Italy — the place that shaped who I am.",
     "intro": "Raffaele grew up in the city of Giovinazzo, on the Adriatic coast of Southern Italy. Here is a selection of family photos.",
-    "photos_title": "Growing Up in Giovinazzo",
-    "friends_title": "What My Friends Say",
+    "photos_title": "Growing up in Giovinazzo",
+    "friends_title": "What my friends say",
     "photos": {
       "parents_young": "Mom and Dad in their youth",
       "baptism": "His baptism with his sister and godmother",
@@ -235,12 +424,12 @@
   },
   "archive": {
     "title": "Archive",
-    "headline": "Past Ventures",
+    "headline": "Past ventures",
     "subtitle": "A look back at the entrepreneurial projects that shaped my journey before cloud architecture.",
     "memories": {
       "name": "Memories IT Company",
       "tagline": "\"La memoria è la poetica del ricordo.\" — Alessandro Morandotti",
-      "period": "Jun 2015 — Mar 2018",
+      "period": "Jan 2015 — Mar 2018",
       "location": "Giovinazzo, Italy",
       "description": "Founded and led a web agency that built innovative digital products for clients across Italy. Memories IT Company was the umbrella under which I developed two main web applications — SunTickets and BeOnMemories — alongside client projects ranging from social marketplaces to real-time trading platforms. This is where I honed my full-stack engineering skills and discovered my passion for building scalable systems.",
       "highlights": {
@@ -281,8 +470,8 @@
     }
   },
   "common": {
-    "read_more": "Read More",
-    "view_all": "View All",
+    "read_more": "Read more",
+    "view_all": "View all",
     "back": "Back",
     "download": "Download",
     "loading": "Loading..."

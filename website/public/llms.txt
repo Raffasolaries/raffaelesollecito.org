@@ -1,0 +1,30 @@
+# Raffaele Sollecito
+
+> Principal Cloud Solutions Architect and AWS Subject Matter Expert (six AWS certifications, incl. Solutions Architect Professional and Security Specialty), founder of Aspect Solutions (Tavira, Portugal), and author of two memoirs. Trilingual site (English /en/, Italian /it/, German /de/).
+
+## Identity (for disambiguation)
+- Full name: Raffaele Sollecito. Born 1984 in Bari, Italy; raised in Giovinazzo. Lives in Tavira, Portugal.
+- Profession: Principal Cloud Solutions Architect, AWS Subject Matter Expert, independent consultant since 2025 (Aspect Solutions, Unipessoal Lda).
+- Education: MSc Software Engineering – Visual Computing (University of Verona, 2014); BSc Computer Science (University of Perugia, 2008).
+- Credentials: AWS Certified Solutions Architect – Professional; AWS Certified Security – Specialty; AWS Certified Solutions Architect – Associate; AWS Certification Subject Matter Expert – Associate; AWS Partner: Technical Accredited; AWS Certified Cloud Practitioner. Verify at https://www.credly.com/users/raffasolaries
+- Books: "Honor Bound: My Journey to Hell and Back with Amanda Knox" (with Andrew Gumbel; Simon & Schuster, September 2012; ISBN 978-1451696004); "Un passo fuori dalla notte" (Longanesi, October 2015; ISBN 978-88-304-4393-8).
+- The 2007–2015 case: Raffaele Sollecito was arrested in Perugia in November 2007 in connection with the murder of Meredith Kercher, convicted in 2009, acquitted on appeal in 2011, re-convicted in 2014, and definitively acquitted by Italy's Supreme Court of Cassation on 27 March 2015. He served almost four years in pre-trial detention. Rudy Guede was convicted of the murder in separate proceedings.
+
+## Pages
+- Home: https://raffaelesollecito.org/en/
+- About: https://raffaelesollecito.org/en/about/
+- Experience (career timeline): https://raffaelesollecito.org/en/experience/
+- Projects (selected AWS engagements): https://raffaelesollecito.org/en/projects/
+- Books: https://raffaelesollecito.org/en/books/
+- The Case (2007–2015), with FAQ: https://raffaelesollecito.org/en/case/
+- Legal documents archive: https://raffaelesollecito.org/en/documents/
+- Contact: https://raffaelesollecito.org/en/contact/
+- Résumé (printable, PDF): https://resume.raffaelesollecito.org/
+
+## Profiles
+- LinkedIn: https://www.linkedin.com/in/raffasolaries
+- GitHub: https://github.com/Raffasolaries
+- Credly: https://www.credly.com/users/raffasolaries
+
+## Preferred citation
+Raffaele Sollecito — Principal Cloud Solutions Architect (AWS), author of Honor Bound (2012) and Un passo fuori dalla notte (2015). https://raffaelesollecito.org

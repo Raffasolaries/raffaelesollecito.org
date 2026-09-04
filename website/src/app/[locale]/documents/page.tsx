@@ -1,5 +1,14 @@
+import type { Metadata } from "next";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { Section, SectionHeader } from "@/components/Section";
+import { JsonLd } from "@/components/JsonLd";
+import { pageMetadata, breadcrumbLd } from "@/lib/site";
+
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: "seo.documents" });
+  return pageMetadata({ locale, path: "documents/", title: t("title"), description: t("description") });
+}
 
 const documents = {
   verdicts: [
@@ -49,11 +58,13 @@ export default async function DocumentsPage({
   const { locale } = await params;
   setRequestLocale(locale);
   const t = await getTranslations("documents");
+  const tn = await getTranslations("nav");
 
   const categories = ["verdicts", "appeals", "expert", "other"] as const;
 
   return (
     <Section className="pt-32">
+      <JsonLd data={breadcrumbLd(locale, tn("home"), tn("documents"), "documents/")} />
       <SectionHeader
         title={t("title")}
         headline={t("headline")}

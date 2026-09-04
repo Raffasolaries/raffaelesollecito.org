@@ -1,5 +1,14 @@
+import type { Metadata } from "next";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { Section, SectionHeader } from "@/components/Section";
+import { JsonLd } from "@/components/JsonLd";
+import { pageMetadata, breadcrumbLd, RESUME_URL } from "@/lib/site";
+
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: "seo.contact" });
+  return pageMetadata({ locale, path: "contact/", title: t("title"), description: t("description") });
+}
 
 export default async function ContactPage({
   params,
@@ -9,9 +18,11 @@ export default async function ContactPage({
   const { locale } = await params;
   setRequestLocale(locale);
   const t = await getTranslations("contact");
+  const tn = await getTranslations("nav");
 
   return (
     <Section className="pt-32">
+      <JsonLd data={breadcrumbLd(locale, tn("home"), tn("contact"), "contact/")} />
       <SectionHeader
         title={t("title")}
         headline={t("headline")}
@@ -79,6 +90,18 @@ export default async function ContactPage({
         <div className="bg-surface border border-border/50 rounded-lg p-8">
           <h3 className="text-lg font-semibold mb-6">{t("social")}</h3>
           <div className="space-y-4">
+            <a
+              href={RESUME_URL}
+              className="flex items-center gap-4 p-3 rounded-md hover:bg-surface-light transition-colors group"
+            >
+              <svg className="w-6 h-6 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12h6m-6 4h6M7 3h7l5 5v13a1 1 0 01-1 1H7a1 1 0 01-1-1V4a1 1 0 011-1z" />
+              </svg>
+              <div>
+                <p className="font-medium group-hover:text-accent transition-colors">{t("resume")}</p>
+                <p className="text-sm text-muted">resume.raffaelesollecito.org</p>
+              </div>
+            </a>
             <a
               href="https://linkedin.com/in/raffasolaries"
               target="_blank"

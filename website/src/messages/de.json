@@ -1,0 +1,479 @@
+{
+  "metadata": {
+    "title": "Raffaele Sollecito — Principal Cloud Solutions Architect (AWS) & Autor",
+    "template": "%s · Raffaele Sollecito",
+    "description": "Offizielle Website von Raffaele Sollecito: Principal Cloud Solutions Architect und AWS Subject Matter Expert (6× AWS-zertifiziert), Gründer von Aspect Solutions, Autor von Honor Bound und Un passo fuori dalla notte."
+  },
+  "seo": {
+    "home": {
+      "title": "Raffaele Sollecito — Principal Cloud Solutions Architect (AWS)",
+      "description": "Raffaele Sollecito ist Principal Cloud Solutions Architect und AWS Subject Matter Expert (6 AWS-Zertifizierungen) und entwirft sichere, resiliente AWS-Plattformen für Unternehmen und regulierte Kunden. Autor von Honor Bound (2012) und Un passo fuori dalla notte (2015)."
+    },
+    "about": {
+      "title": "Über Raffaele Sollecito",
+      "description": "Wer Raffaele Sollecito heute ist: AWS-zertifizierter Principal Cloud Solutions Architect aus Giovinazzo, Italien, ansässig in Tavira, Portugal — Ausbildung, Werte und die Erfahrungen hinter der Arbeit."
+    },
+    "experience": {
+      "title": "Erfahrung & Laufbahn",
+      "description": "Beruflicher Werdegang von Raffaele Sollecito: vom Full-Stack-Entwickler und Gründer zum Principal Cloud Solutions Architect — Aspect Solutions, PwC Luxembourg, Volkswagen Digital Solutions, ITnet, Tantosvago."
+    },
+    "projects": {
+      "title": "Ausgewählte AWS-Projekte",
+      "description": "Von Raffaele Sollecito umgesetzte AWS-Unternehmensarchitekturen: Landing Zones, EKS-Plattformen, Edge-Migration von Cloudflare zu CloudFront, Multi-Region-Disaster-Recovery, agentische KI auf Amazon Bedrock, Compliance-Archive."
+    },
+    "books": {
+      "title": "Bücher — Honor Bound & Un passo fuori dalla notte",
+      "description": "Die beiden Memoiren von Raffaele Sollecito: Honor Bound (Simon & Schuster, 2012, mit Andrew Gumbel) und Un passo fuori dalla notte (Longanesi, 2015). Inhalt, Zitate und Bezugsquellen."
+    },
+    "case": {
+      "title": "Der Fall Meredith Kercher (2007–2015): Fakten & FAQ",
+      "description": "Was Raffaele Sollecito im Fall Meredith Kercher widerfahren ist: Verhaftung in Perugia 2007, fast vier Jahre Haft und der endgültige Freispruch durch den italienischen Kassationsgerichtshof am 27. März 2015. Chronologie, FAQ, Gerichtsdokumente."
+    },
+    "documents": {
+      "title": "Archiv der Gerichtsdokumente",
+      "description": "Urteile, Berufungsentscheidungen, Gutachten und juristische Dokumente aus dem Fall Meredith Kercher mit Beteiligung von Raffaele Sollecito — ein öffentliches Archiv."
+    },
+    "contact": {
+      "title": "Kontakt",
+      "description": "Kontaktieren Sie Raffaele Sollecito für Beratung zu AWS-Cloud-Architektur, Sicherheit und Platform Engineering oder für Vortrags- und Medienanfragen."
+    },
+    "family": {
+      "title": "Familie & Freunde",
+      "description": "Woher Raffaele Sollecito kommt: Giovinazzo an der Adriaküste Apuliens — Familienfotos und Worte langjähriger Freunde."
+    },
+    "archive": {
+      "title": "Archiv — Memories IT Company, SunTickets, BeOnMemories",
+      "description": "Die unternehmerischen Projekte von Raffaele Sollecito vor der Cloud-Architektur: die Webagentur Memories IT Company, die Buchungsplattform SunTickets und die Gedenkplattform BeOnMemories."
+    }
+  },
+  "nav": {
+    "home": "Start",
+    "about": "Über mich",
+    "experience": "Erfahrung",
+    "projects": "Projekte",
+    "books": "Bücher",
+    "case": "Der Fall",
+    "family": "Familie",
+    "documents": "Dokumente",
+    "contact": "Kontakt",
+    "archive": "Archiv",
+    "resume": "Lebenslauf"
+  },
+  "hero": {
+    "eyebrow": "Principal Cloud Solutions Architect · AWS Subject Matter Expert",
+    "name": "Raffaele Sollecito",
+    "title": "Ich entwerfe sichere, resiliente AWS-Plattformen für Unternehmen und regulierte Kunden.",
+    "subtitle": "Sechs AWS-Zertifizierungen, darunter Solutions Architect Professional und Security Specialty. Landing Zones, Cloud-Sicherheit, Kubernetes-Plattformen, Multi-Region-Disaster-Recovery und agentische KI auf Amazon Bedrock — durchgängig verantwortet als unabhängiger Principal Architect.",
+    "cta_work": "Ausgewählte Projekte",
+    "cta_resume": "Lebenslauf herunterladen",
+    "cta_contact": "Kontakt aufnehmen",
+    "location": "Tavira, Portugal · Remote, EU-weit",
+    "availability": "Offen für Projektverträge und Fractional-Principal-Architect-Rollen",
+    "scroll": "Scrollen zum Entdecken"
+  },
+  "home": {
+    "certs_title": "Verifizierte AWS-Zertifizierungen",
+    "certs_note": "Alle Badges auf Credly überprüfbar",
+    "services_title": "Was ich mache",
+    "services_headline": "Architektur, die produktionsreif ist",
+    "services": {
+      "landing": {
+        "title": "Landing Zones & Governance",
+        "text": "Multi-Account-AWS-Fundamente mit Control Tower, Organizations und SCPs, IAM-Identity-Center-Föderation mit Entra ID oder Google Workspace sowie Guardrails, die in Terraform oder CDK abgeglichen werden."
+      },
+      "security": {
+        "title": "Sicherheit & Compliance",
+        "text": "Zero-Trust-Netzwerkperimeter (Transit Gateway, Network Firewall, WAFv2, Shield Advanced), Security-Hub-Remediation, KMS und Secrets Manager, WORM-Archive mit S3 Object Lock, Incident Response."
+      },
+      "platforms": {
+        "title": "Plattformen & Resilienz",
+        "text": "Produktive EKS- und ECS-Plattformen mit GitOps und Karpenter, Aurora- und Valkey-Datenschichten sowie Multi-Region-Disaster-Recovery, als Code entworfen und in Live-Failover-Übungen bewiesen."
+      },
+      "ai": {
+        "title": "AI-native Engineering",
+        "text": "Agentische interne Entwicklerplattformen auf Amazon Bedrock AgentCore — RAG mit zitierten Quellen, Agenten, die Merge Requests prüfen, und credential-lose OIDC-Bereitstellung über viele Accounts."
+      }
+    },
+    "work_title": "Ausgewählte Projekte",
+    "work_headline": "Aktuelle Engagements",
+    "work_cta": "Alle Projekte",
+    "trusted_title": "Laufbahn",
+    "trusted_text": "Zuvor bei PwC Luxembourg, Volkswagen Digital Solutions, ITnet und Tantosvago; seit 2025 selbstständig.",
+    "beyond_title": "Jenseits der Cloud",
+    "beyond_headline": "Autor — und eine Geschichte, die ich nie verborgen habe",
+    "beyond_books_title": "Zwei Memoiren",
+    "beyond_books_text": "Honor Bound (Simon & Schuster, 2012) und Un passo fuori dalla notte (Longanesi, 2015).",
+    "beyond_case_title": "Der Fall, 2007–2015",
+    "beyond_case_text": "Zu Unrecht im Fall Meredith Kercher beschuldigt und 2015 vom italienischen Kassationsgerichtshof endgültig freigesprochen. Die Fakten, eine Chronologie und die Gerichtsdokumente finden Sie hier.",
+    "cta_title": "Sie suchen einen Principal Architect?",
+    "cta_text": "Ich übernehme nur wenige Engagements gleichzeitig — Architekturverantwortung, Sicherheitsprogramme, Plattformmigrationen, AI-native Entwicklerwerkzeuge.",
+    "cta_button": "Gespräch beginnen"
+  },
+  "about": {
+    "title": "Über mich",
+    "headline": "Ingenieur aus Überzeugung. Architekt von Beruf. Autor durch die Umstände.",
+    "bio_intro": "Ich bin Principal Cloud Solutions Architect und AWS Subject Matter Expert mit mehr als zehn Jahren Erfahrung in AWS Platform Engineering, Sicherheit und DevOps sowie sechs AWS-Zertifizierungen, darunter Solutions Architect Professional und Security Specialty. Ich entwerfe und liefere Multi-Account-Landing-Zones, Zero-Trust-Netzwerkperimeter, produktive Kubernetes-Plattformen, Multi-Region-Disaster-Recovery und agentische KI-Plattformen für Unternehmen und regulierte Kunden — eine europäische Institution, Volkswagen, einen globalen Gaming-Publisher, ein FCA-reguliertes Fintech, öffentliche Versorger und IoT-Unternehmen.",
+    "bio_current": "Seit 2025 arbeite ich selbstständig über Aspect Solutions von Tavira, Portugal aus — meist eingebettet als Principal Architect im Plattform- oder Beratungsteam des Kunden. Mir sind klare Verantwortungsgrenzen wichtig, Least Privilege, ein Change Management, das Ingenieure tatsächlich befolgen, und Designs, die eine Live-Failover-Übung überstehen.",
+    "bio_personal": "Ich bin außerdem Autor. Meine Memoiren Honor Bound erschienen 2012 bei Simon & Schuster, Un passo fuori dalla notte 2015 bei Longanesi. Nach Feierabend: Manga, lange Spaziergänge an der Algarve-Küste und gotische Architektur.",
+    "case_title": "Zum Fall",
+    "case_text": "Zwischen 2007 und 2015 wurde ich im Fall Meredith Kercher in Perugia zu Unrecht beschuldigt und verbrachte fast vier Jahre in Haft, bevor mich der italienische Kassationsgerichtshof am 27. März 2015 endgültig freisprach. Ich schloss mein Masterstudium ab, während das Verfahren noch lief, und arbeite seitdem ununterbrochen in der Software- und Cloud-Entwicklung. Ich verberge dieses Kapitel nicht und stelle es nicht in den Vordergrund: Die Fakten, eine Chronologie und die Gerichtsdokumente stehen auf einer eigenen Seite.",
+    "case_link": "Fakten und FAQ lesen",
+    "stats": {
+      "years": "10+",
+      "years_label": "Jahre AWS",
+      "certs": "6",
+      "certs_label": "AWS-Zertifizierungen",
+      "clients": "15+",
+      "clients_label": "Unternehmenskunden",
+      "countries": "5",
+      "countries_label": "Länder"
+    },
+    "values_title": "Wie ich arbeite",
+    "values": {
+      "ownership": {
+        "title": "Verantwortung, durchgängig",
+        "text": "Vom Well-Architected Review bis zum Runbook. Ich bleibe für das verantwortlich, was ich entwerfe."
+      },
+      "evidence": {
+        "title": "Belege statt Annahmen",
+        "text": "DR, das geübt wird; Sicherheit, die in Security Hub gemessen wird; Kosten, die mit der Rechnung abgeglichen werden."
+      },
+      "governance": {
+        "title": "Governance, die Ingenieure befolgen",
+        "text": "Peer-reviewte Pull Requests, plan-gesteuerte CI, mit dem Code versionierte Design-Dokumente, ServiceNow, wenn der Kunde es braucht."
+      }
+    },
+    "education_title": "Ausbildung",
+    "education": {
+      "verona": {
+        "school": "Università degli Studi di Verona",
+        "degree": "MSc Software Engineering — Visual Computing (LM-32)",
+        "period": "2008 — 2014"
+      },
+      "perugia": {
+        "school": "Università degli Studi di Perugia",
+        "degree": "BSc Informatik (L-26)",
+        "period": "2004 — 2008"
+      },
+      "camerino": {
+        "school": "Università di Camerino",
+        "degree": "Staatliche Berufszulassung — Software Engineering",
+        "period": "2014"
+      }
+    },
+    "personal_title": "Der Mensch hinter dem Code",
+    "personal_text": "Geboren in Bari, aufgewachsen in Giovinazzo, ausgebildet in Perugia und Verona. Ich habe Ereignisse durchlebt, von denen die meisten Menschen nur lesen; sie haben mich Geduld gelehrt, den Wert von Beweisen und den Preis dafür, zur Wahrheit zu stehen. Dieselbe Entschlossenheit bringe ich in Systeme ein, die schützen, skalieren und Bestand haben müssen."
+  },
+  "experience": {
+    "title": "Erfahrung",
+    "headline": "Laufbahn",
+    "subtitle": "Von Full-Stack-Entwicklung und der Gründung einer Webagentur zur Principal-Cloud-Architektur für Unternehmen und regulierte Kunden.",
+    "resume_cta": "Druckbarer Lebenslauf und PDF",
+    "positions": {
+      "aspect": {
+        "company": "Aspect Solutions",
+        "role": "Principal Cloud Solutions Architect & Gründer",
+        "period": "Jan 2025 — heute",
+        "location": "Remote (Tavira, Portugal)",
+        "description": "Unabhängiger Principal Architect für internationale Kunden in Gaming, Fintech, IoT, Cybersecurity und Automotive: AWS-native Edge-Migrationen, Multi-Region-Disaster-Recovery, EKS-Plattform-Upgrades, Compliance-Archive auf S3 Object Lock und eine agentische Entwicklerplattform auf Amazon Bedrock AgentCore über elf AWS-Accounts."
+      },
+      "pwc": {
+        "company": "PwC Luxembourg",
+        "role": "Cloud Architect",
+        "period": "Sep 2023 — Jan 2024",
+        "location": "Remote",
+        "description": "Entwurf der institutionsweiten zentralen Backup-Strategie auf AWS Backup für eine europäische Institution; Einführung automatisierten EC2-Patchings und organisationsweiter StackSets; Automatisierung der Network-Firewall-Threat-Lists; Leitung der Remediation exponierter EC2- und RDS-Ressourcen aus Security-Hub- und Config-Findings."
+      },
+      "vw": {
+        "company": "Volkswagen Digital Solutions",
+        "role": "Cloud Solutions Architect",
+        "period": "Feb 2023 — Jun 2023",
+        "location": "Lissabon, Portugal",
+        "description": "Bereitstellung sicherer AWS-Accounts innerhalb der MAN-konformen Konzern-Landing-Zone; automatisierte Account-Provisionierung mit Step Functions und CDK; Cross-Account-Rollen und hybride Route-53-Resolver über Direct Connect und Transit Gateway; Multi-Account-Security-Tooling."
+      },
+      "itnet": {
+        "company": "ITnet",
+        "role": "Solutions Architect",
+        "period": "Okt 2021 — Feb 2023",
+        "location": "Assago, Italien",
+        "description": "Begleitung von Mittelstands- und Großkunden bei Cloud-Einführung und Hybridbetrieb; Entwurf von Control-Tower-Landing-Zones; Integration von ServiceNow ITSM, CMDB und ITOM mit AWS Service Catalog; Bewertung einer Azure-SAP-Landschaft für die AWS-Migration."
+      },
+      "tantosvago": {
+        "company": "Tantosvago",
+        "role": "AWS DevOps Engineer",
+        "period": "Jun 2019 — Okt 2021",
+        "location": "Mailand, Italien",
+        "description": "Einführung von Git Flow und CI/CD für ECS-Workloads und CloudFront-+-S3-Websites; Integration von Partner-REST-APIs mit mTLS; Aufbau eines eigenen SSO mit Lambda-Authorizern; Containerisierung von Laravel-Anwendungen auf ECS Fargate."
+      },
+      "keypartner": {
+        "company": "Key Partner Digital",
+        "role": "Full Stack Engineer",
+        "period": "Apr 2018 — Dez 2018",
+        "location": "Mailand, Italien",
+        "description": "Leitung eines plattformübergreifenden Chatbot-Frameworks auf AWS Lex und Claudia.js mit Angular-2+-Frontends."
+      },
+      "memories": {
+        "company": "Memories IT Company",
+        "role": "CEO & Lead Engineer",
+        "period": "Jan 2015 — Mär 2018",
+        "location": "Giovinazzo, Italien",
+        "description": "Gründung und Leitung einer Webagentur für Marktplatz-, Buchungs-, Hospitality-, Versicherungs-, Autovermietungs- und Forex-Plattformen; Integrationen mit Stripe, Google Maps und what3words; Produkte SunTickets® und BeOnMemories."
+      }
+    }
+  },
+  "projects": {
+    "title": "Projekte",
+    "headline": "Ausgewählte Engagements",
+    "subtitle": "AWS-Unternehmensarchitektur, umgesetzt als verantwortlicher Principal Architect. Aktuelle Kunden werden beschrieben, nicht genannt.",
+    "items": {
+      "gaming": {
+        "title": "AWS Platform Engineering & Edge-Migration für Live-Spieletitel",
+        "client": "Globaler Mobile- & Web-Gaming-Publisher — über einen Beratungspartner",
+        "period": "Mär 2026 — heute",
+        "description": "Verantwortung für die Terraform-Plattform hinter drei Live-Titeln über mehrere Accounts, sechs EKS-Cluster und elf Aurora-Cluster. Migration von sieben Produktionszonen von Cloudflare zu CloudFront, WAFv2 und Shield Advanced im Budget. Entwurf von Multi-Region-DR für EKS, Aurora, Valkey und CI/CD als ein parametergesteuerter Workflow, validiert in einer Live-Failover-Übung. RabbitMQ 3.13→4.2 auf Amazon MQ, AWS Backup PITR, EKS 1.35 mit Karpenter, Security Hub FSBP. Durchführung eines CloudFront/WAF-Workshops für 12 Ingenieure."
+      },
+      "iot": {
+        "title": "AI-native interne Entwicklerplattform",
+        "client": "Globales Unternehmen für IoT-Positionierung & Wireless-Halbleiter",
+        "period": "Jul 2025 — heute",
+        "description": "Principal Architect einer agentischen Entwicklerplattform auf Amazon Bedrock AgentCore, Lambda, EventBridge und DynamoDB: Repo-Discovery-, Architektur-Compliance- und RAG-Agenten, die GitLab-Merge-Requests prüfen und mit zitierten Quellen antworten. Cross-Account-GitLab-OIDC-Deploy-Rollen (CDK) über elf AWS-Accounts; alle Findings des AWS Security Agent behoben. Hochverfügbares self-managed GitLab für 500+ Nutzer, GitHub- und SVN-Migration mit vollständiger Historie, serverloses Firmen-Wiki."
+      },
+      "fintech": {
+        "title": "Cloud-Plattform, Compliance-Archiv & Security Operations",
+        "client": "FCA-regulierte Fintech-Gruppe",
+        "period": "Aug 2023 — heute",
+        "description": "Control-Tower-Landing-Zone mit Security Hub, Google-Workspace-SSO in IAM Identity Center, GitLab-OIDC-CI/CD, ECS-Microservices für Echtzeit-Marktdaten, AppSync GraphQL und Managed Grafana. Unveränderliches 7-Jahres-E-Mail-Archiv auf S3 Object Lock, das zugleich die Lizenzkosten um ≈51 % senkte. Leitung der Reaktion auf einen P1-Markenimitationsangriff, Härtung von SPF/DKIM/DMARC auf zehn Domains, Migration von Microsoft 365 zu Google Workspace, Entwurf einer US-Multi-Region-HA."
+      },
+      "reevo": {
+        "title": "Landing Zone & Multi-Tenant-Kubernetes für die öffentliche Gasverteilung",
+        "client": "ReeVo Cloud & Cyber Security — Endkunde aus dem öffentlichen Sektor",
+        "period": "Jan 2024 — Dez 2025",
+        "description": "Control Tower, Security Hub und IAM Identity Center föderiert mit Entra ID; Hub-and-Spoke-Transit-Gateway mit Direct Connect und VPN-Failover; Network Firewall mit Suricata. Multi-Tenant-EKS mit Namespace-Isolation, ArgoCD-GitOps, Karpenter und NGINX-Ingress; Terraform-Observability-Module; privater NLB → API Gateway → CloudFront mit WAF, Cognito und KMS."
+      },
+      "awake": {
+        "title": "Modernisierung einer Connected-Vehicle-Plattform",
+        "client": "AWAKE Mobility — Automotive IoT",
+        "period": "Jan 2025 — Feb 2025",
+        "description": "Prod/Dev/QA-Multi-Account-Architektur nach dem Well-Architected Framework; Entra-ID-SSO mit Least-Privilege-Permission-Sets; VPC-Segmentierung und Network Firewall; credential-freie Bitbucket-CI/CD über IAM Identity Center; AWS Backup mit regionsübergreifender Replikation; CloudFormation und Terraform."
+      }
+    }
+  },
+  "books": {
+    "title": "Bücher",
+    "headline": "Zwei Memoiren, eine Geschichte",
+    "subtitle": "Geschrieben für unterschiedliche Leser, in unterschiedlichen Jahren, über dieselben acht Jahre — und über das, was danach kommt.",
+    "buy": "Bezugsquellen",
+    "honor": {
+      "title": "Honor Bound",
+      "subtitle": "My Journey to Hell and Back with Amanda Knox",
+      "meta": "Mit Andrew Gumbel · Simon & Schuster · September 2012 · Englisch · ISBN 978-1-4516-9600-4",
+      "synopsis": "Eines der meistbeachteten Tötungsdelikte unserer Zeit angeklagt, von den Medien ins Visier genommen und von den Gerichten verurteilt, verbrachte Raffaele Sollecito vier Jahre im Gefängnis für ein Verbrechen, mit dem er nichts zu tun hatte. Geschrieben nach dem Berufungsfreispruch 2011, ist Honor Bound sein Bericht aus erster Hand über die Verhaftung, die Prozesse, die Jahre im Gefängnis von Terni und darüber, warum er sich nicht retten wollte, indem er sich gegen Amanda Knox wendete.",
+      "quote": "He refused to testify against her to save his own skin, because he knew she would be lost forever.",
+      "amazon": "Amazon",
+      "bn": "Barnes & Noble"
+    },
+    "passo": {
+      "title": "Un passo fuori dalla notte",
+      "subtitle": "Tutto quello che non avete mai immaginato di me",
+      "meta": "Longanesi · Oktober 2015 · Italienisch · ISBN 978-88-304-4393-8",
+      "synopsis": "Für italienische Leser nach dem endgültigen Freispruch im März 2015 geschrieben, erzählt Un passo fuori dalla notte von einem jungen Mann, der ins Leben zurückkehrt: die verlorenen Jahre, die Familie, die zu ihm hielt, der unter laufendem Verfahren abgeschlossene Studienabschluss und die ersten Schritte aus der Nacht — hin zu Arbeit, Vertrauen und einer selbstbestimmten Zukunft.",
+      "amazon": "Amazon.it",
+      "ibs": "IBS"
+    }
+  },
+  "case": {
+    "title": "Der Fall",
+    "headline": "Der Fall Meredith Kercher, 2007–2015",
+    "lede": "In der Nacht des 1. November 2007 wurde Meredith Kercher, eine 21-jährige britische Studentin, in Perugia, Italien, ermordet. Ich war 23, Informatikstudent in derselben Stadt, und seit einer Woche mit Amanda Knox zusammen. Fünf Tage später wurden wir beide verhaftet. Ich verbrachte fast vier Jahre im Gefängnis für ein Verbrechen, mit dem ich nichts zu tun hatte. Am 27. März 2015 sprach uns der italienische Kassationsgerichtshof beide endgültig frei.",
+    "respect": "Merediths Familie hat eine Tochter und eine Schwester verloren. Nichts auf dieser Seite soll das schmälern, und ich habe meinen Freispruch nie als etwas anderes betrachtet als eine Rückkehr zur Wahrheit.",
+    "sections": {
+      "timeline": "Chronologie",
+      "faq": "Häufig gestellte Fragen",
+      "documents": "Gerichtsdokumente",
+      "books": "In meinen eigenen Worten"
+    },
+    "timeline": {
+      "t2007": {
+        "date": "6. November 2007",
+        "text": "Verhaftung in Perugia zusammen mit Amanda Knox, fünf Tage nach dem Mord. Untersuchungshaft im Gefängnis von Terni."
+      },
+      "t2009": {
+        "date": "4. Dezember 2009",
+        "text": "Verurteilung in erster Instanz durch das Schwurgericht Perugia (Kammer Massei) zu 25 Jahren Haft."
+      },
+      "t2011": {
+        "date": "3. Oktober 2011",
+        "text": "Freispruch in der Berufung durch das Berufungsschwurgericht Perugia (Kammer Hellmann), nachdem unabhängige Sachverständige die DNA-Beweise als unzuverlässig eingestuft hatten. Freilassung nach 1.427 Tagen Haft."
+      },
+      "t2013": {
+        "date": "26. März 2013",
+        "text": "Der Kassationsgerichtshof hebt den Berufungsfreispruch auf und ordnet ein neues Berufungsverfahren in Florenz an."
+      },
+      "t2014": {
+        "date": "30. Januar 2014",
+        "text": "Erneute Verurteilung durch das Berufungsschwurgericht Florenz (Kammer Nencini) zu 25 Jahren Haft."
+      },
+      "t2015": {
+        "date": "27. März 2015",
+        "text": "Der Kassationsgerichtshof (Fünfte Strafkammer) spricht beide Angeklagten endgültig frei. Die im September 2015 veröffentlichte Urteilsbegründung nennt schwere Ermittlungsfehler und das Fehlen jeglicher biologischer Spur der beiden Angeklagten im Tatzimmer. Nach italienischem Recht ist das Urteil rechtskräftig."
+      }
+    },
+    "faq": {
+      "q1": {
+        "q": "Wurde Raffaele Sollecito freigesprochen?",
+        "a": "Ja. Am 27. März 2015 sprach der italienische Kassationsgerichtshof Raffaele Sollecito und Amanda Knox vom Mord an Meredith Kercher endgültig frei. Ein Freispruch der Kassation ist nach italienischem Recht rechtskräftig: Es gibt kein weiteres Rechtsmittel und kein neues Verfahren."
+      },
+      "q2": {
+        "q": "Wie lange war er im Gefängnis?",
+        "a": "Fast vier Jahre — 1.427 Tage Untersuchungshaft im Gefängnis von Terni, vom 6. November 2007 bis zum 3. Oktober 2011, als er in der Berufung freigesprochen und freigelassen wurde. Die erneute Verurteilung 2014 führte nie zu einer Rückkehr ins Gefängnis und wurde 2015 aufgehoben."
+      },
+      "q3": {
+        "q": "Wer wurde wegen des Mordes verurteilt?",
+        "a": "Rudy Guede wurde in einem gesonderten, abgekürzten Verfahren wegen des Mordes an Meredith Kercher verurteilt. Seine Verurteilung wurde im Dezember 2010 mit einer Strafe von 16 Jahren rechtskräftig."
+      },
+      "q4": {
+        "q": "Was sagte der Kassationsgerichtshof 2015?",
+        "a": "Die im September 2015 veröffentlichte Urteilsbegründung beschrieb die Ermittlungen als von schweren Fehlern geprägt und stellte fest, dass im Tatzimmer keine biologische Spur von Sollecito oder Knox gefunden wurde, wohl aber Spuren von Guede. Das Gericht schloss den Fall mit einem vollständigen Freispruch ab — nicht mit einem Freispruch aus Mangel an Beweisen."
+      },
+      "q5": {
+        "q": "Wurde er für die zu Unrecht erlittene Haft entschädigt?",
+        "a": "Nein. 2017 wies das Berufungsgericht Florenz seinen Antrag auf Entschädigung für die Jahre in Untersuchungshaft ab. Er setzt sich weiterhin für eine Reform der italienischen Justiz ein."
+      },
+      "q6": {
+        "q": "Beeinträchtigt der Fall seine berufliche Arbeit?",
+        "a": "Nein. Er schloss 2014, während das Verfahren noch lief, seinen MSc in Software Engineering an der Universität Verona ab und arbeitet seitdem ununterbrochen in der Software- und Cloud-Entwicklung — heute als Principal Cloud Solutions Architect mit sechs AWS-Zertifizierungen. Kunden und Arbeitgeber hatten stets Zugang zu diesen Fakten."
+      },
+      "q7": {
+        "q": "Wo kann ich die Gerichtsdokumente lesen?",
+        "a": "Die Urteile, Berufungsentscheidungen und Gutachten sind auf der Dokumentenseite dieser Website veröffentlicht, überwiegend im italienischen Original."
+      },
+      "q8": {
+        "q": "Hat er darüber geschrieben?",
+        "a": "Ja — zwei Memoiren: Honor Bound (Simon & Schuster, 2012, geschrieben mit Andrew Gumbel) und Un passo fuori dalla notte (Longanesi, 2015)."
+      }
+    },
+    "documents_text": "Alle Gerichtsentscheidungen, Gutachten und juristischen Dokumente stehen im Archiv zur Verfügung.",
+    "documents_cta": "Dokumentenarchiv öffnen",
+    "books_text": "Die ganze Geschichte, von der Verhaftung bis zu den Jahren danach, steht in meinen beiden Büchern.",
+    "books_cta": "Die Bücher"
+  },
+  "documents": {
+    "title": "Dokumente",
+    "headline": "Juristisches Archiv",
+    "subtitle": "Gerichtsentscheidungen, Gutachten und juristische Dokumente aus dem Fall Meredith Kercher — veröffentlicht für alle, die die Akten statt der Schlagzeilen lesen möchten. Die meisten Dokumente sind auf Italienisch.",
+    "categories": {
+      "verdicts": "Urteile",
+      "appeals": "Berufungen",
+      "expert": "Gutachten",
+      "other": "Weitere Dokumente"
+    }
+  },
+  "contact": {
+    "title": "Kontakt",
+    "headline": "Lassen Sie uns sprechen",
+    "subtitle": "Cloud-Architektur-, Sicherheits- und Plattformprojekte; Vortrags- und Medienanfragen.",
+    "email": "E-Mail",
+    "phone": "Telefon",
+    "location": "Standort",
+    "location_value": "Tavira, Faro, Portugal · Remote, EU-weit",
+    "social": "Online finden",
+    "resume": "Druckbarer Lebenslauf (PDF)",
+    "availability": "Derzeit offen für Projektverträge und Fractional-Principal-Architect-Engagements."
+  },
+  "footer": {
+    "tagline": "Principal Cloud Solutions Architect · Autor",
+    "copyright": "Raffaele Sollecito. Alle Rechte vorbehalten.",
+    "built_with": "Erstellt mit Next.js, bereitgestellt auf AWS."
+  },
+  "family": {
+    "title": "Familie & Freunde",
+    "headline": "Wo alles begann",
+    "subtitle": "Giovinazzo an der Adriaküste Süditaliens — der Ort, der mich geprägt hat.",
+    "intro": "Raffaele wuchs in der Stadt Giovinazzo an der Adriaküste Süditaliens auf. Hier eine Auswahl von Familienfotos.",
+    "photos_title": "Aufwachsen in Giovinazzo",
+    "friends_title": "Was meine Freunde sagen",
+    "photos": {
+      "parents_young": "Mama und Papa in ihrer Jugend",
+      "baptism": "Seine Taufe mit Schwester und Patin",
+      "with_mom": "Raffaele mit 3 Jahren mit seiner Mutter",
+      "age_1": "Raffaele mit 1 Jahr",
+      "age_5": "Raffaele mit 5 Jahren",
+      "age_4": "Raffaele mit 4 Jahren",
+      "age_6": "Raffaele mit 6 Jahren",
+      "school_class": "Raffaele in der Schule mit Klassenkameraden an seinem 7. Geburtstag",
+      "birthday_8": "Raffaeles 8. Geburtstag mit Eltern und Schwester"
+    },
+    "friends": {
+      "antonella": {
+        "name": "Antonella Petruzzella",
+        "quote": "Ich habe Raffaele im ersten Jahr des Gymnasiums kennengelernt — er war immer ein angenehmer, großzügiger und freundlicher Mensch. Eines Tages sagte er mir, jede Handlung müsse von einem Gefühl der Liebe und Zuneigung getragen sein, dass Liebe das Gefühl ist, das allem zugrunde liegt. An diesem Tag habe ich verstanden, dass es Menschen gibt, die noch an diese wichtigen Werte glauben. Raffaele ist einer der aufrichtigsten und ehrlichsten Menschen, die ich je gekannt habe, und ich bin stolz, seine Freundin zu sein."
+      },
+      "francesco": {
+        "name": "Francesco Marrano",
+        "quote": "Ich bin mit Raffaele aufgewachsen — deshalb fühlen wir uns wie Brüder. Viele wichtige Erfahrungen unseres Lebens haben wir gemeinsam erlebt, schon seit dem Kindergarten! Wir wurden erwachsen und fanden uns im Gymnasium wieder. Wir begannen gemeinsam zu reisen — Barcelona, Lissabon. Raffaele und ich planen, einen Monat in Japan zu verbringen, weil uns viele Interessen wie Manga und Technologie verbinden. Ich hoffe, diese furchtbare Geschichte endet bald, denn Raffaele ist ein fantastischer Mensch, der all diesen Schmerz nicht verdient."
+      },
+      "erica": {
+        "name": "Erica Milillo",
+        "quote": "Ich nannte ihn den kleinen Lord wegen seiner Eleganz, seiner Feinfühligkeit, seines Respekts vor allen! Wenn ein Freund wegen einer Sache fern ist, die allen einen bitteren Nachgeschmack hinterlässt und einen machtlos fühlen lässt, fällt es ein wenig schwer, dieses freudige Lächeln hervorzuholen … aber die Erinnerungen an Raffaele sind nur Erinnerungen der Freude. Das ist Raffaele für mich — ein Prinz von großem Seelenadel!"
+      },
+      "milko": {
+        "name": "Milko Desantis",
+        "quote": "Meine Bekanntschaft mit Raffaele reicht viele Jahre zurück: Wir besuchten gemeinsam die Mittelschule und das Gymnasium — die Jahre, in denen meiner Meinung nach Freundschaften entstehen, die dann ein Leben lang halten. Und so ist es."
+      }
+    }
+  },
+  "archive": {
+    "title": "Archiv",
+    "headline": "Frühere Unternehmungen",
+    "subtitle": "Ein Rückblick auf die unternehmerischen Projekte, die meinen Weg vor der Cloud-Architektur geprägt haben.",
+    "memories": {
+      "name": "Memories IT Company",
+      "tagline": "\"La memoria è la poetica del ricordo.\" — Alessandro Morandotti",
+      "period": "Jan 2015 — Mär 2018",
+      "location": "Giovinazzo, Italien",
+      "description": "Gründung und Leitung einer Webagentur, die innovative digitale Produkte für Kunden in ganz Italien entwickelte. Memories IT Company war das Dach, unter dem ich zwei zentrale Webanwendungen — SunTickets und BeOnMemories — sowie Kundenprojekte von sozialen Marktplätzen bis zu Echtzeit-Handelsplattformen entwickelte. Hier habe ich meine Full-Stack-Fähigkeiten geschärft und meine Leidenschaft für skalierbare Systeme entdeckt.",
+      "highlights": {
+        "social_marketplaces": "Soziale Marktplätze mit Nutzerprofilen und Messaging",
+        "booking_platforms": "Online-Buchungsplattformen für Tourismus und Gastgewerbe",
+        "angular_apps": "Single-Page-Anwendungen mit Angular 2+",
+        "wordpress_sites": "Individuelle WordPress-Themes und -Plugins für Kunden",
+        "forex_platform": "Echtzeit-Forex-Handelsplattform mit D3.js-Visualisierungen",
+        "integrations": "Integrationen von Stripe-Zahlungen, Google Maps und What3Words"
+      }
+    },
+    "suntickets": {
+      "name": "SunTickets®",
+      "description": "Eine innovative Online-Buchungs- und Verwaltungsplattform für Strandbäder, Schwimmbäder, Resorts, Campingplätze, Feriendörfer und Restaurants. SunTickets verband ein umfassendes Verwaltungssystem mit einem neuartigen Buchungserlebnis — Nutzer konnten Sonnenschirme, Liegen, Tische, Stellplätze oder jeden beliebigen Platz buchen, indem sie direkt auf ein Luftbild des Ortes klickten (falls nicht vorhanden, per Drohne aufgenommen).",
+      "features_title": "Hauptfunktionen",
+      "features": {
+        "beach_clubs": "Vollständige Verwaltungssoftware für Strandbadbetreiber",
+        "pools": "Buchungssystem für Schwimmbäder und Wasserparks",
+        "resorts": "Reservierungsverwaltung für Resorts und Feriendörfer",
+        "campsites": "Stellplatz- und Platzbuchung für Campingplätze",
+        "restaurants": "Tischreservierungssystem für Restaurants",
+        "aerial_booking": "Interaktive Buchung auf Luftbildbasis — buchen per Klick auf die Karte"
+      },
+      "registered": "SunTickets® ist eine eingetragene Marke der Memories IT Company."
+    },
+    "beonmemories": {
+      "name": "BeOnMemories",
+      "description": "Eine innovative Gedenkplattform im Web, mit der Nutzer ihren Verstorbenen von überall aus gedenken konnten. Nutzer konnten Rosen, Kerzen, Votivgegenstände und Blumenarrangements kaufen und per Kurier direkt ans Grab liefern lassen — alles über ein intuitives Online-Erlebnis. Die Plattform bot eine umfassende Datenbank der Friedhöfe in ganz Italien, sodass sich jedes Grab leicht finden und eine Lieferung ohne persönliche Anreise organisieren ließ.",
+      "tech_title": "Plattform-Highlights",
+      "features": {
+        "cemetery_database": "Umfangreiche Datenbank italienischer Friedhöfe mit Grabsuche",
+        "ecommerce": "Online-Shop für Rosen, Kerzen, Votivgegenstände und Blumenarrangements",
+        "courier_delivery": "Kurierdienst mit Lieferung direkt ans Grab im Namen des Kunden",
+        "magento": "E-Commerce-Engine auf Magento-Basis für sichere Transaktionen",
+        "oxwall": "Community-Ebene auf Oxwall zum Teilen von Erinnerungen und Würdigungen",
+        "nationwide": "Landesweite Abdeckung italienischer Friedhöfe"
+      }
+    }
+  },
+  "common": {
+    "read_more": "Mehr lesen",
+    "view_all": "Alle anzeigen",
+    "back": "Zurück",
+    "download": "Herunterladen",
+    "loading": "Wird geladen …"
+  }
+}

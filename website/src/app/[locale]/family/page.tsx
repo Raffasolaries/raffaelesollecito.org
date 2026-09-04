@@ -1,5 +1,14 @@
+import type { Metadata } from "next";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { Section, SectionHeader } from "@/components/Section";
+import { JsonLd } from "@/components/JsonLd";
+import { pageMetadata, breadcrumbLd } from "@/lib/site";
+
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: "seo.family" });
+  return pageMetadata({ locale, path: "family/", title: t("title"), description: t("description") });
+}
 
 const childhoodPhotos = [
   { src: "/images/family/parents-young.jpg", captionKey: "photos.parents_young" },
@@ -40,11 +49,13 @@ export default async function FamilyPage({
   const { locale } = await params;
   setRequestLocale(locale);
   const t = await getTranslations("family");
+  const tn = await getTranslations("nav");
 
   return (
     <>
       {/* Intro */}
       <Section className="pt-32">
+      <JsonLd data={breadcrumbLd(locale, tn("home"), tn("family"), "family/")} />
         <SectionHeader
           title={t("title")}
           headline={t("headline")}
