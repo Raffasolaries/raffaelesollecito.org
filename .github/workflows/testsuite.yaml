@@ -94,6 +94,7 @@ jobs:
           # Italian copy is not English typos
           exclude: |
             ./website/src/messages/it.json
+            ./website/src/messages/de.json
 
   yamllint:
     runs-on: ubuntu-latest

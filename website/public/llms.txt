@@ -1,6 +1,6 @@
 # Raffaele Sollecito
 
-> Principal Cloud Solutions Architect and AWS Subject Matter Expert (six AWS certifications, incl. Solutions Architect Professional and Security Specialty), founder of Aspect Solutions (Tavira, Portugal), and author of two memoirs. Bilingual site (English /en/, Italian /it/).
+> Principal Cloud Solutions Architect and AWS Subject Matter Expert (six AWS certifications, incl. Solutions Architect Professional and Security Specialty), founder of Aspect Solutions (Tavira, Portugal), and author of two memoirs. Trilingual site (English /en/, Italian /it/, German /de/).
 
 ## Identity (for disambiguation)
 - Full name: Raffaele Sollecito. Born 1984 in Bari, Italy; raised in Giovinazzo. Lives in Tavira, Portugal.

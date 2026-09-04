@@ -2,23 +2,46 @@
 
 import { usePathname } from "next/navigation";
 import Link from "next/link";
+import { locales, localeNames, type Locale } from "@/i18n/config";
+
+const FLAGS: Record<Locale, string> = { en: "🇬🇧", it: "🇮🇹", de: "🇩🇪" };
 
 export function LocaleSwitcher() {
   const pathname = usePathname();
-  const currentLocale = pathname.split("/")[1];
-  const targetLocale = currentLocale === "en" ? "it" : "en";
-  const targetPath = pathname.replace(`/${currentLocale}`, `/${targetLocale}`);
+  const segments = pathname.split("/");
+  const currentLocale = segments[1] as Locale;
 
   return (
-    <Link
-      href={targetPath}
-      className="inline-flex items-center gap-1.5 px-2.5 py-1.5 text-xs font-medium text-muted hover:text-foreground border border-border rounded-md hover:border-accent/50 transition-all"
-      title={targetLocale === "en" ? "Switch to English" : "Passa all'italiano"}
+    <nav
+      aria-label="Language"
+      className="inline-flex items-center rounded-md border border-border overflow-hidden"
     >
-      <span className="text-base leading-none">
-        {targetLocale === "en" ? "🇬🇧" : "🇮🇹"}
-      </span>
-      {targetLocale.toUpperCase()}
-    </Link>
+      {locales.map((locale) => {
+        const active = locale === currentLocale;
+        const targetPath = active
+          ? pathname
+          : ["", locale, ...segments.slice(2)].join("/") || `/${locale}/`;
+        return (
+          <Link
+            key={locale}
+            href={targetPath}
+            hrefLang={locale}
+            lang={locale}
+            aria-current={active ? "page" : undefined}
+            title={localeNames[locale]}
+            className={`inline-flex items-center gap-1 px-2 py-1.5 text-xs font-medium transition-all ${
+              active
+                ? "bg-accent/10 text-foreground"
+                : "text-muted hover:text-foreground hover:bg-surface-light"
+            }`}
+          >
+            <span className="text-sm leading-none" aria-hidden="true">
+              {FLAGS[locale]}
+            </span>
+            {locale.toUpperCase()}
+          </Link>
+        );
+      })}
+    </nav>
   );
 }

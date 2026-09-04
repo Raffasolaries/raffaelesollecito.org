@@ -26,8 +26,10 @@ var REDIRECT_TO_ARCHIVE = {
 
 function getLocale(request) {
   var lang = request.headers['accept-language'];
-  if (lang && lang.value && lang.value.toLowerCase().indexOf('it') === 0) {
-    return 'it';
+  if (lang && lang.value) {
+    var v = lang.value.toLowerCase();
+    if (v.indexOf('it') === 0) return 'it';
+    if (v.indexOf('de') === 0) return 'de';
   }
   return 'en';
 }
@@ -57,11 +59,11 @@ function legacyRedirect(uri, locale) {
   if (path === '') return null;
 
   // /en/book/ or /it/book/ → /{locale}/books/
-  var m = path.match(/^\/(en|it)\/book$/);
+  var m = path.match(/^\/(en|it|de)\/book$/);
   if (m) return '/' + m[1] + '/books/';
 
   // /{locale}/<legacy> → /{locale}/<new>
-  var lm = path.match(/^\/(en|it)(\/.+)$/);
+  var lm = path.match(/^\/(en|it|de)(\/.+)$/);
   if (lm && LEGACY[lm[2]]) return '/' + lm[1] + '/' + LEGACY[lm[2]];
 
   // /<legacy> (old WordPress, no locale) → /{detected}/<new>

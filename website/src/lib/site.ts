@@ -21,7 +21,8 @@ export const ROUTES = [
 ] as const;
 export type Route = (typeof ROUTES)[number];
 
-export const ogLocale = (locale: string) => (locale === "it" ? "it_IT" : "en_US");
+const OG_LOCALES: Record<string, string> = { en: "en_US", it: "it_IT", de: "de_DE" };
+export const ogLocale = (locale: string) => OG_LOCALES[locale] ?? "en_US";
 
 export const localizedUrl = (locale: string, path: Route | string = "") =>
   `${SITE_URL}/${locale}/${path}`;

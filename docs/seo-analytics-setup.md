@@ -32,7 +32,7 @@ that only the site owner can perform. Work top to bottom; each step is idempoten
    (If a TXT record already exists at the apex — e.g. SPF — add the new value as a second `ResourceRecords` entry; do not replace it.)
 3. Back in Search Console → **Verify**. Then:
    - **Sitemaps** → submit `https://raffaelesollecito.org/sitemap.xml` and `https://resume.raffaelesollecito.org/sitemap.xml`.
-   - **URL Inspection** → request indexing for `/en/`, `/en/case/`, `/en/books/`, `/it/`, `/it/case/` and the résumé root. This is the fastest way to get the new case/FAQ page into the index.
+   - **URL Inspection** → request indexing for `/en/`, `/en/case/`, `/en/books/`, `/it/`, `/it/case/`, `/de/`, `/de/case/` and the résumé root. This is the fastest way to get the new case/FAQ page into the index.
    - **Settings → Users** → keep only your accounts.
 4. Optional belt-and-braces: also add the meta-tag token as GitHub Variable `GOOGLE_SITE_VERIFICATION` (repo → Settings → Secrets and variables → Actions → Variables). The DNS TXT already verifies; the meta tag survives a DNS migration.
 
@@ -77,7 +77,7 @@ The search engines already have an entity for you; the goal is to make the *prof
 ## 6. Verification checklist after the PR merges
 
 ```bash
-curl -sI https://raffaelesollecito.org/ | grep -i location          # 302 → /en/ or /it/
+curl -sI https://raffaelesollecito.org/ | grep -i location          # 302 → /en/, /it/ or /de/ (Accept-Language)
 curl -sI https://raffaelesollecito.org/en/book/ | grep -i location  # 301 → /en/books/
 curl -sI https://raffaelesollecito.org/honor-bound/ | grep -i location
 curl -sI https://raffaelesollecito.org/en/nope/ | head -1           # HTTP/2 404

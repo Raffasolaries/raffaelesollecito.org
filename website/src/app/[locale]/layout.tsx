@@ -148,7 +148,7 @@ const entityGraph = {
       "@id": WEBSITE_ID,
       url: SITE_URL,
       name: "Raffaele Sollecito",
-      inLanguage: ["en", "it"],
+      inLanguage: [...locales],
       publisher: { "@id": PERSON_ID },
       about: { "@id": PERSON_ID },
     },

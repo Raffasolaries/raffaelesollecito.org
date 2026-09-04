@@ -2,11 +2,11 @@
 
 ## Project Overview
 
-Personal website and infrastructure for [raffaelesollecito.org](https://raffaelesollecito.org) — Raffaele Sollecito's bilingual (EN/IT) portfolio, memoir, and legal archive.
+Personal website and infrastructure for [raffaelesollecito.org](https://raffaelesollecito.org) — Raffaele Sollecito's trilingual (EN/IT/DE) portfolio, memoir, and legal archive.
 
 The project contains two main components:
 1. **Terraform infrastructure** — AWS resources (S3, CloudFront, ECS, Aurora, Route53, ACM)
-2. **Next.js website** (`website/`) — static site with bilingual support, deployed to S3+CloudFront
+2. **Next.js website** (`website/`) — static site with EN/IT/DE support, deployed to S3+CloudFront
 
 Originally based on [terraform-aws-serverless-static-wordpress](https://github.com/TechToSpeech/terraform-aws-serverless-static-wordpress) by TechToSpeech. The WordPress CMS is still available as a fallback (toggle `launch=1`), but the primary site is now a Next.js static export.
 
@@ -93,14 +93,14 @@ CI/CD passes these as `TF_VAR_*` environment variables. For local dev, use `loca
 │   ├── lambda_slack/          # Slack notifications
 │   └── waf/                   # WAFv2 (optional)
 ├── website/                   # Next.js website source
-│   ├── src/app/[locale]/      # Page components (EN/IT)
+│   ├── src/app/[locale]/      # Page components (EN/IT/DE)
 │   ├── src/components/        # Shared components (Header, Footer, ThemeToggle)
-│   ├── src/messages/          # Translation files (en.json, it.json)
+│   ├── src/messages/          # Translation files (en.json, it.json, de.json)
 │   ├── src/i18n/              # next-intl configuration
 │   ├── src/lib/site.ts        # SITE_URL, routes, pageMetadata() (canonical + hreflang), breadcrumbLd()
 │   ├── src/app/sitemap.ts     # /sitemap.xml with hreflang alternates (force-static)
 │   ├── src/app/robots.ts      # /robots.txt (allows AI crawlers)
-│   ├── src/app/not-found.tsx  # Bilingual 404 → out/404.html (CloudFront custom_error_response)
+│   ├── src/app/not-found.tsx  # Trilingual 404 → out/404.html (CloudFront custom_error_response)
 │   ├── public/                # Static assets (images, icons, SEO files)
 │   │   ├── images/            # Photos, book covers, archive assets
 │   │   ├── documents/         # Legal PDFs (gitignored, synced from S3)
@@ -127,7 +127,7 @@ CI/CD passes these as `TF_VAR_*` environment variables. For local dev, use `loca
 ## Website Details
 
 - **Framework**: Next.js 16 with App Router, static export (`output: 'export'`)
-- **i18n**: `next-intl` with `[locale]` path-based routing (EN/IT)
+- **i18n**: `next-intl` with `[locale]` path-based routing (EN/IT/DE)
 - **Styling**: Tailwind CSS v4 with `@theme inline`, CSS custom properties for dark/light mode
 - **Theme**: Dark/light toggle with localStorage persistence and flash-free inline script
 - **Params pattern**: `params: Promise<{ locale: string }>` (Next.js 16 async params)
