@@ -106,7 +106,7 @@
     "beyond_case_title": "The case, 2007–2015",
     "beyond_case_text": "Wrongfully accused in the Meredith Kercher case and definitively acquitted by Italy's Supreme Court in 2015. The facts, a timeline and the court documents are here.",
     "cta_title": "Need a principal architect?",
-    "cta_text": "I take on a small number of engagements at a time — architecture ownership, security programmes, platform migrations, AI-native developer tooling.",
+    "cta_text": "I take on a small number of engagements at a time — architecture ownership, security programs, platform migrations, AI-native developer tooling.",
     "cta_button": "Start a conversation"
   },
   "about": {
@@ -182,7 +182,7 @@
         "role": "Cloud Architect",
         "period": "Sep 2023 — Jan 2024",
         "location": "Remote",
-        "description": "Designed the institution-wide centralised backup strategy on AWS Backup for a European institution; rolled out automated EC2 patching and org-wide StackSets; automated Network Firewall threat lists; led remediation of exposed EC2 and RDS resources from Security Hub and Config findings."
+        "description": "Designed the institution-wide centralized backup strategy on AWS Backup for a European institution; rolled out automated EC2 patching and org-wide StackSets; automated Network Firewall threat lists; led remediation of exposed EC2 and RDS resources from Security Hub and Config findings."
       },
       "vw": {
         "company": "Volkswagen Digital Solutions",
@@ -203,7 +203,7 @@
         "role": "AWS DevOps Engineer",
         "period": "Jun 2019 — Oct 2021",
         "location": "Milan, Italy",
-        "description": "Introduced Git Flow and CI/CD for ECS workloads and CloudFront + S3 sites; integrated partner REST APIs with mTLS; built custom SSO with Lambda authorizers; containerised Laravel applications on ECS Fargate."
+        "description": "Introduced Git Flow and CI/CD for ECS workloads and CloudFront + S3 sites; integrated partner REST APIs with mTLS; built custom SSO with Lambda authorizers; containerized Laravel applications on ECS Fargate."
       },
       "keypartner": {
         "company": "Key Partner Digital",
@@ -251,7 +251,7 @@
         "description": "Control Tower, Security Hub and IAM Identity Center federated with Entra ID; hub-and-spoke Transit Gateway with Direct Connect and VPN failover; Network Firewall with Suricata. Multi-tenant EKS with namespace isolation, ArgoCD GitOps, Karpenter and NGINX ingress; Terraform observability modules; private NLB → API Gateway → CloudFront with WAF, Cognito and KMS."
       },
       "awake": {
-        "title": "Connected-vehicle platform modernisation",
+        "title": "Connected-vehicle platform modernization",
         "client": "AWAKE Mobility — automotive IoT",
         "period": "Jan 2025 — Feb 2025",
         "description": "Prod/Dev/QA multi-account architecture aligned to the Well-Architected Framework; Entra ID SSO with least-privilege permission sets; VPC segmentation and Network Firewall; credential-free Bitbucket CI/CD via IAM Identity Center; AWS Backup with cross-region replication; CloudFormation and Terraform."
@@ -267,7 +267,7 @@
       "title": "Honor Bound",
       "subtitle": "My Journey to Hell and Back with Amanda Knox",
       "meta": "With Andrew Gumbel · Simon & Schuster · September 2012 · English · ISBN 978-1-4516-9600-4",
-      "synopsis": "Accused of one of the most publicised murders of our time, targeted by the media and sentenced by the courts, Raffaele Sollecito spent four years in prison for a crime he had nothing to do with. Written after his 2011 appeal acquittal, Honor Bound is his first-person account of the arrest, the trials, the years in Terni prison, and why he refused to save himself by turning on Amanda Knox.",
+      "synopsis": "Accused of one of the most publicized murders of our time, targeted by the media and sentenced by the courts, Raffaele Sollecito spent four years in prison for a crime he had nothing to do with. Written after his 2011 appeal acquittal, Honor Bound is his first-person account of the arrest, the trials, the years in Terni prison, and why he refused to save himself by turning on Amanda Knox.",
       "quote": "He refused to testify against her to save his own skin, because he knew she would be lost forever.",
       "amazon": "Amazon",
       "bn": "Barnes & Noble"

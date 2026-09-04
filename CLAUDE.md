@@ -179,7 +179,7 @@ Both systems write to the same S3 bucket — WordPress output overwrites Next.js
 - terraform-docs auto-generates README.md via pre-commit
 - NEVER mention current Aspect Solutions clients by name on website or public content (describe them: "global gaming publisher", "IoT semiconductor company", "FCA-regulated fintech"). Past clients (ReeVo, AWAKE Mobility) and past employers may be named.
 - Every page.tsx exports `generateMetadata` built with `pageMetadata()` from `src/lib/site.ts` and reads its title/description from `seo.<page>` in the message files. Never set canonical/OG in the layout.
-- The case page states facts only (dates, courts, outcomes) and names Meredith Kercher respectfully; never editorialise about other people involved. Book quotes must be real jacket/text quotes — never invent one.
+- The case page states facts only (dates, courts, outcomes) and names Meredith Kercher respectfully; never editorialize about other people involved. Book quotes must be real jacket/text quotes — never invent one.
 - GA4 / Search Console / Bing tokens come from GitHub Variables `GA_MEASUREMENT_ID`, `GOOGLE_SITE_VERIFICATION`, `BING_SITE_VERIFICATION` (see `docs/seo-analytics-setup.md`).
 
 ## S3 Buckets (Active)
