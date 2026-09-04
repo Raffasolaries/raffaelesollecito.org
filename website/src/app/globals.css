@@ -4,36 +4,66 @@
   --color-background: var(--theme-background);
   --color-foreground: var(--theme-foreground);
   --color-muted: var(--theme-muted);
-  --color-accent: #7c3aed;
-  --color-accent-light: #a78bfa;
-  --color-crimson: #dc2626;
-  --color-crimson-dark: #991b1b;
+  --color-accent: var(--theme-accent);
+  --color-accent-light: var(--theme-accent-light);
+  --color-crimson: #c5311d;
+  --color-crimson-dark: #8f2314;
   --color-surface: var(--theme-surface);
   --color-surface-light: var(--theme-surface-light);
   --color-border: var(--theme-border);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  --font-display: var(--font-display);
 }
 
-/* Light theme (default) */
+/* Light theme — "washi" paper, indigo (ai-iro) accent. Shared with resume.raffaelesollecito.org */
 :root {
-  --theme-background: #fafafa;
-  --theme-foreground: #1a1a2e;
-  --theme-muted: #6b7280;
+  --theme-background: #f7f5f0;
+  --theme-foreground: #15161f;
+  --theme-muted: #5f6270;
   --theme-surface: #ffffff;
-  --theme-surface-light: #f3f4f6;
-  --theme-border: #e5e7eb;
+  --theme-surface-light: #eeebe4;
+  --theme-border: #dcd8ce;
+  --theme-accent: #243c8f;
+  --theme-accent-light: #3a55b8;
+  --theme-line: rgba(21, 22, 31, 0.06);
 }
 
-/* Dark theme */
+/* Dark theme (default for first visit) — sumi ink */
 .dark {
-  --theme-background: #0a0a0f;
-  --theme-foreground: #e4e4e7;
-  --theme-muted: #71717a;
-  --theme-surface: #18181b;
-  --theme-surface-light: #27272a;
-  --theme-border: #3f3f46;
+  --theme-background: #0b0b12;
+  --theme-foreground: #e8e6df;
+  --theme-muted: #8b8d99;
+  --theme-surface: #14141d;
+  --theme-surface-light: #1d1e2a;
+  --theme-border: #2a2b3a;
+  --theme-accent: #8da2ff;
+  --theme-accent-light: #aab9ff;
+  --theme-line: rgba(232, 230, 223, 0.06);
 }
+
+/* Display serif for headings (matches the résumé) */
+h1, h2, .font-display {
+  font-family: var(--font-display), "Source Serif 4", Georgia, serif;
+  letter-spacing: -0.015em;
+}
+
+/* Mandala line-art backdrop (very low opacity, pure decoration) */
+.mandala::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: url("/mandala.svg") no-repeat;
+  background-size: 1100px 1100px;
+  background-position: calc(100% + 380px) -420px;
+  opacity: 0.075;
+  color: currentColor;
+  mask-image: radial-gradient(closest-side at 85% 15%, #000 40%, transparent 100%);
+  -webkit-mask-image: radial-gradient(closest-side at 85% 15%, #000 40%, transparent 100%);
+}
+.dark .mandala::before { opacity: 0.09; filter: invert(1); }
+.mandala-left::before { background-position: -420px calc(100% + 380px); mask-image: radial-gradient(closest-side at 15% 85%, #000 40%, transparent 100%); -webkit-mask-image: radial-gradient(closest-side at 15% 85%, #000 40%, transparent 100%); }
 
 body {
   background: var(--color-background);
@@ -65,8 +95,8 @@ body {
     -45deg,
     transparent,
     transparent 49px,
-    rgba(124, 58, 237, 0.03) 49px,
-    rgba(124, 58, 237, 0.03) 50px
+    var(--theme-line) 49px,
+    var(--theme-line) 50px
   );
 }
 
@@ -75,8 +105,8 @@ body {
     -45deg,
     transparent,
     transparent 49px,
-    rgba(124, 58, 237, 0.03) 49px,
-    rgba(124, 58, 237, 0.03) 50px
+    var(--theme-line) 49px,
+    var(--theme-line) 50px
   );
 }
 
@@ -103,15 +133,15 @@ body {
 
 /* Glow effect for accent elements */
 .glow-accent {
-  box-shadow: 0 0 20px rgba(124, 58, 237, 0.15);
+  box-shadow: 0 0 20px rgba(141, 162, 255, 0.18);
 }
 
 .dark .glow-accent {
-  box-shadow: 0 0 20px rgba(124, 58, 237, 0.15);
+  box-shadow: 0 0 20px rgba(141, 162, 255, 0.18);
 }
 
 :root .glow-accent {
-  box-shadow: 0 0 20px rgba(124, 58, 237, 0.1);
+  box-shadow: 0 0 20px rgba(36, 60, 143, 0.12);
 }
 
 /* Custom scrollbar */
@@ -133,12 +163,5 @@ body {
 }
 
 /* Selection color */
-::selection {
-  background: rgba(124, 58, 237, 0.3);
-  color: white;
-}
-
-:root:not(.dark) ::selection {
-  background: rgba(124, 58, 237, 0.2);
-  color: #1a1a2e;
-}
+::selection { background: rgba(141, 162, 255, 0.35); color: white; }
+:root:not(.dark) ::selection { background: rgba(36, 60, 143, 0.18); color: #15161f; }

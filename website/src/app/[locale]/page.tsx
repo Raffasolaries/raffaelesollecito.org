@@ -32,10 +32,9 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
   return (
     <>
       {/* ───────────────── Hero ───────────────── */}
-      <section className="relative min-h-[92vh] flex items-center speed-lines">
+      <section className="relative min-h-[78vh] lg:min-h-[84vh] max-h-[1100px] flex items-center speed-lines mandala">
         <div className="absolute inset-0 overflow-hidden pointer-events-none" aria-hidden="true">
-          <div className="absolute top-1/4 right-0 w-[28rem] h-[28rem] bg-accent/5 rounded-full blur-3xl" />
-          <div className="absolute bottom-1/4 left-0 w-64 h-64 bg-crimson/5 rounded-full blur-3xl" />
+                    <div className="absolute bottom-1/4 left-0 w-64 h-64 bg-crimson/5 rounded-full blur-3xl" />
           <div className="absolute top-0 right-[15%] w-px h-full bg-gradient-to-b from-transparent via-accent/20 to-transparent hidden lg:block" />
         </div>
 

@@ -113,3 +113,16 @@ jobs:
           aws cloudfront create-invalidation \
             --distribution-id "${CLOUDFRONT_DISTRIBUTION_ID}" \
             --paths "/*"
+
+      - name: Notify IndexNow (Bing / Copilot)
+        run: |
+          python3 - <<'PY'
+          import json,urllib.request,xml.etree.ElementTree as ET
+          ns={'s':'http://www.sitemaps.org/schemas/sitemap/0.9'}
+          xml=urllib.request.urlopen('https://raffaelesollecito.org/sitemap.xml').read()
+          urls=[l.text for l in ET.fromstring(xml).findall('.//s:loc',ns)]
+          body=json.dumps({'host':'raffaelesollecito.org','key':'5b508b0a515e349a5e6824763c45b143','keyLocation':'https://raffaelesollecito.org/5b508b0a515e349a5e6824763c45b143.txt','urlList':urls}).encode()
+          req=urllib.request.Request('https://api.indexnow.org/indexnow',data=body,headers={'Content-Type':'application/json; charset=utf-8'})
+          try: print('IndexNow', urllib.request.urlopen(req).status, len(urls), 'urls')
+          except Exception as e: print('IndexNow failed (non-blocking):', e)
+          PY
