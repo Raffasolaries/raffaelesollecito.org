@@ -3,7 +3,7 @@ import { getTranslations, setRequestLocale } from "next-intl/server";
 import Link from "next/link";
 import { Section, SectionHeader } from "@/components/Section";
 import { JsonLd } from "@/components/JsonLd";
-import { pageMetadata, breadcrumbLd, localizedUrl, PERSON_ID } from "@/lib/site";
+import { pageMetadata, breadcrumbLd, localizedUrl, PERSON_ID, BUILD_DATE } from "@/lib/site";
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
   const { locale } = await params;
@@ -34,7 +34,7 @@ export default async function CasePage({ params }: { params: Promise<{ locale: s
         publisher: { "@id": PERSON_ID },
         about: { "@id": PERSON_ID },
         mainEntityOfPage: localizedUrl(locale, "case/"),
-        dateModified: "2026-09-04",
+        dateModified: BUILD_DATE,
       },
       {
         "@type": "FAQPage",

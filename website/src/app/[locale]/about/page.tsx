@@ -3,7 +3,7 @@ import { getTranslations, setRequestLocale } from "next-intl/server";
 import Link from "next/link";
 import { Section, SectionHeader } from "@/components/Section";
 import { JsonLd } from "@/components/JsonLd";
-import { pageMetadata, breadcrumbLd, localizedUrl, PERSON_ID } from "@/lib/site";
+import { pageMetadata, breadcrumbLd, localizedUrl, PERSON_ID, BUILD_DATE } from "@/lib/site";
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
   const { locale } = await params;
@@ -20,7 +20,7 @@ export default async function AboutPage({ params }: { params: Promise<{ locale: 
   const ld = {
     "@context": "https://schema.org",
     "@graph": [
-      { "@type": "ProfilePage", "@id": localizedUrl(locale, "about/") + "#page", mainEntity: { "@id": PERSON_ID }, inLanguage: locale, dateModified: "2026-09-04" },
+      { "@type": "ProfilePage", "@id": localizedUrl(locale, "about/") + "#page", mainEntity: { "@id": PERSON_ID }, inLanguage: locale, dateModified: BUILD_DATE },
       breadcrumbLd(locale, tn("home"), tn("about"), "about/"),
     ],
   };
