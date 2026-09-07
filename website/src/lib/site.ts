@@ -100,3 +100,6 @@ export function breadcrumbLd(locale: string, homeLabel: string, label: string, p
     ],
   };
 }
+
+/** ISO 8601 build timestamp (with timezone) for schema.org dateModified. */
+export const BUILD_DATE = new Date().toISOString();

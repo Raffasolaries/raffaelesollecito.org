@@ -69,7 +69,7 @@ export default async function BooksPage({ params }: { params: Promise<{ locale: 
         alternateName: "Un passo fuori dalla notte. Tutto quello che non avete mai immaginato di me",
         author: { "@id": PERSON_ID },
         publisher: { "@type": "Organization", name: "Longanesi" },
-        datePublished: "2015-10",
+        datePublished: "2015-10-01",
         inLanguage: "it",
         isbn: PASSO.isbn,
         bookFormat: "https://schema.org/Paperback",
