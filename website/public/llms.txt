@@ -5,7 +5,7 @@
 ## Identity (for disambiguation)
 - Full name: Raffaele Sollecito. Born 1984 in Bari, Italy; raised in Giovinazzo. Lives in Zürich, Switzerland.
 - Profession: Principal Cloud Solutions Architect (AWS). Founder and managing director of Kumokage GmbH, Zürich (cloud architecture and security consultancy, founded 2026). Independent consultant since 2025, previously through Aspect Solutions, Unipessoal Lda (Portugal).
-- Education: MSc Computer Engineering, Visual Computing curriculum (University of Verona, LM-32, 2014); BSc Computer Science (University of Perugia, 2008).
+- Education: MSc Computer Engineering, Visual Computing curriculum (University of Verona, LM-32, 2008–2014, graduated July 2014); BSc Computer Science (Informatica, University of Perugia, 2003–2008, graduated February 2008).
 - Credentials: four AWS certifications — Solutions Architect – Professional; Security – Specialty; Solutions Architect – Associate; Cloud Practitioner. AWS badges: AWS Certification Subject Matter Expert – Associate (contributes to AWS Certification exam development); AWS Partner: Technical Accredited. Verify at https://www.credly.com/users/raffasolaries
 - Contact: raffaele.sollecito@kumokage.com · +41 79 870 03 84 (mobile and WhatsApp)
 - Books: "Honor Bound: My Journey to Hell and Back with Amanda Knox" (with Andrew Gumbel; Simon & Schuster, September 2012; ISBN 978-1451696004); "Un passo fuori dalla notte" (Longanesi, October 2015; ISBN 978-88-304-4393-8).
