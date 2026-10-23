@@ -92,8 +92,8 @@ export default async function BooksPage({ params }: { params: Promise<{ locale: 
       rel="noopener noreferrer"
       className={
         primary
-          ? "inline-flex items-center px-5 py-2.5 bg-accent hover:bg-accent-light text-white font-medium rounded-md transition-colors"
-          : "inline-flex items-center px-5 py-2.5 border border-border hover:border-accent/50 font-medium rounded-md transition-colors"
+          ? "inline-flex items-center px-5 py-2.5 bg-foreground text-background hover:bg-accent font-medium rounded-md transition-colors"
+          : "inline-flex items-center px-5 py-2.5 border border-border hover:border-accent font-medium rounded-md transition-colors"
       }
     >
       {label} ↗
@@ -109,16 +109,13 @@ export default async function BooksPage({ params }: { params: Promise<{ locale: 
         {/* Honor Bound */}
         <article id="honor-bound" className="grid lg:grid-cols-5 gap-12 items-start scroll-mt-28">
           <div className="lg:col-span-2 flex justify-center lg:justify-start">
-            <div className="relative">
-              <div className="absolute -inset-4 bg-crimson/5 rounded-lg blur-xl" aria-hidden="true" />
-              <img
-                src={HONOR.cover}
-                alt="Honor Bound book cover"
-                width={678}
-                height={1024}
-                className="relative w-64 rounded-lg shadow-2xl border border-border/50"
-              />
-            </div>
+            <img
+              src={HONOR.cover}
+              alt="Honor Bound book cover"
+              width={678}
+              height={1024}
+              className="w-64 rounded-lg shadow-xl border border-border"
+            />
           </div>
           <div className="lg:col-span-3 space-y-6">
             <div>
@@ -127,7 +124,7 @@ export default async function BooksPage({ params }: { params: Promise<{ locale: 
               <p className="mt-3 text-accent font-mono text-sm">{t("honor.meta")}</p>
             </div>
             <p className="text-lg leading-relaxed">{t("honor.synopsis")}</p>
-            <blockquote className="border-l-2 border-crimson pl-6 py-2">
+            <blockquote className="border-l-2 border-accent pl-6 py-2">
               <p className="text-muted italic text-lg leading-relaxed">&ldquo;{t("honor.quote")}&rdquo;</p>
             </blockquote>
             <div>
@@ -160,17 +157,14 @@ export default async function BooksPage({ params }: { params: Promise<{ locale: 
             </div>
           </div>
           <div className="lg:col-span-2 flex justify-center lg:justify-end order-1 lg:order-2">
-            <div className="relative">
-              <div className="absolute -inset-4 bg-accent/5 rounded-lg blur-xl" aria-hidden="true" />
-              <img
-                src={PASSO.cover}
-                alt="Un passo fuori dalla notte — copertina"
-                width={912}
-                height={1401}
-                loading="lazy"
-                className="relative w-64 rounded-lg shadow-2xl border border-border/50"
-              />
-            </div>
+            <img
+              src={PASSO.cover}
+              alt="Un passo fuori dalla notte — copertina"
+              width={912}
+              height={1401}
+              loading="lazy"
+              className="w-64 rounded-lg shadow-xl border border-border"
+            />
           </div>
         </article>
       </Section>

@@ -27,7 +27,7 @@ export function Header() {
   const [mobileOpen, setMobileOpen] = useState(false);
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border/50">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border">
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
@@ -61,7 +61,7 @@ export function Header() {
             })}
             <a
               href={RESUME_URL}
-              className="ml-2 px-3 py-1.5 text-sm font-medium rounded-md border border-accent/40 text-accent hover:bg-accent hover:text-white transition-colors"
+              className="ml-2 px-3 py-1.5 text-sm font-medium rounded-md border border-accent/50 text-accent hover:bg-accent hover:text-background transition-colors"
             >
               {t("resume")}
             </a>
@@ -108,7 +108,7 @@ export function Header() {
 
         {/* Mobile Nav */}
         {mobileOpen && (
-          <div className="lg:hidden pb-4 border-t border-border/50 mt-2 pt-4">
+          <div className="lg:hidden pb-4 border-t border-border mt-2 pt-4">
             {navItems.map((item) => {
               const fullPath = `/${locale}${item.href}/`;
               const isActive = pathname === fullPath || pathname === fullPath.slice(0, -1);

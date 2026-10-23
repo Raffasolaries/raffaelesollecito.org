@@ -60,7 +60,7 @@ export default async function ExperiencePage({
               <div
                 className={`absolute left-0 md:left-8 top-1.5 w-3 h-3 rounded-full border-2 -translate-x-[5px] ${
                   index === 0
-                    ? "bg-accent border-accent glow-accent"
+                    ? "bg-accent border-accent"
                     : "bg-background border-border"
                 }`}
               />

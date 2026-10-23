@@ -1,11 +1,11 @@
 {
   "name": "Raffaele Sollecito",
   "short_name": "RS",
-  "description": "Cloud Architect & Author",
+  "description": "Principal Cloud Solutions Architect (AWS) & Author",
   "start_url": "/en/",
   "display": "standalone",
-  "background_color": "#0a0a0f",
-  "theme_color": "#7c3aed",
+  "background_color": "#0e1217",
+  "theme_color": "#0e1217",
   "icons": [
     {
       "src": "/icon-192.png",

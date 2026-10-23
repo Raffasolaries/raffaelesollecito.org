@@ -97,13 +97,13 @@ export default async function DocumentsPage({
                   href={`/documents/${doc.file}`}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-3 p-3 rounded-md bg-surface border border-border/50 hover:border-accent/30 transition-all group"
+                  className="flex items-center gap-3 p-3 rounded-md bg-surface border border-border hover:border-accent/30 transition-all group"
                 >
                   <span
                     className={`text-xs font-mono px-2 py-0.5 rounded ${
                       doc.file.endsWith(".pdf")
-                        ? "bg-crimson/10 text-crimson"
-                        : "bg-accent/10 text-accent"
+                        ? "bg-accent/10 text-accent"
+                        : "bg-surface-light text-muted"
                     }`}
                   >
                     {doc.file.endsWith(".pdf") ? "PDF" : "DOCX"}

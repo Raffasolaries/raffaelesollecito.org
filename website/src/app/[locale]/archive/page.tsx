@@ -75,14 +75,11 @@ export default async function ArchivePage({
 
           {/* Memories Logo */}
           <div className="lg:col-span-2 flex items-center justify-center">
-            <div className="relative w-full max-w-sm">
-              <div className="absolute -inset-4 bg-accent/5 rounded-2xl blur-2xl" />
-              <img
-                src="/images/archive/memories-logo.png"
-                alt="Memories IT Company"
-                className="relative w-full rounded-xl border border-border/50 bg-white p-6"
-              />
-            </div>
+            <img
+              src="/images/archive/memories-logo.png"
+              alt="Memories IT Company"
+              className="w-full max-w-sm rounded-xl border border-border bg-white p-6"
+            />
           </div>
         </div>
       </Section>
@@ -103,7 +100,7 @@ export default async function ArchivePage({
               {t("suntickets.description")}
             </p>
 
-            <div className="bg-surface border border-border/50 rounded-lg p-6">
+            <div className="bg-surface border border-border rounded-lg p-6">
               <h4 className="font-semibold mb-4">
                 {t("suntickets.features_title")}
               </h4>
@@ -138,7 +135,7 @@ export default async function ArchivePage({
             <img
               src="/images/archive/suntickets-infographic.jpg"
               alt="SunTickets Infographic"
-              className="w-full max-w-xs rounded-lg border border-border/50 shadow-lg"
+              className="w-full max-w-xs rounded-lg border border-border shadow-lg"
             />
           </div>
         </div>
@@ -155,7 +152,7 @@ export default async function ArchivePage({
               {t("beonmemories.description")}
             </p>
 
-            <div className="bg-surface border border-border/50 rounded-lg p-6">
+            <div className="bg-surface border border-border rounded-lg p-6">
               <h4 className="font-semibold mb-4">
                 {t("beonmemories.tech_title")}
               </h4>
@@ -171,7 +168,7 @@ export default async function ArchivePage({
                   ] as const
                 ).map((key) => (
                   <div key={key} className="flex gap-3">
-                    <div className="w-1.5 h-1.5 mt-2 rounded-full bg-crimson shrink-0" />
+                    <div className="w-1.5 h-1.5 mt-2 rounded-full bg-accent shrink-0" />
                     <p className="text-muted text-sm">
                       {t(`beonmemories.features.${key}`)}
                     </p>
@@ -187,12 +184,12 @@ export default async function ArchivePage({
               <img
                 src="/images/archive/beonmemories-brochure.jpg"
                 alt="BeOnMemories"
-                className="w-full rounded-xl border border-border/50 shadow-lg"
+                className="w-full rounded-xl border border-border shadow-lg"
               />
               <img
                 src="/images/archive/beonmemories-design.png"
                 alt="BeOnMemories — European reach"
-                className="w-full rounded-xl border border-border/50 shadow-lg"
+                className="w-full rounded-xl border border-border shadow-lg"
               />
             </div>
           </div>

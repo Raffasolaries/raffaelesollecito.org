@@ -74,7 +74,7 @@ export default async function FamilyPage({
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {childhoodPhotos.map((photo) => (
             <div key={photo.captionKey} className="group">
-              <div className="overflow-hidden rounded-lg border border-border/50 bg-surface aspect-square flex items-center justify-center">
+              <div className="overflow-hidden rounded-lg border border-border bg-surface aspect-square flex items-center justify-center">
                 <img
                   src={photo.src}
                   alt={t(photo.captionKey)}
@@ -97,7 +97,7 @@ export default async function FamilyPage({
           {friends.map((friend) => (
             <div
               key={friend.key}
-              className="bg-surface border border-border/50 rounded-lg p-8 hover:border-accent/30 transition-all"
+              className="bg-surface border border-border rounded-lg p-8 hover:border-accent/30 transition-all"
             >
               <div className="flex items-center gap-5 mb-6">
                 <div className="shrink-0">
