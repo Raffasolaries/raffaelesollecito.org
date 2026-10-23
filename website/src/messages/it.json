@@ -2,20 +2,20 @@
   "metadata": {
     "title": "Raffaele Sollecito — Principal Cloud Solutions Architect (AWS) e Autore",
     "template": "%s · Raffaele Sollecito",
-    "description": "Sito ufficiale di Raffaele Sollecito: Principal Cloud Solutions Architect e AWS Subject Matter Expert (6 certificazioni AWS), fondatore di Aspect Solutions, autore di Honor Bound e Un passo fuori dalla notte."
+    "description": "Sito ufficiale di Raffaele Sollecito: Principal Cloud Solutions Architect (AWS), fondatore di Kumokage GmbH a Zurigo, AWS Certified Solutions Architect – Professional e Security – Specialty, AWS Certification SME; autore di Honor Bound e Un passo fuori dalla notte."
   },
   "seo": {
     "home": {
       "title": "Raffaele Sollecito — Principal Cloud Solutions Architect (AWS)",
-      "description": "Raffaele Sollecito è Principal Cloud Solutions Architect e AWS Subject Matter Expert (6 certificazioni AWS): progetta piattaforme AWS sicure e resilienti per clienti enterprise e regolamentati. Autore di Honor Bound (2012) e Un passo fuori dalla notte (2015)."
+      "description": "Raffaele Sollecito è Principal Cloud Solutions Architect (AWS) e fondatore di Kumokage GmbH a Zurigo: progetta piattaforme AWS sicure e resilienti per clienti enterprise e regolamentati. Quattro certificazioni AWS, AWS Certification SME. Autore di Honor Bound (2012) e Un passo fuori dalla notte (2015)."
     },
     "about": {
       "title": "Chi è Raffaele Sollecito",
-      "description": "Chi è oggi Raffaele Sollecito: Principal Cloud Solutions Architect certificato AWS, di Giovinazzo, residente a Tavira (Portogallo) — formazione, valori e le esperienze dietro il lavoro."
+      "description": "Chi è oggi Raffaele Sollecito: Principal Cloud Solutions Architect certificato AWS, di Giovinazzo, residente a Zurigo e fondatore di Kumokage GmbH — formazione, valori e le esperienze dietro il lavoro."
     },
     "experience": {
       "title": "Esperienza e carriera",
-      "description": "Il percorso professionale di Raffaele Sollecito: da full-stack engineer e fondatore a Principal Cloud Solutions Architect — Aspect Solutions, PwC Luxembourg, Volkswagen Digital Solutions, ITnet, Tantosvago."
+      "description": "Il percorso professionale di Raffaele Sollecito: da full-stack engineer e fondatore a Principal Cloud Solutions Architect — Kumokage GmbH, Aspect Solutions, PwC Luxembourg, Volkswagen Digital Solutions, ITnet, Tantosvago."
     },
     "projects": {
       "title": "Progetti AWS selezionati",
@@ -60,15 +60,15 @@
     "resume": "Curriculum"
   },
   "hero": {
-    "eyebrow": "Principal Cloud Solutions Architect · AWS Subject Matter Expert",
+    "eyebrow": "Principal Cloud Solutions Architect (AWS) · Fondatore di Kumokage GmbH",
     "name": "Raffaele Sollecito",
     "title": "Progetto piattaforme AWS sicure e resilienti per clienti enterprise e regolamentati.",
-    "subtitle": "Sei certificazioni AWS, tra cui Solutions Architect Professional e Security Specialty. Landing zone, sicurezza cloud, piattaforme Kubernetes, disaster recovery multi-regione e AI agentica su Amazon Bedrock — seguite end-to-end come principal architect indipendente.",
+    "subtitle": "AWS Certified Solutions Architect – Professional e Security – Specialty, e AWS Certification Subject Matter Expert. Landing zone, sicurezza cloud, piattaforme Kubernetes, disaster recovery multi-regione e AI agentica su Amazon Bedrock — seguite end-to-end come principal architect responsabile, attraverso la mia società di Zurigo, Kumokage GmbH.",
     "cta_work": "Progetti selezionati",
     "cta_resume": "Scarica il curriculum",
     "cta_contact": "Contattami",
-    "location": "Tavira, Portogallo · Remoto, in tutta Europa",
-    "availability": "Disponibile per incarichi a contratto e ruoli di principal architect frazionale",
+    "location": "Zurigo, Svizzera · Clienti in Svizzera e in tutta Europa",
+    "availability": "Disponibile per nuovi incarichi tramite Kumokage GmbH",
     "scroll": "Scorri per esplorare"
   },
   "home": {
@@ -98,7 +98,7 @@
     "work_headline": "Incarichi recenti",
     "work_cta": "Tutti gli incarichi",
     "trusted_title": "Carriera",
-    "trusted_text": "In precedenza con PwC Luxembourg, Volkswagen Digital Solutions, ITnet e Tantosvago; indipendente dal 2025.",
+    "trusted_text": "In precedenza con PwC Luxembourg, Volkswagen Digital Solutions, ITnet e Tantosvago; indipendente dal 2025 e, dal 2026, attraverso la mia società di Zurigo, Kumokage GmbH.",
     "beyond_title": "Oltre il cloud",
     "beyond_headline": "Autore, e una storia che non ho mai nascosto",
     "beyond_books_title": "Due libri",
@@ -112,21 +112,21 @@
   "about": {
     "title": "Chi sono",
     "headline": "Ingegnere prima di tutto. Architetto di mestiere. Autore per circostanza.",
-    "bio_intro": "Sono Principal Cloud Solutions Architect e AWS Subject Matter Expert, con oltre dieci anni di platform engineering, sicurezza e DevOps su AWS e sei certificazioni AWS, tra cui Solutions Architect Professional e Security Specialty. Progetto e realizzo landing zone multi-account, perimetri di rete zero-trust, piattaforme Kubernetes in produzione, disaster recovery multi-regione e piattaforme di AI agentica per clienti enterprise e regolamentati — un'istituzione europea, Volkswagen, un publisher globale di videogiochi, una fintech regolata dalla FCA, utility del settore pubblico e aziende IoT.",
-    "bio_current": "Dal 2025 lavoro in modo indipendente attraverso Aspect Solutions da Tavira, in Portogallo, in genere inserito come principal architect nel team di piattaforma o di consulenza del cliente. Tengo ai confini di ownership, al least privilege, a un change management che gli ingegneri seguono davvero e a progetti che reggono un failover reale.",
-    "bio_personal": "Sono anche un autore: il mio memoir Honor Bound è stato pubblicato da Simon & Schuster nel 2012 e Un passo fuori dalla notte da Longanesi nel 2015. Fuori dal lavoro: manga, lunghe camminate sulla costa dell'Algarve e architettura gotica.",
+    "bio_intro": "Sono Principal Cloud Solutions Architect, con oltre dieci anni nell'ingegneria del software, di cui sette di platform engineering, sicurezza e DevOps su AWS. Ho quattro certificazioni AWS, tra cui Solutions Architect Professional e Security Specialty, e contribuisco allo sviluppo degli esami di certificazione AWS come Subject Matter Expert. Progetto e realizzo landing zone multi-account, perimetri di rete zero-trust, piattaforme Kubernetes in produzione, disaster recovery multi-regione e piattaforme di AI agentica per clienti enterprise e regolamentati — un'istituzione europea, Volkswagen, un publisher globale di videogiochi, una fintech regolata dalla FCA, utility del settore pubblico e aziende IoT.",
+    "bio_current": "Dal 2025 lavoro in modo indipendente, prima attraverso Aspect Solutions in Portogallo, in genere inserito come principal architect nel team di piattaforma o di consulenza del cliente. Nell'ottobre 2026 ho fondato a Zurigo Kumokage GmbH, la società attraverso cui oggi accetto nuovi incarichi. Tengo ai confini di ownership, al least privilege, a un change management che gli ingegneri seguono davvero e a progetti che reggono un failover reale.",
+    "bio_personal": "Sono anche un autore: il mio memoir Honor Bound è stato pubblicato da Simon & Schuster nel 2012 e Un passo fuori dalla notte da Longanesi nel 2015. Fuori dal lavoro: manga, lunghe camminate e architettura gotica.",
     "case_title": "Il caso",
     "case_text": "Tra il 2007 e il 2015 sono stato accusato ingiustamente nel caso Meredith Kercher a Perugia e ho passato quasi quattro anni in carcere prima che la Corte di Cassazione mi assolvesse in via definitiva il 27 marzo 2015. Ho completato la laurea magistrale mentre il processo era ancora aperto e da allora ho lavorato senza interruzioni nel software e nel cloud. Non nascondo quel capitolo e non lo metto davanti a tutto: i fatti, la cronologia e gli atti giudiziari sono in una pagina dedicata.",
     "case_link": "Leggi i fatti e le FAQ",
     "stats": {
-      "years": "10+",
-      "years_label": "Anni su AWS",
-      "certs": "6",
+      "engineering": "10+",
+      "engineering_label": "Anni di ingegneria del software",
+      "aws": "7+",
+      "aws_label": "Anni su AWS",
+      "certs": "4",
       "certs_label": "Certificazioni AWS",
-      "clients": "15+",
-      "clients_label": "Clienti enterprise",
-      "countries": "5",
-      "countries_label": "Paesi in cui ho lavorato"
+      "sme": "SME",
+      "sme_label": "Contributore agli esami di certificazione AWS"
     },
     "values_title": "Come lavoro",
     "values": {
@@ -147,8 +147,8 @@
     "education": {
       "verona": {
         "school": "Università degli Studi di Verona",
-        "degree": "Laurea magistrale in Ingegneria Informatica — Visual Computing (LM-32)",
-        "period": "2008 — 2014"
+        "degree": "Laurea magistrale in Ingegneria e Scienze Informatiche — curriculum Visual Computing (LM-32)",
+        "period": "2014"
       },
       "perugia": {
         "school": "Università degli Studi di Perugia",
@@ -170,6 +170,13 @@
     "subtitle": "Dallo sviluppo full-stack e dalla fondazione di una web agency all'architettura cloud per clienti enterprise e regolamentati.",
     "resume_cta": "Curriculum stampabile e PDF",
     "positions": {
+      "kumokage": {
+        "company": "Kumokage GmbH",
+        "role": "Fondatore e Managing Director · Principal Cloud Solutions Architect",
+        "period": "Ott 2026 — Presente",
+        "location": "Zurigo, Svizzera",
+        "description": "Ho fondato a Zurigo una società di consulenza che progetta, mette in sicurezza e gestisce piattaforme cloud con focus su AWS, e guido ogni incarico come principal architect responsabile: landing zone e governance, sicurezza delle informazioni e compliance, piattaforme Kubernetes, disaster recovery multi-regione e AI governata su Amazon Bedrock. Microsoft Azure, Google Cloud e Alibaba Cloud sono nella roadmap."
+      },
       "aspect": {
         "company": "Aspect Solutions",
         "role": "Principal Cloud Solutions Architect e Fondatore",
@@ -236,7 +243,7 @@
         "title": "Piattaforma interna per sviluppatori AI-native",
         "client": "Azienda globale di semiconduttori per posizionamento e wireless IoT",
         "period": "Lug 2025 — Presente",
-        "description": "Principal architect di una piattaforma per sviluppatori basata su agenti con Amazon Bedrock AgentCore, Lambda, EventBridge e DynamoDB: agenti di repo-discovery, conformità architetturale e RAG che validano le merge request GitLab e rispondono con fonti citate. Ruoli di deploy GitLab OIDC cross-account (CDK) su undici account AWS; tutte le segnalazioni di AWS Security Agent risolte. GitLab self-managed in alta disponibilità per oltre 500 utenti, migrazione da GitHub e SVN con storico completo, wiki aziendale serverless."
+        "description": "Ho guidato l'architettura e la realizzazione hands-on di una piattaforma per sviluppatori basata su agenti con Amazon Bedrock AgentCore, Lambda, EventBridge e DynamoDB: agenti di repo-discovery, conformità architetturale e RAG che validano le merge request GitLab e rispondono con fonti citate. Ruoli di deploy GitLab OIDC cross-account (CDK) su undici account AWS; tutte le segnalazioni di AWS Security Agent risolte. GitLab self-managed in alta disponibilità, migrazione da GitHub e SVN con storico completo, wiki aziendale serverless."
       },
       "fintech": {
         "title": "Piattaforma cloud, archivio di compliance e security operations",
@@ -306,7 +313,7 @@
       "q3": { "q": "Chi è stato condannato per l'omicidio?", "a": "Rudy Guede è stato condannato per l'omicidio di Meredith Kercher in un procedimento separato con rito abbreviato. La condanna è diventata definitiva nel dicembre 2010, con una pena di 16 anni." },
       "q4": { "q": "Cosa ha detto la Cassazione nel 2015?", "a": "Le motivazioni, depositate a settembre 2015, descrivono un'indagine segnata da gravi carenze e rilevano che nella stanza del delitto non è stata trovata alcuna traccia biologica di Sollecito o Knox, mentre erano presenti quelle di Guede. La Corte ha chiuso il caso con un'assoluzione piena, non per insufficienza di prove." },
       "q5": { "q": "È stato risarcito per l'ingiusta detenzione?", "a": "No. Nel 2017 la Corte d'Appello di Firenze ha rigettato la sua richiesta di riparazione per gli anni di custodia cautelare. Ha continuato a impegnarsi per la riforma della giustizia italiana." },
-      "q6": { "q": "Il caso incide sul suo lavoro?", "a": "No. Ha conseguito la laurea magistrale in Ingegneria Informatica all'Università di Verona nel 2014, con il processo ancora aperto, e da allora ha lavorato senza interruzioni nel software e nel cloud — oggi come Principal Cloud Solutions Architect con sei certificazioni AWS. Clienti e datori di lavoro hanno sempre avuto accesso a questi fatti." },
+      "q6": { "q": "Il caso incide sul suo lavoro?", "a": "No. Ha conseguito la laurea magistrale in Ingegneria e Scienze Informatiche all'Università di Verona nel 2014, con il processo ancora aperto, e da allora ha lavorato senza interruzioni nel software e nel cloud — oggi come Principal Cloud Solutions Architect con quattro certificazioni AWS e fondatore di Kumokage GmbH a Zurigo. Clienti e datori di lavoro hanno sempre avuto accesso a questi fatti." },
       "q7": { "q": "Dove posso leggere gli atti?", "a": "Sentenze, decisioni d'appello e perizie sono pubblicate nella pagina Documenti di questo sito, per lo più in italiano." },
       "q8": { "q": "Ne ha scritto?", "a": "Sì — due libri: Honor Bound (Simon & Schuster, 2012, scritto con Andrew Gumbel) e Un passo fuori dalla notte (Longanesi, 2015)." }
     },
@@ -331,15 +338,16 @@
     "headline": "Parliamone",
     "subtitle": "Incarichi di architettura cloud, sicurezza e piattaforme; richieste per interventi e media.",
     "email": "Email",
-    "phone": "Telefono",
+    "phone": "Cellulare e WhatsApp",
+    "whatsapp": "Scrivimi su WhatsApp",
     "location": "Sede",
-    "location_value": "Tavira, Faro, Portogallo · Remoto, in tutta Europa",
+    "location_value": "Zurigo, Svizzera · Clienti in Svizzera e in tutta Europa",
     "social": "Dove trovarmi online",
     "resume": "Curriculum stampabile (PDF)",
-    "availability": "Attualmente disponibile per incarichi a contratto e ruoli di principal architect frazionale."
+    "availability": "Disponibile per nuovi incarichi tramite Kumokage GmbH."
   },
   "footer": {
-    "tagline": "Principal Cloud Solutions Architect · Autore",
+    "tagline": "Principal Cloud Solutions Architect · Fondatore di Kumokage GmbH · Autore",
     "copyright": "Raffaele Sollecito. Tutti i diritti riservati.",
     "built_with": "Realizzato con Next.js, distribuito su AWS."
   },

@@ -58,7 +58,7 @@ export default async function AboutPage({ params }: { params: Promise<{ locale: 
               />
             </div>
             <div className="bg-surface border border-border/50 rounded-lg p-6 space-y-4">
-              {(["years", "certs", "clients", "countries"] as const).map((key) => (
+              {(["engineering", "aws", "certs", "sme"] as const).map((key) => (
                 <div key={key} className="flex items-center justify-between">
                   <span className="text-muted text-sm">{t(`stats.${key}_label`)}</span>
                   <span className="text-2xl font-bold text-accent">{t(`stats.${key}`)}</span>

@@ -8,7 +8,8 @@ import { locales, type Locale } from "@/i18n/config";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { JsonLd } from "@/components/JsonLd";
-import { SITE_URL, PERSON_ID, WEBSITE_ID, RESUME_URL } from "@/lib/site";
+import { SITE_URL, PERSON_ID, WEBSITE_ID, RESUME_URL, CONTACT, COMPANY } from "@/lib/site";
+import { CERTS, badgeUrl } from "@/lib/certs";
 import "../globals.css";
 
 const geistSans = Geist({
@@ -100,36 +101,32 @@ const entityGraph = {
       image: `${SITE_URL}/images/raffaele-1.jpg`,
       jobTitle: "Principal Cloud Solutions Architect",
       description:
-        "Principal Cloud Solutions Architect and AWS Subject Matter Expert (six AWS certifications), founder of Aspect Solutions, and author of the memoirs Honor Bound (Simon & Schuster, 2012) and Un passo fuori dalla notte (Longanesi, 2015).",
+        "Principal Cloud Solutions Architect (AWS) and founder of Kumokage GmbH in Zürich; AWS Certified Solutions Architect – Professional and Security – Specialty, and AWS Certification Subject Matter Expert; author of the memoirs Honor Bound (Simon & Schuster, 2012) and Un passo fuori dalla notte (Longanesi, 2015).",
       birthPlace: { "@type": "Place", name: "Bari, Italy" },
       nationality: { "@type": "Country", name: "Italy" },
       homeLocation: {
         "@type": "Place",
-        address: { "@type": "PostalAddress", addressLocality: "Tavira", addressRegion: "Faro", addressCountry: "PT" },
+        address: { "@type": "PostalAddress", addressLocality: "Zürich", addressRegion: "ZH", addressCountry: "CH" },
       },
-      email: "mailto:raffaele.sollecito@aspectsolutions.eu",
+      email: `mailto:${CONTACT.email}`,
+      telephone: CONTACT.phone,
       worksFor: {
         "@type": "Organization",
-        name: "Aspect Solutions, Unipessoal Lda",
-        url: "https://www.linkedin.com/company/aspect-solutions-innovate/",
+        name: COMPANY.name,
+        url: COMPANY.url,
+        sameAs: [COMPANY.linkedin],
+        address: { "@type": "PostalAddress", addressLocality: "Zürich", addressCountry: "CH" },
       },
       alumniOf: [
         { "@type": "CollegeOrUniversity", name: "Università degli Studi di Verona", url: "https://www.univr.it/" },
         { "@type": "CollegeOrUniversity", name: "Università degli Studi di Perugia", url: "https://www.unipg.it/" },
       ],
-      hasCredential: [
-        ["AWS Certified Solutions Architect – Professional", "1bf12aa4-d1ad-4178-96f9-b15bee1f7fde"],
-        ["AWS Certified Security – Specialty", "20256e01-69c8-48f0-b139-e3468b9f5837"],
-        ["AWS Certified Solutions Architect – Associate", "d2bcc5cd-06d7-431c-b96b-88027da8fdef"],
-        ["AWS Certification Subject Matter Expert – Associate", "84f7bf87-5948-4b0e-8afe-3f5193d85883"],
-        ["AWS Partner: Technical Accredited", "5c9c82af-b374-4e72-971f-a9e576007cca"],
-        ["AWS Certified Cloud Practitioner", "a93d8bd5-9e9d-4aa6-98c3-fe49592ac2da"],
-      ].map(([name, id]) => ({
+      hasCredential: CERTS.map((c) => ({
         "@type": "EducationalOccupationalCredential",
-        name,
-        credentialCategory: "certification",
+        name: c.name,
+        credentialCategory: c.kind,
         recognizedBy: { "@type": "Organization", name: "Amazon Web Services" },
-        url: `https://www.credly.com/badges/${id}`,
+        url: badgeUrl(c),
       })),
       knowsAbout: [
         "Amazon Web Services", "Cloud Architecture", "Cloud Security", "AWS Control Tower", "Landing Zones",

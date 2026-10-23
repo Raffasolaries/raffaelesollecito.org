@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { Section, SectionHeader } from "@/components/Section";
 import { JsonLd } from "@/components/JsonLd";
-import { pageMetadata, breadcrumbLd, RESUME_URL } from "@/lib/site";
+import { pageMetadata, breadcrumbLd, RESUME_URL, CONTACT, COMPANY } from "@/lib/site";
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
   const { locale } = await params;
@@ -48,10 +48,10 @@ export default async function ContactPage({
             <div>
               <p className="text-sm text-muted">{t("email")}</p>
               <a
-                href="mailto:raffaele.sollecito@aspectsolutions.eu"
+                href={`mailto:${CONTACT.email}`}
                 className="text-foreground hover:text-accent transition-colors"
               >
-                raffaele.sollecito@aspectsolutions.eu
+                {CONTACT.email}
               </a>
             </div>
           </div>
@@ -65,8 +65,16 @@ export default async function ContactPage({
             </div>
             <div>
               <p className="text-sm text-muted">{t("phone")}</p>
-              <a href="tel:+39335422409" className="text-foreground hover:text-accent transition-colors">
-                +39 335 422 409
+              <a href={`tel:${CONTACT.phone}`} className="text-foreground hover:text-accent transition-colors">
+                {CONTACT.phoneDisplay}
+              </a>
+              <a
+                href={CONTACT.whatsappUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block text-sm text-accent hover:text-accent-light transition-colors"
+              >
+                {t("whatsapp")} ↗
               </a>
             </div>
           </div>
@@ -100,6 +108,20 @@ export default async function ContactPage({
               <div>
                 <p className="font-medium group-hover:text-accent transition-colors">{t("resume")}</p>
                 <p className="text-sm text-muted">resume.raffaelesollecito.org</p>
+              </div>
+            </a>
+            <a
+              href={COMPANY.linkedin}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-4 p-3 rounded-md hover:bg-surface-light transition-colors group"
+            >
+              <svg className="w-6 h-6 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3 21h18M5 21V7l7-4 7 4v14M9 21v-6h6v6M9 10h.01M12 10h.01M15 10h.01" />
+              </svg>
+              <div>
+                <p className="font-medium group-hover:text-accent transition-colors">{COMPANY.name}</p>
+                <p className="text-sm text-muted">linkedin.com/company/kumokage</p>
               </div>
             </a>
             <a

@@ -177,7 +177,8 @@ Both systems write to the same S3 bucket — WordPress output overwrites Next.js
 - Feature branches for infrastructure changes, PRs to main
 - `*.tfvars` files are gitignored — use GitHub Secrets/Variables for CI
 - terraform-docs auto-generates README.md via pre-commit
-- NEVER mention current Aspect Solutions clients by name on website or public content (describe them: "global gaming publisher", "IoT semiconductor company", "FCA-regulated fintech"). Past clients (ReeVo, AWAKE Mobility) and past employers may be named.
+- NEVER mention current clients by name on website or public content, whether contracted through Aspect Solutions or Kumokage GmbH (describe them: "global gaming publisher", "IoT semiconductor company", "FCA-regulated fintech"). Past clients (ReeVo, AWAKE Mobility) and past employers may be named.
+- Credentials: four AWS certifications plus two AWS badges (Certification SME, Partner accreditation) — never "six certifications" or "6×". Canonical Credly badge IDs live in `src/lib/certs.ts`; public email, phone/WhatsApp and company links live in `CONTACT` / `COMPANY` in `src/lib/site.ts`. Experience claims: "10+ years in software engineering, 7+ on AWS".
 - Every page.tsx exports `generateMetadata` built with `pageMetadata()` from `src/lib/site.ts` and reads its title/description from `seo.<page>` in the message files. Never set canonical/OG in the layout.
 - The case page states facts only (dates, courts, outcomes) and names Meredith Kercher respectfully; never editorialize about other people involved. Book quotes must be real jacket/text quotes — never invent one.
 - GA4 / Search Console / Bing tokens come from GitHub Variables `GA_MEASUREMENT_ID`, `GOOGLE_SITE_VERIFICATION`, `BING_SITE_VERIFICATION` (see `docs/seo-analytics-setup.md`).
