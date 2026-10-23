@@ -58,7 +58,9 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           reporter: github-pr-check
           filter_mode: added
-          flags: --module
+          tflint_version: v0.65.0
+          tflint_init: true
+          flags: --call-module-type=all
           level: error
 
   tfsec:
