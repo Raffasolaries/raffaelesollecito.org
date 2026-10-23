@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { THEME_INIT_SCRIPT } from "@/lib/theme";
 import "./globals.css";
 
 export const metadata = {
@@ -9,7 +10,10 @@ export const metadata = {
 /** Root 404 (served by CloudFront custom_error_response for 403/404). Trilingual (EN/IT/DE), self-contained. */
 export default function NotFound() {
   return (
-    <html lang="en" className="dark">
+    <html lang="en" suppressHydrationWarning>
+      <head>
+        <script dangerouslySetInnerHTML={{ __html: THEME_INIT_SCRIPT }} />
+      </head>
       <body className="font-sans antialiased bg-background text-foreground min-h-screen flex items-center justify-center px-6">
         <main className="max-w-lg text-center">
           <p className="font-mono text-accent text-sm tracking-widest uppercase">404</p>
@@ -22,7 +26,7 @@ export default function NotFound() {
             Die angeforderte Seite existiert nicht oder wurde verschoben.
           </p>
           <div className="mt-8 flex flex-wrap justify-center gap-3">
-            <Link href="/en/" className="px-5 py-2.5 rounded-md bg-accent text-white font-medium">English home</Link>
+            <Link href="/en/" className="px-5 py-2.5 rounded-md bg-foreground text-background font-medium">English home</Link>
             <Link href="/it/" className="px-5 py-2.5 rounded-md border border-border font-medium">Home in italiano</Link>
             <Link href="/de/" className="px-5 py-2.5 rounded-md border border-border font-medium">Startseite auf Deutsch</Link>
           </div>

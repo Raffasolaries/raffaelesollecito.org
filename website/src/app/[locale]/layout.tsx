@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono, Source_Serif_4 } from "next/font/google";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages, setRequestLocale } from "next-intl/server";
@@ -9,6 +9,7 @@ import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { JsonLd } from "@/components/JsonLd";
 import { SITE_URL, PERSON_ID, WEBSITE_ID, RESUME_URL, CONTACT, COMPANY } from "@/lib/site";
+import { THEME_COLORS, THEME_INIT_SCRIPT } from "@/lib/theme";
 import { CERTS, badgeUrl } from "@/lib/certs";
 import "../globals.css";
 
@@ -81,11 +82,12 @@ export async function generateMetadata({
         ? { "msvalidate.01": process.env.NEXT_PUBLIC_BING_SITE_VERIFICATION }
         : undefined,
     },
-    other: {
-      "theme-color": "#0b0b12",
-    },
   };
 }
+
+export const viewport: Viewport = {
+  themeColor: THEME_COLORS,
+};
 
 /** Entity graph shared by every page: Person (the subject) + WebSite. */
 const entityGraph = {
@@ -181,7 +183,7 @@ export default async function LocaleLayout({
       <head>
         <script
           dangerouslySetInnerHTML={{
-            __html: `(function(){try{var t=localStorage.getItem("theme");if(t!=="light"){document.documentElement.classList.add("dark")}}catch(e){}})()`,
+            __html: THEME_INIT_SCRIPT,
           }}
         />
         <JsonLd data={entityGraph} />

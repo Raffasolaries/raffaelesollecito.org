@@ -37,7 +37,7 @@ export default async function AboutPage({ params }: { params: Promise<{ locale: 
             <p className="text-muted leading-relaxed">{t("bio_current")}</p>
             <p className="text-muted leading-relaxed">{t("bio_personal")}</p>
 
-            <aside className="mt-8 rounded-lg border border-border/60 bg-surface p-6">
+            <aside className="mt-8 rounded-lg border border-border bg-surface p-6">
               <h2 className="text-sm font-mono uppercase tracking-widest text-accent">{t("case_title")}</h2>
               <p className="mt-3 text-muted leading-relaxed">{t("case_text")}</p>
               <Link href={`/${locale}/case/`} className="mt-4 inline-flex items-center text-accent hover:text-accent-light font-medium">
@@ -47,21 +47,18 @@ export default async function AboutPage({ params }: { params: Promise<{ locale: 
           </div>
 
           <div className="lg:col-span-2 space-y-6">
-            <div className="relative">
-              <div className="absolute -inset-2 bg-accent/10 rounded-lg blur-xl" aria-hidden="true" />
-              <img
-                src="/images/raffaele-1.jpg"
-                alt="Raffaele Sollecito"
-                width={960}
-                height={960}
-                className="relative w-full rounded-lg border border-border/50 object-cover aspect-[4/5]"
-              />
-            </div>
-            <div className="bg-surface border border-border/50 rounded-lg p-6 space-y-4">
+            <img
+              src="/images/raffaele-1.jpg"
+              alt="Raffaele Sollecito"
+              width={960}
+              height={960}
+              className="w-full rounded-lg border border-border object-cover aspect-[4/5]"
+            />
+            <div className="bg-surface border border-border rounded-lg p-6 space-y-4">
               {(["engineering", "aws", "certs", "sme"] as const).map((key) => (
                 <div key={key} className="flex items-center justify-between">
                   <span className="text-muted text-sm">{t(`stats.${key}_label`)}</span>
-                  <span className="text-2xl font-bold text-accent">{t(`stats.${key}`)}</span>
+                  <span className="text-2xl font-display font-semibold text-foreground">{t(`stats.${key}`)}</span>
                 </div>
               ))}
             </div>
@@ -74,7 +71,7 @@ export default async function AboutPage({ params }: { params: Promise<{ locale: 
         <h2 className="text-2xl font-bold mb-8">{t("values_title")}</h2>
         <div className="grid md:grid-cols-3 gap-6">
           {(["ownership", "evidence", "governance"] as const).map((k) => (
-            <div key={k} className="p-6 bg-surface rounded-lg border border-border/50">
+            <div key={k} className="p-6 bg-surface rounded-lg border border-border">
               <h3 className="font-semibold text-lg">{t(`values.${k}.title`)}</h3>
               <p className="mt-2 text-sm text-muted leading-relaxed">{t(`values.${k}.text`)}</p>
             </div>
@@ -90,7 +87,7 @@ export default async function AboutPage({ params }: { params: Promise<{ locale: 
             { src: "/images/raffaele-3.jpg", alt: "Raffaele Sollecito — interview", w: 2560, h: 1706 },
             { src: "/images/raffaele-4.jpg", alt: "Raffaele Sollecito", w: 1152, h: 2048 },
           ].map((photo) => (
-            <div key={photo.src} className="overflow-hidden rounded-lg border border-border/50">
+            <div key={photo.src} className="overflow-hidden rounded-lg border border-border">
               <img
                 src={photo.src}
                 alt={photo.alt}

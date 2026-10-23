@@ -129,7 +129,8 @@ CI/CD passes these as `TF_VAR_*` environment variables. For local dev, use `loca
 - **Framework**: Next.js 16 with App Router, static export (`output: 'export'`)
 - **i18n**: `next-intl` with `[locale]` path-based routing (EN/IT/DE)
 - **Styling**: Tailwind CSS v4 with `@theme inline`, CSS custom properties for dark/light mode
-- **Theme**: Dark/light toggle with localStorage persistence and flash-free inline script
+- **Theme**: Dark/light toggle with localStorage persistence and flash-free inline script (`src/lib/theme.ts`); without a saved choice the visitor's system setting (`prefers-color-scheme`) decides
+- **Design**: washi `#f6f4ef` / sumi ink `#0e1217`, one aizome accent (`#2f5d8a` light, `#8fb4db` dark), shared with kumokage.com; vermilion `#c5311d` only in the RS seal; Source Serif 4 headings, Geist body. Tokens in `src/app/globals.css`; every text pairing meets WCAG AA. Primary buttons are `bg-foreground text-background hover:bg-accent`. No violet, glows, blurred blobs or pulsing badges.
 - **Params pattern**: `params: Promise<{ locale: string }>` (Next.js 16 async params)
 - **Node**: v25 in CI
 

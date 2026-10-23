@@ -53,7 +53,7 @@ export default async function CasePage({ params }: { params: Promise<{ locale: s
     <>
       <JsonLd data={ld} />
 
-      <Section className="pt-32 speed-lines mandala">
+      <Section className="pt-32 mandala">
         <SectionHeader title={t("title")} headline={t("headline")} />
         <div className="max-w-3xl space-y-6">
           <p className="text-lg sm:text-xl leading-relaxed">{t("lede")}</p>
@@ -65,13 +65,13 @@ export default async function CasePage({ params }: { params: Promise<{ locale: s
       <Section className="bg-surface/30">
         <h2 className="text-2xl font-bold mb-10">{t("sections.timeline")}</h2>
         <ol className="relative">
-          <div className="absolute left-4 top-0 bottom-0 w-px bg-gradient-to-b from-crimson via-accent to-transparent" aria-hidden="true" />
+          <div className="absolute left-4 top-0 bottom-0 w-px bg-gradient-to-b from-border via-border to-accent" aria-hidden="true" />
           <div className="space-y-8">
             {TIMELINE.map((k, i) => (
               <li key={k} className="relative pl-12">
                 <div
                   className={`absolute left-4 top-1.5 w-3 h-3 rounded-full -translate-x-[5px] ${
-                    i === TIMELINE.length - 1 ? "bg-accent border-2 border-accent glow-accent" : "bg-background border-2 border-crimson"
+                    i === TIMELINE.length - 1 ? "bg-accent border-2 border-accent" : "bg-background border-2 border-muted"
                   }`}
                   aria-hidden="true"
                 />
@@ -99,17 +99,17 @@ export default async function CasePage({ params }: { params: Promise<{ locale: s
       {/* Documents + Books */}
       <Section className="bg-surface/30 !py-16">
         <div className="grid md:grid-cols-2 gap-6">
-          <div className="bg-surface border border-border/50 rounded-lg p-8">
+          <div className="bg-surface border border-border rounded-lg p-8">
             <h3 className="text-xl font-bold mb-3">{t("sections.documents")}</h3>
             <p className="text-muted mb-6">{t("documents_text")}</p>
-            <Link href={`/${locale}/documents/`} className="inline-flex items-center px-5 py-2.5 bg-accent hover:bg-accent-light text-white font-medium rounded-md transition-all">
+            <Link href={`/${locale}/documents/`} className="inline-flex items-center px-5 py-2.5 bg-foreground text-background hover:bg-accent font-medium rounded-md transition-colors">
               {t("documents_cta")} →
             </Link>
           </div>
-          <div className="bg-surface border border-border/50 rounded-lg p-8">
+          <div className="bg-surface border border-border rounded-lg p-8">
             <h3 className="text-xl font-bold mb-3">{t("sections.books")}</h3>
             <p className="text-muted mb-6">{t("books_text")}</p>
-            <Link href={`/${locale}/books/`} className="inline-flex items-center px-5 py-2.5 border border-border hover:border-crimson/50 font-medium rounded-md transition-all">
+            <Link href={`/${locale}/books/`} className="inline-flex items-center px-5 py-2.5 border border-border hover:border-accent font-medium rounded-md transition-colors">
               {t("books_cta")} →
             </Link>
           </div>

@@ -4,9 +4,10 @@ import { useEffect, useState } from "react";
 
 type Theme = "light" | "dark";
 
-/** Site default is dark (sumi ink); an explicit user choice in localStorage wins. */
+/** No saved choice: follow the visitor's system setting, as the inline THEME_INIT_SCRIPT does before paint. */
 function getSystemTheme(): Theme {
-  return "dark";
+  if (typeof window === "undefined" || !window.matchMedia) return "light";
+  return window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
 }
 
 function getStoredTheme(): Theme | null {
