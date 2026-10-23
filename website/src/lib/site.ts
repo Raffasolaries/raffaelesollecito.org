@@ -6,6 +6,21 @@ export const RESUME_URL = "https://resume.raffaelesollecito.org/";
 export const PERSON_ID = `${SITE_URL}/#person`;
 export const WEBSITE_ID = `${SITE_URL}/#website`;
 
+/** Public contact details, shared by the contact page and the Person JSON-LD. */
+export const CONTACT = {
+  email: "raffaele.sollecito@kumokage.com",
+  phone: "+41798700384",
+  phoneDisplay: "+41 79 870 03 84",
+  whatsappUrl: "https://wa.me/41798700384",
+} as const;
+
+/** The company Raffaele works through. */
+export const COMPANY = {
+  name: "Kumokage GmbH",
+  url: "https://kumokage.com",
+  linkedin: "https://www.linkedin.com/company/kumokage/",
+} as const;
+
 /** Canonical route paths (no locale, with trailing slash). "" = home. */
 export const ROUTES = [
   "",

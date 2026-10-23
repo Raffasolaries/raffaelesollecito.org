@@ -11,6 +11,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
 }
 
 const positionKeys = [
+  "kumokage",
   "aspect",
   "pwc",
   "vw",

@@ -169,7 +169,7 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
       {/* ───────────────── Stats + career strip ───────────────── */}
       <Section className="!py-14">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-          {(["years", "certs", "clients", "countries"] as const).map((key) => (
+          {(["engineering", "aws", "certs", "sme"] as const).map((key) => (
             <div key={key} className="text-center">
               <div className="text-4xl font-bold text-accent">{t(`about.stats.${key}`)}</div>
               <div className="mt-2 text-sm text-muted">{t(`about.stats.${key}_label`)}</div>
