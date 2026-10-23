@@ -62,9 +62,13 @@ function legacyRedirect(uri, locale) {
   var m = path.match(/^\/(en|it|de)\/book$/);
   if (m) return '/' + m[1] + '/books/';
 
-  // /{locale}/<legacy> → /{locale}/<new>
+  // /{locale}/<legacy> → /{locale}/<new>. Skip when the slug is already the canonical
+  // route (e.g. /en/about/ for '/about'), otherwise the redirect points at itself.
   var lm = path.match(/^\/(en|it|de)(\/.+)$/);
-  if (lm && LEGACY[lm[2]]) return '/' + lm[1] + '/' + LEGACY[lm[2]];
+  if (lm && LEGACY[lm[2]]) {
+    var dest = '/' + lm[1] + '/' + LEGACY[lm[2]];
+    if (dest !== path + '/') return dest;
+  }
 
   // /<legacy> (old WordPress, no locale) → /{detected}/<new>
   if (LEGACY[path]) return '/' + locale + '/' + LEGACY[path];
