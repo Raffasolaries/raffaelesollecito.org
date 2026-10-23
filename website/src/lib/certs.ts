@@ -2,7 +2,7 @@ export interface Cert {
   name: string;
   short: string;
   level: "professional" | "specialty" | "associate" | "foundational";
-  /** Exam-based AWS certification, or an AWS badge (SME programme, partner accreditation). */
+  /** Exam-based AWS certification, or an AWS badge (SME program, partner accreditation). */
   kind: "certification" | "badge";
   badgeId: string;
 }
