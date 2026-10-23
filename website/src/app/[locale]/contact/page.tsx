@@ -111,7 +111,7 @@ export default async function ContactPage({
               </div>
             </a>
             <a
-              href={COMPANY.linkedin}
+              href={COMPANY.url}
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-4 p-3 rounded-md hover:bg-surface-light transition-colors group"
@@ -121,7 +121,7 @@ export default async function ContactPage({
               </svg>
               <div>
                 <p className="font-medium group-hover:text-accent transition-colors">{COMPANY.name}</p>
-                <p className="text-sm text-muted">linkedin.com/company/kumokage</p>
+                <p className="text-sm text-muted">kumokage.com</p>
               </div>
             </a>
             <a
